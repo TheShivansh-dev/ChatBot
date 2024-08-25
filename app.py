@@ -15,7 +15,38 @@ GOOGLE_CX: Final = '92178ceca83294240'  # Custom Search Engine ID
 ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
 
 GIF_IMAGE_PATHS: Final = {
-    # Your GIF paths here
+      'call': 'Image/call.gif',
+    'go': 'Image/go.gif',
+    'swing': 'Image/swing.gif',
+    'hug': 'Image/hug.gif',
+    'praise': 'Image/praise.gif',
+    'scold': 'Image/scold.gif',
+    'ignore': 'Image/ignore.gif',
+    'chill': 'Image/chill.gif',
+    'dance': 'Image/dance.gif',
+    'move': 'Image/move.gif',
+    'sorry': 'Image/sorry.gif',
+    'fight': 'Image/fight.gif',
+    'miss': 'Image/miss.gif',
+    'write': 'Image/write.gif',
+    'throw': 'Image/throw.gif',
+    'kick': 'Image/kick.gif',
+    'care': 'Image/care.gif',
+    'snatch': 'Image/snatch.gif',
+    'tease': 'Image/tease.gif',
+    'stalk': 'Image/stalk.gif',
+    'enjoy': 'Image/enjoy.gif',
+    'play': 'Image/play.gif',
+    'teach': 'Image/teach.gif',
+    'slap': 'Image/slap.gif',
+    'feed': 'Image/feed.gif',
+    'poke': 'Image/poke.gif',
+    'bite': 'Image/bite.gif',
+    'greet': 'Image/greet.gif',
+    'boom': 'Image/boom.gif',
+    'beat': 'Image/beat.gif',
+    'roast': 'Image/roast.gif',
+    'fry': 'Image/fry.gif'
 }
 
 # Initialize Flask app
