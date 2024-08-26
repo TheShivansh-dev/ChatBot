@@ -133,6 +133,8 @@ def handle_response(text: str) -> str:
         return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
     if re.search(r'\bwho is your owner\b', processed):
         return 'My Owner is Ishi'
+    if re.search(r'\bgood morning\b\bgood mrng\b\bgm\b\bgood night\b\bgood nyt\b\bgn\b\bgd nyt\b\bgood afternoon\b\bgood noon\b', processed):
+        return 'Jai Shree Krishna'
     if re.search(r'\bbook\b', processed):
         return '@shivanshUp'
     if re.search(r'\bquiz\b\bhead admin\b', processed):
