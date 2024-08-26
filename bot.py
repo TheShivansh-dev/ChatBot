@@ -17,7 +17,7 @@ GOOGLE_CXS: Final[List[str]] = [
     '92178ceca83294240',  # First CX ID
     '671582ee1a93142c9',  # Replace with your second CX ID
 ]
-ALLOWED_GROUP_ID: Final = -1002137866227  # Replace with your actual group ID
+ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
 
 GIF_IMAGE_PATHS: Final = {
     'bite': 'Image/bite.gif',
