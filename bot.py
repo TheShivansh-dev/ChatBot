@@ -1,56 +1,70 @@
 import requests
-from typing import Final
+from typing import Final, List
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import re
 
+# Your bot token and username
 TOKEN: Final = '7147905922:AAFPXxcBS3vdWmc0W0BrQ_EP2SsiyxhSzZY'
 BOT_USERNAME: Final = '@Iesp0404_bot'
 
 # Google Custom Search API credentials
-GOOGLE_API_KEY: Final = 'AIzaSyDqzvNif6a5kJm_sc4EmJzSk5upzrvHE48'
-GOOGLE_CX: Final = '92178ceca83294240'  # Custom Search Engine ID
-ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
+GOOGLE_API_KEYS: Final[List[str]] = [
+    'AIzaSyDqzvNif6a5kJm_sc4EmJzSk5upzrvHE48',  # First API Key
+    'AIzaSyCZjlwdblmT1T6xJrsUi22V9xgw9MZzByw',  # Replace with your second API key
+]
+GOOGLE_CXS: Final[List[str]] = [
+    '92178ceca83294240',  # First CX ID
+    '671582ee1a93142c9',  # Replace with your second CX ID
+]
+ALLOWED_GROUP_ID: Final = -1002137866227  # Replace with your actual group ID
 
 GIF_IMAGE_PATHS: Final = {
-    'call': 'Image/call.gif',
-    'go': 'Image/go.gif',
-    'swing': 'Image/swing.gif',
-    'hug': 'Image/hug.gif',
-    'praise': 'Image/praise.gif',
-    'scold': 'Image/scold.gif',
-    'ignore': 'Image/ignore.gif',
-    'chill': 'Image/chill.gif',
-    'dance': 'Image/dance.gif',
-    'move': 'Image/move.gif',
-    'sorry': 'Image/sorry.gif',
-    'fight': 'Image/fight.gif',
-    'miss': 'Image/miss.gif',
-    'write': 'Image/write.gif',
-    'throw': 'Image/throw.gif',
-    'kick': 'Image/kick.gif',
-    'care': 'Image/care.gif',
-    'snatch': 'Image/snatch.gif',
-    'tease': 'Image/tease.gif',
-    'stalk': 'Image/stalk.gif',
-    'enjoy': 'Image/enjoy.gif',
-    'play': 'Image/play.gif',
-    'teach': 'Image/teach.gif',
-    'slap': 'Image/slap.gif',
-    'feed': 'Image/feed.gif',
-    'poke': 'Image/poke.gif',
     'bite': 'Image/bite.gif',
-    'greet': 'Image/greet.gif',
     'boom': 'Image/boom.gif',
     'beat': 'Image/beat.gif',
+    'call': 'Image/call.gif',
+    'care': 'Image/care.gif',
+    'chill': 'Image/chill.gif',
+    'dance': 'Image/dance.gif',
+    'enjoy': 'Image/enjoy.gif',
+    'feed': 'Image/feed.gif',
+    'fight': 'Image/fight.gif',
+    'fry': 'Image/fry.gif',
+    'greet': 'Image/greet.gif',
+    'go': 'Image/go.gif',
+    'hug': 'Image/hug.gif',
+    'ignore': 'Image/ignore.gif',
+    'kill': 'Image/kill.gif',
+    'knock': 'Image/knock.gif',
+    'miss': 'Image/miss.gif',
+    'move': 'Image/move.gif',
+    'patt': 'Image/patt.gif',
+    'play': 'Image/play.gif',
+    'poison': 'Image/poison.gif',
+    'poke': 'Image/poke.gif',
+    'praise': 'Image/praise.gif',
     'roast': 'Image/roast.gif',
-    'fry': 'Image/fry.gif'
+    'scold': 'Image/scold.gif',
+    'silent': 'Image/silent.gif',
+    'slap': 'Image/slap.gif',
+    'snatch': 'Image/snatch.gif',
+    'sorry': 'Image/sorry.gif',
+    'spit': 'Image/spit.gif',
+    'stab': 'Image/stab.gif',
+    'stalk': 'Image/stalk.gif',
+    'swing': 'Image/swing.gif',
+    'tease': 'Image/tease.gif',
+    'teach': 'Image/teach.gif',
+    'write': 'Image/write.gif',
+    'throw': 'Image/throw.gif'
 }
 
 def clean_text(text: str) -> str:
     # Remove URLs
     text = re.sub(r'http[s]?://\S+', '', text)
     return text
+
 async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     command = update.message.text.split()[0][1:]
     file_path = GIF_IMAGE_PATHS.get(command)
@@ -74,33 +88,35 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('For a custom command, I will respond in a customized way.')
 
-# Function to get a response from Google Custom Search
 async def get_google_search_response(query: str) -> str:
     search_url = "https://www.googleapis.com/customsearch/v1"
-    params = {
-        "key": GOOGLE_API_KEY,
-        "cx": GOOGLE_CX,
-        "q": query
-    }
-    try:
-        response = requests.get(search_url, params=params)
-        if response.status_code == 429:  # Check for quota exceeded
-            return "I've reached my daily search limit. I'll be able to respond after tomorrow."
-        response.raise_for_status()
-        search_results = response.json()
-        if 'items' in search_results:
-            snippets = [clean_text(item.get('snippet', '')) for item in search_results['items']]
-            return ' '.join(snippets)[:400]  # Limit response to 400 characters
-        else:
-            return 'No results found.'
-    except requests.exceptions.HTTPError as http_err:
-        return f"HTTP error occurred: {http_err}"
-    except Exception as err:
-        return f"Other error occurred: {err}"
+    for api_key, cx in zip(GOOGLE_API_KEYS, GOOGLE_CXS):
+        params = {
+            "key": api_key,
+            "cx": cx,
+            "q": query
+        }
+        try:
+            response = requests.get(search_url, params=params)
+            if response.status_code == 429:  # Check for quota exceeded
+                continue  # Try the next API key and CX ID
+            response.raise_for_status()
+            search_results = response.json()
+            if 'items' in search_results:
+                snippets = [clean_text(item.get('snippet', '')) for item in search_results['items']]
+                return ' '.join(snippets)[:400]  # Limit response to 400 characters
+            else:
+                return 'No results found.'
+        except requests.exceptions.HTTPError as http_err:
+            if response.status_code == 403:  # Forbidden (possibly quota exceeded)
+                continue  # Try the next API key and CX ID
+            return f"HTTP error occurred: {http_err}"
+        except Exception as err:
+            return f"Other error occurred: {err}"
+    
+    # If all keys are exhausted
+    return "I've reached my daily search limit. I'll be able to respond after tomorrow."
 
-
-# Command to handle Google Custom Search queries
-# Command to handle Google Custom Search queries
 async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id
 
@@ -133,8 +149,10 @@ def handle_response(text: str) -> str:
         return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
     if re.search(r'\bwho is your owner\b', processed):
         return 'My Owner is Ishi'
-    if re.search(r'\bgood morning\b\bgood mrng\b\bgm\b\bgood night\b\bgood nyt\b\bgn\b\bgd nyt\b\bgood afternoon\b\bgood noon\b', processed):
-        return 'Jai Shree Krishna'
+    if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
+        return 'Jai Shree Krishna, ask any query with search command'
+    
+    # Book-related response
     if re.search(r'\bbook\b', processed):
         return '@shivanshUp'
     if re.search(r'\bquiz\b\bhead admin\b', processed):
@@ -155,6 +173,7 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
     all_commands = f"Available commands:\n{commands_list}\n/search"
     await update.message.reply_text(all_commands)
+
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text: str = update.message.text
     print(f'User({update.message.chat.id}): "{text}"')
