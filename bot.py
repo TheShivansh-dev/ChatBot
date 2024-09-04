@@ -3,10 +3,17 @@ from typing import Final, List
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import re
+import random
+
+
+
 
 # Your bot token and username
 TOKEN: Final = '7147905922:AAFPXxcBS3vdWmc0W0BrQ_EP2SsiyxhSzZY'
 BOT_USERNAME: Final = '@Iesp0404_bot'
+
+TRUTH_FILE = 'truths.txt'
+DARE_FILE = 'dares.txt'
 
 # Google Custom Search API credentials
 GOOGLE_API_KEYS: Final[List[str]] = [
@@ -18,7 +25,7 @@ GOOGLE_CXS: Final[List[str]] = [
     '671582ee1a93142c9',  # Replace with your second CX ID
 ]
 ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
-
+ALLOWED_ADMIN_GROUP_ID: Final = -1002137866227
 GIF_IMAGE_PATHS: Final = {
     'bite': 'Image/bite.gif',
     'boom': 'Image/boom.gif',
@@ -65,6 +72,51 @@ def clean_text(text: str) -> str:
     text = re.sub(r'http[s]?://\S+', '', text)
     return text
 
+# Function to get a random line from a file
+def get_random_line(file_path: str) -> str:
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:  # Specify UTF-8 encoding
+            lines = file.readlines()
+            return random.choice(lines).strip() if lines else 'No content found.'
+    except FileNotFoundError:
+        return f'{file_path} not found. Please make sure the file exists.'
+    except UnicodeDecodeError as e:
+        return f'Error reading file {file_path}: {e}'
+
+
+def add_line_to_file(file_path: str, new_line: str) -> str:
+    try:
+        with open(file_path, 'a') as file:  # Open file in append mode
+            file.write(new_line + '\n')
+        return 'Your text has been added!'
+    except Exception as e:
+        return f'Failed to add text: {e}'
+
+async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
+    if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
+        user_message = ' '.join(context.args).strip()
+        if user_message:
+            response = add_line_to_file(TRUTH_FILE, user_message)
+            await update.message.reply_text(response)
+        else:
+            await update.message.reply_text('Please provide a truth question to add.')
+    else:
+        await update.message.reply_text('This command is not allowed in this group.')
+
+
+
+async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
+    if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
+        user_message = ' '.join(context.args).strip()
+        if user_message:
+            response = add_line_to_file(DARE_FILE, user_message)
+            await update.message.reply_text(response)
+        else:
+            await update.message.reply_text('Please provide a dare to add.')
+    else:
+        await update.message.reply_text('This command is not allowed in this place Use in @iesp0404 admin group.')
 async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     command = update.message.text.split()[0][1:]
     file_path = GIF_IMAGE_PATHS.get(command)
@@ -81,6 +133,15 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+
+async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    truth = get_random_line('truths.txt')
+    await update.message.reply_text(truth)
+
+# Function to handle the /dare command
+async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    dare = get_random_line('dares.txt')
+    await update.message.reply_text(dare)
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
@@ -198,6 +259,10 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler('custom', custom_command))
     app.add_handler(CommandHandler('search', search_command))
     app.add_handler(CommandHandler('iespcommands', commands_command))
+    app.add_handler(CommandHandler('truth', truth_command))
+    app.add_handler(CommandHandler('dare', dare_command))
+    app.add_handler(CommandHandler('addtruth', add_truth_command))
+    app.add_handler(CommandHandler('adddare', add_dare_command))
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_error_handler(error)
