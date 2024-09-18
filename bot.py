@@ -152,8 +152,7 @@ async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text(
-        'No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -226,19 +225,7 @@ def handle_response(text: str) -> str:
     if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
         return 'Jai Shree Krishna, ask any query with search command'
 
-    # Book-related response
-    if re.search(r'\bbook\b', processed):
-        return '@shivanshUp'
-    if re.search(r'\bquiz\b\bhead admin\b', processed):
-        return '@shivanshUp'
-    if re.search(r'\b management\b', processed):
-        return '@cinderella_299 '
-    if re.search(r'\boctopus\b\bcrocodile\b', processed):
-        return '@Jimmyflu  @O000000000O00000000O'
-    if re.search(r'\bchess\b', processed):
-        return '@shivanshUp @Chiiiiikkuu @innocent_boy95 '
-    if re.search(r'\brapid fire\b', processed):
-        return '@maahi_raj001'
+    
 
     return None
 
