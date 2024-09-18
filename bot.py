@@ -5,12 +5,11 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 import re
 import random
 
-
-
-
+# Your bot token and username
 # Your bot token and username
 TOKEN: Final = '7147905922:AAFPXxcBS3vdWmc0W0BrQ_EP2SsiyxhSzZY'
 BOT_USERNAME: Final = '@Iesp0404_bot'
+
 
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
@@ -26,6 +25,7 @@ GOOGLE_CXS: Final[List[str]] = [
 ]
 ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
 ALLOWED_ADMIN_GROUP_ID: Final = -1002137866227
+
 GIF_IMAGE_PATHS: Final = {
     'bite': 'Image/bite.gif',
     'boom': 'Image/boom.gif',
@@ -67,10 +67,12 @@ GIF_IMAGE_PATHS: Final = {
     'throw': 'Image/throw.gif'
 }
 
+
 def clean_text(text: str) -> str:
     # Remove URLs
     text = re.sub(r'http[s]?://\S+', '', text)
     return text
+
 
 # Function to get a random line from a file
 def get_random_line(file_path: str) -> str:
@@ -92,6 +94,7 @@ def add_line_to_file(file_path: str, new_line: str) -> str:
     except Exception as e:
         return f'Failed to add text: {e}'
 
+
 async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id
     if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
@@ -105,7 +108,6 @@ async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('This command is not allowed in this group.')
 
 
-
 async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id
     if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
@@ -117,6 +119,8 @@ async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text('Please provide a dare to add.')
     else:
         await update.message.reply_text('This command is not allowed in this place Use in @iesp0404 admin group.')
+
+
 async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     command = update.message.text.split()[0][1:]
     file_path = GIF_IMAGE_PATHS.get(command)
@@ -131,23 +135,30 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
         else:
             await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
 
+
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+
 
 async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     truth = get_random_line('truths.txt')
     await update.message.reply_text(truth)
+
 
 # Function to handle the /dare command
 async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     dare = get_random_line('dares.txt')
     await update.message.reply_text(dare)
 
+
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    await update.message.reply_text(
+        'No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('For a custom command, I will respond in a customized way.')
+
 
 async def get_google_search_response(query: str) -> str:
     search_url = "https://www.googleapis.com/customsearch/v1"
@@ -174,9 +185,10 @@ async def get_google_search_response(query: str) -> str:
             return f"HTTP error occurred: {http_err}"
         except Exception as err:
             return f"Other error occurred: {err}"
-    
+
     # If all keys are exhausted
     return "I've reached my daily search limit. I'll be able to respond after tomorrow."
+
 
 async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id
@@ -191,6 +203,7 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text('Please ask a question.')
     else:
         await update.message.reply_text('Sorry, this command is not allowed in this group. Join @iesp0404')
+
 
 def handle_response(text: str) -> str:
     processed: str = text.lower()
@@ -212,7 +225,7 @@ def handle_response(text: str) -> str:
         return 'My Owner is Ishi'
     if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
         return 'Jai Shree Krishna, ask any query with search command'
-    
+
     # Book-related response
     if re.search(r'\bbook\b', processed):
         return '@shivanshUp'
@@ -229,11 +242,13 @@ def handle_response(text: str) -> str:
 
     return None
 
+
 # Command to list all available commands
 async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
     all_commands = f"Available commands:\n{commands_list}\n/search"
     await update.message.reply_text(all_commands)
+
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text: str = update.message.text
@@ -244,8 +259,10 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             print('Bot:', response)
             await update.message.reply_text(response)
 
+
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
+
 
 if __name__ == "__main__":
     print('Starting bot...')
