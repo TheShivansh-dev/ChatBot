@@ -165,11 +165,20 @@ async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_message = ' '.join(context.args).strip()
         if user_message:
             response = add_line_to_file(TRUTH_FILE, user_message)
-            await update.message.reply_text(response)
+            try:
+                await update.message.reply_text(response)
+            except:
+                await update.message.chat.send_message(response)
         else:
-            await update.message.reply_text('Please provide a truth question to add.')
+            try:
+                await update.message.reply_text('Please provide a truth question to add.')
+            except:
+                await update.message.chat.send_message('Please provide a truth question to add.')
     else:
-        await update.message.reply_text('This command is not allowed in this group.')
+        try:
+            await update.message.reply_text('This command is not allowed in this group.')
+        except:
+            await update.message.chat.send_message('This command is not allowed in this group.')
 
 
 async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -180,9 +189,15 @@ async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             response = add_line_to_file(DARE_FILE, user_message)
             await update.message.reply_text(response)
         else:
-            await update.message.reply_text('Please provide a dare to add.')
+            try:
+                await update.message.reply_text('Please provide a dare to add.')
+            except:
+                await update.message.chat.send_message('Please provide a dare to add.')
     else:
-        await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
+        try:
+            await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
+        except:
+            await update.message.chat.send_message('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
 
 
 async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -195,32 +210,53 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
     if file_path:
         if file_path.endswith('.gif'):
-            await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
+            try:
+                await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
+            except:
+                await update.message.chat.send_animation(animation=open(file_path, 'rb'), caption=custom_message)
         else:
-            await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
+            try:
+                await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
+            except:
+                await update.message.chat.send_photo(photo=open(file_path, 'rb'), caption=custom_message)
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
-
+    try:
+        await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+    except:
+        await update.message.chat.send_message('Hello! Thanks For Chatting With Me, I am YourBot.')
 
 async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     truth = get_random_line('truths.txt')
-    await update.message.reply_text(truth)
+    try:
+        await update.message.reply_text(truth)
+    except:
+        await update.message.chat.send_message(truth)
 
 
 # Function to handle the /dare command
 async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     dare = get_random_line('dares.txt')
-    await update.message.reply_text(dare)
+    try:
+        await update.message.reply_text(dare)
+    except:
+        await update.message.chat.send_message(dare)
+    
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    try:
+        await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    except:
+        await update.message.chat.send_message('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text('For a custom command, I will respond in a customized way.')
+    try:
+        await update.message.reply_text('For a custom command, I will respond in a customized way.')
+    except:
+        await update.message.chat.send_message('For a custom command, I will respond in a customized way.')
 
 
 async def get_google_search_response(query: str) -> str:
@@ -261,11 +297,20 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_message = ' '.join(context.args)
         if user_message:
             response = await get_google_search_response(user_message)
-            await update.message.reply_text(response)
+            try:
+                await update.message.reply_text(response)
+            except:
+                await update.message.chat.send_message(response)
         else:
-            await update.message.reply_text('Please ask a question.')
+            try:
+                await update.message.reply_text('Please ask a question.')
+            except:
+                await update.message.chat.send_message('Please ask a question.')
     else:
-        await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
+        try:
+            await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
+        except:
+            await update.message.chat.send_message('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
 
 
 def handle_response(text: str) -> str:
@@ -298,24 +343,46 @@ def handle_response(text: str) -> str:
 async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
     all_commands = f"Available commands:\n{commands_list}\n/search"
-    await update.message.reply_text(all_commands)
+    try:
+        await update.message.reply_text(all_commands)
+    except:
+        await update.message.chat.send_message(all_commands)
 
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id  # Get the chat ID
     text: str = update.message.text
-    
 
-    words = text.split()
-    if len(words) > 2:
-        response = kb.answer_question(text)
-        print('Bot:', response)
-        await update.message.reply_text(response)
-    else:
-        response = handle_response(text)
-        if response:
+    # Check if the chat ID is the allowed group ID
+    if chat_id == ALLOWED_GROUP_ID:
+        words = text.split()
+        if len(words) > 2:
+            response = kb.answer_question(text)
             print('Bot:', response)
-            await update.message.reply_text(response)
+            if response is None or response == '':
+                try:
+                    await update.message.reply_text('ask with /search command for all kind of queries')
+                except:
+                    await update.message.chat.send_message('ask with /search command for all kind of queries')
+            else: 
+                try:
+                    await update.message.reply_text(response)
+                except:
+                    await update.message.chat.send_message(response)
+        else:
+            response = handle_response(text)
+            if response:
+                try:
+                    await update.message.reply_text(response)
+                except:
+                    await update.message.chat.send_message(response)
+    else:
+        try:
+            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
+        except:
+            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
+
 
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
