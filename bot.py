@@ -16,7 +16,7 @@ BOT_USERNAME: Final = '@Iesp0404_bot'
 
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
-filename = "knwldge.txt"
+filename = "knwldg.txt"
 
 
 # Google Custom Search API credentials
