@@ -66,8 +66,8 @@ I was poor growing up.","I feel old.
 I am currently in a juvenile detention center.
 My mom is coming to visit me tomorrow.
 I will be released in about a month.
-I am here for shoplifting.","User 1: Hello, my name is (name).
-User 2: Hello, my name is (name).
+I am here for shoplifting.","User 1: Hello, my name is ishi.
+User 2: Hello, my name is ishi.
 User 1: It's nice to meet you. What do you do for fun?
 User 2: I like to watch war documentaries.
 User 1: Really? I love war documentaries too! What's your favorite one?
@@ -204,7 +204,7 @@ User 2: I would love to, but I don't know how to skateboard.
 User 1: That's okay! I can teach you.
 User 2: That would be great! Thanks!
 User 1: No problem! What's your name?
-User 2: My name is Ashley.
+User 2: My name is Ishi.
 User 1: Nice to meet you, Ashley! I'm Michael.
 User 2: Nice to meet you too, Michael!
 User 1: So, what do you like to do for fun?
@@ -228,8 +228,8 @@ I will be released in about a month.","I am a vegan.
 I will graduate from high school in two years.
 I like riding horses.
 My bedroom is purple and lime green.","User 1: Hi, what's your name?
-User 2: I'm [user 2's name].
-User 1: Nice to meet you, [user 2's name].
+User 2: I'm Ishi.
+User 1: Nice to meet you, Ishi.
 User 2: Nice to meet you too.
 User 1: So, what do you like to do for fun?
 User 2: I like to ride horses, play video games, and watch movies.
@@ -302,8 +302,8 @@ I take dance lessons once a week.","I am a woman.
 I have a dogs.
 I attend church every week.
 I work as a school teacher.
-I enjoy gardening and walking outdoors.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I enjoy gardening and walking outdoors.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to go to church, garden, and walk outdoors.
 User 1: That's cool. I like to dance, listen to music, and read books.
@@ -524,8 +524,8 @@ My brother is older than me.
 I am on the soccer team.","I have 5cats.
 I am a construction worker.
 My cats are very special to me.
-I enjoy building houses.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I enjoy building houses.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for work?
 User 2: I'm a construction worker.
 User 1: Oh, that's cool. I've always been interested in building houses.
@@ -919,8 +919,8 @@ I graduated from yale in 2011 with a degree in finance.","I hate my job.
 My wife spends all my money.
 I am 40 years old.
 I am planning on getting a divorce.
-I work as a car salesman.","User 1: Hey, I'm [User 1's name]. What's your name?
-User 2: I'm [User 2's name]. Nice to meet you.
+I work as a car salesman.","User 1: Hey, I'm Ishi. What's your name?
+User 2: I'm Ishi. Nice to meet you.
 User 1: You too. What do you do for a living?
 User 2: I'm a car salesman.
 User 1: Oh, that's interesting. How do you like it?
@@ -1454,8 +1454,8 @@ My bedroom is purple and lime green.","I am a buddhist.
 I live in alaska.
 I have not spoken in three months.
 I like meditation.
-I quit my job to pursue my spirituality full time.","User 1: Hi! I'm [user 1's name].
-User 2: Hello. I am [user 2's name].
+I quit my job to pursue my spirituality full time.","User 1: Hi! I'm Ishi.
+User 2: Hello. I am Ishi.
 User 1: Nice to meet you! What do you do for fun?
 User 2: I like to meditate.
 User 1: Oh, that's cool. I've never tried it before.
@@ -1820,8 +1820,8 @@ I currently work for a watch dealer.","I like to dance.
 I was born in somalia.
 I was forced to marry when i was a.
 My aunt helped me escape when i was of.
-Now i live in the united states.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: I'm [user 2's name]. Nice to meet you!
+Now i live in the united states.","User 1: Hi, I'm Ishi. What's your name?
+User 2: I'm Ishi. Nice to meet you!
 User 1: Nice to meet you too! Where are you from?
 User 2: I'm from Somalia.
 User 1: Oh, that's interesting. I've never met anyone from Somalia before.
@@ -1854,8 +1854,8 @@ I have one older sister.","I like to dance.
 My aunt helped me escape when i was of.
 Now i live in the united states.
 I was forced to marry when i was a.
-I was born in somalia.","User 1: Hi! My name is [User 1's name].
-User 2: Hello! I'm [User 2's name].
+I was born in somalia.","User 1: Hi! My name is Ishi.
+User 2: Hello! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to dance and sing.
 User 1: That's cool! I love to dance too.
@@ -2036,8 +2036,8 @@ I like to take walks.","I am 60years old.
 I think i will retire in a few years.
 I am a librarian.
 I have visited spain a times.
-I really like to travel.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I really like to travel.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a librarian.
 User 1: Oh, that's cool. I've always thought about being a librarian.
@@ -2214,8 +2214,8 @@ I make straight as in school.","I am an omnivore.
 I am expecting twins in two months.
 I work at a bank.
 I just bought my first home.
-A already have a children.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+A already have a children.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: What do you do for a living?
 User 2: I work at a bank.
 User 1: Oh, cool. I'm in high school right now, and I'm thinking about going into physical therapy.
@@ -3166,8 +3166,8 @@ My best friend lives next door.
 I have a pet turtle.","I hate math class.
 My brother is older than me.
 I am on the soccer team.
-I am 13 years old.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am 13 years old.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: I'm four years old.
 User 2: Wow, you're a little younger than me. I'm 13.
 User 1: I have a pet turtle.
@@ -3534,8 +3534,8 @@ I work took i have a part time job at burger king.","I have three dogs.
 My father was a door to door salesman.
 I also have a dog walking business.
 I like to watch the olympics.
-I am in an open polyamorous relationship.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am in an open polyamorous relationship.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to watch the Olympics, I have three dogs, and I'm in an open polyamorous relationship.
 User 1: What's it like being in an open polyamorous relationship?
@@ -3766,8 +3766,8 @@ Its red with blue stripe so it shiny when i race.","I live in alabama.
 I like tacos.
 I have three sisters.
 I have one brother.
-I love dogs.","User 1: Hi there, my name is [User 1's name]!
-User 2: Hi [User 1's name], my name is [User 2's name]!
+I love dogs.","User 1: Hi there, my name is Ishi!
+User 2: Hi Ishi, my name is Ishi!
 User 1: What do you like to do for fun?
 User 2: I like to go to the beach, I live in Alabama so it's always nice and sunny.
 User 1: Oh nice! I love the beach too, I live in California so I'm lucky to be close to some amazing beaches.
@@ -3796,8 +3796,8 @@ User 1: That's great! So, what do you like to do outside of work?
 User 2: I like to go to the beach, spend time with my family, and go to the movies.
 User 1: Sounds like we have a lot in common! I like to do all those things too.
 User 2: That's great! I'm glad we have something in common.
-User 1: Me too! It's nice to meet you, [User 2's name].
-User 2: It's nice to meet you too, [User 1's name]."
+User 1: Me too! It's nice to meet you, Ishi.
+User 2: It's nice to meet you too, Ishi."
 "I hate the color pink.
 I do not drink alcohol.
 My father was a construction worker.
@@ -4289,9 +4289,9 @@ I am getting married in the spring.","I am a little girl.
 I have superpowers.
 I am very lonely.
 I live in the cloud.
-I like to make time stop.","User 1: Hi, my name is [user 1's name]. I'm a kindergarten teacher.
-User 2: Hi, my name is [user 2's name]. I'm a little girl.
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+I like to make time stop.","User 1: Hi, my name is Ishi. I'm a kindergarten teacher.
+User 2: Hi, my name is Ishi. I'm a little girl.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I like to make time stop.
 User 1: That's a cool superpower! Do you ever use it to help people?
 User 2: I have, but not very often. It's hard to use my power without people getting scared.
@@ -4323,8 +4323,8 @@ My favorite color is blue.","I am a little girl.
 I have superpowers.
 I like to make time stop.
 I am very lonely.
-I live in the cloud.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I live in the cloud.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: It's nice to meet you!
 User 2: You too!
 User 1: So, what do you like to do for fun?
@@ -4454,8 +4454,8 @@ I used to be pretty but time has not been kind.","I drive a mini van.
 Coffee is my preferred beverage.
 I coach little league baseball.
 I also like a glass of wine in the evenings.
-I have five sons.","User 1: Hello! I'm [user 1's name].
-User 2: Hi [user 1's name], I'm [user 2's name].
+I have five sons.","User 1: Hello! I'm Ishi.
+User 2: Hi Ishi, I'm Ishi.
 User 1: What's your favorite thing to do?
 User 2: I love to coach little league baseball.
 User 1: That sounds like fun! I used to play baseball when I was younger.
@@ -4638,8 +4638,8 @@ I see the rolling stones in concert every year.","I have one brother.
 I live in alabama.
 I love dogs.
 I have three sisters.
-I like tacos.","User 1: Hi! My name is [user 1's name]. What's your name?
-User 2: Hello! My name is [user 2's name]. It's nice to meet you!
+I like tacos.","User 1: Hi! My name is Ishi. What's your name?
+User 2: Hello! My name is Ishi. It's nice to meet you!
 User 1: Nice to meet you too! What do you do for a living?
 User 2: I'm a stay-at-home mom. I have three kids and a dog.
 User 1: Oh, that's nice! I'm an economics major and I'm married with two kids.
@@ -4695,8 +4695,8 @@ I am an electrician.
 I work my parents farms.","I live in colorado.
 I am a mechanical engineer.
 I have a black lab named trooper.
-My favorite activity is rock climbing.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My favorite activity is rock climbing.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you. Where are you from?
 User 2: I'm from Colorado.
 User 1: Oh, that's cool. I've always wanted to go to Colorado.
@@ -4762,8 +4762,8 @@ We spent summers ring at national parks.","I live in colorado.
 I am a mechanical engineer.
 My favorite activity is rock climbing.
 I have a black lab named trooper.
-I like to go hiking in the spring.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I like to go hiking in the spring.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to rock climb, hike, and play with my dog.
 User 1: Oh, that sounds fun! I love to go hiking and rock climbing too.
@@ -4776,7 +4776,7 @@ User 1: You should! It's definitely worth the trip.
 User 2: So, what do you do for work?
 User 1: I'm a country music singer.
 User 2: Oh, really? That's cool! What's your name?
-User 1: My name is [user 1's name].
+User 1: My name is Ishi.
 User 2: I've never heard of you. Do you have any songs out?
 User 1: I do! I have a couple of albums out.
 User 2: Oh, cool! I'll have to check them out.
@@ -4887,9 +4887,9 @@ I spend my time bird watching with my cats.
 I have rainbow hair.","I work at a school.
 I just moved into my first home.
 I am expecting triplets in three months.
-A already have a step children.","User 1: Hi! I'm [user 1's name]. What's your name?
-User 2: Hi! I'm [user 2's name].
-User 1: It's nice to meet you, [user 2's name]. What do you do for a living?
+A already have a step children.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi! I'm Ishi.
+User 1: It's nice to meet you, Ishi. What do you do for a living?
 User 2: I work at a school.
 User 1: Oh, that's cool! I've always wanted to be a teacher.
 User 2: It's a lot of work, but it's very rewarding.
@@ -5020,8 +5020,8 @@ I like to play chess.","I am a party animal.
 I help out at the food bank occasionally.
 I am deathly afraid of heights.
 My favorite movie is mean girls.
-I own a cat and a dog.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I own a cat and a dog.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What are you up to today?
 User 2: I'm just hanging out at home. What about you?
 User 1: I'm going to take a bubble bath.
@@ -5343,8 +5343,8 @@ My favourite skater is rob dryden.
 I am always wearing a hat.
 My friends are all skateboarders.","User 1: Hey.
 User 2: Hi.
-User 1: I'm [user 1's name].
-User 2: Nice to meet you. I'm [user 2's name].
+User 1: I'm Ishi.
+User 2: Nice to meet you. I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to skate.
 User 1: Really? That's cool. I used to skate a lot when I was younger.
@@ -5746,8 +5746,8 @@ My favorite activity is rock climbing.
 I am a mechanical engineer.","I am scared of dying.
 The county wide bake sale is where i feel most at home.
 I have a dogs.
-I love to bake cookies.","User 1: Hi! My name is [user 1's name].
-User 2: Hi, I'm [user 2's name]. It's nice to meet you.
+I love to bake cookies.","User 1: Hi! My name is Ishi.
+User 2: Hi, I'm Ishi. It's nice to meet you.
 User 1: Nice to meet you too. What do you like to do for fun?
 User 2: I love to bake cookies, go hiking, and spend time with my dogs.
 User 1: That sounds like a lot of fun! I love baking too. What's your favorite cookie recipe?
@@ -6064,8 +6064,8 @@ I grew up on a farm.
 I am a recovering alcoholic.","I like to take walks.
 I do not drink soda.
 I have a boyfriend.
-I like to eat hamburgers and french fries.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I like to eat hamburgers and french fries.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Where are you from?
 User 2: I grew up in a small town in the Midwest, but I now live in the city.
 User 1: I grew up on a farm, but I also now live in the city.
@@ -6214,8 +6214,8 @@ I turned 18 years old yesterday.","I am high maintenance.
 I like to tan in tanning beds.
 I love spending money.
 I diet a lot.
-I love listening to britney spears.","User 1: Hi, I'm [user 1's name]. I just turned 18 yesterday!
-User 2: Happy birthday! I'm [user 2's name]. What are you doing to celebrate?
+I love listening to britney spears.","User 1: Hi, I'm Ishi. I just turned 18 yesterday!
+User 2: Happy birthday! I'm Ishi. What are you doing to celebrate?
 User 1: I'm going hiking with my friends this morning to see the sunset.
 User 2: That sounds really nice! I love hiking.
 User 1: Me too! It's one of my favorite things to do.
@@ -6656,8 +6656,8 @@ I am expecting twins in two months.
 I work at a bank.","I like to ride horses.
 I help tend the fields.
 I have three arabian horses.
-I like to listen to rock music while working.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I like to listen to rock music while working.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to ride horses, help tend the fields, and listen to rock music.
 User 1: That sounds like a lot of fun! I like to read, write, and go for walks.
@@ -6698,8 +6698,8 @@ My favorite season is winter.","I like to ride horses.
 I help tend the fields.
 I like to listen to rock music while working.
 I have three arabian horses.
-My father is a farmer.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My father is a farmer.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to ride horses, listen to rock music, and help tend the fields.
 User 1: That sounds like a lot of fun. I love horses too.
@@ -7096,8 +7096,8 @@ My favorite band is the insane clown posse.
 I play a lot of call of duty.","I prefer being inside.
 I am a recording engineer and own my own studio.
 Whats up i am a 46 year old single dad 46 a kids.
-I live in california but the recording artist market was dead last year.","User 1: Hey, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I live in california but the recording artist market was dead last year.","User 1: Hey, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a recording engineer and own my own studio.
 User 1: That's awesome! What kind of music do you work on?
@@ -7498,8 +7498,8 @@ My sister is a pole dancer.
 My favorite color is red.","My husband is adopted.
 I like to watch nhl hockey.
 I live is a rural farming community.
-I have a german shepherd dog.","User 1: Hey, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I have a german shepherd dog.","User 1: Hey, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a farmer.
 User 1: Oh, that's cool. I've always been fascinated by farming. Do you like it?
@@ -7533,8 +7533,8 @@ I want to be a lawyer.","My husband is adopted.
 I have a german shepherd dog.
 I live is a rural farming community.
 I like to watch nhl hockey.
-I enjoy coloring books.","User 1: Hi, I'm [User 1's name]. I was raised on a horse farm.
-User 2: Hi, I'm [User 2's name]. I live in a rural farming community.
+I enjoy coloring books.","User 1: Hi, I'm Ishi. I was raised on a horse farm.
+User 2: Hi, I'm Ishi. I live in a rural farming community.
 User 1: I'm actually from a rural farming community too!
 User 2: That's cool! What's your favorite thing about living in a rural farming community?
 User 1: I love the peace and quiet. It's so much more relaxing than living in the city.
@@ -7598,8 +7598,8 @@ My ex cheated and left me for a lawyer.
 I prefer being inside.","Two dogs live with me.
 I have short hair.
 I like doing the treadmill and rowing machine.
-I go to the gym regularly.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+I go to the gym regularly.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: What do you do for a living?
 User 2: I'm a personal trainer.
 User 1: Oh, that's cool. I'm a recording engineer.
@@ -8090,8 +8090,8 @@ I buy only organic food products.","I enjoy coloring books.
 I have a german shepherd dog.
 I live is a rural farming community.
 I like to watch nhl hockey.
-My husband is adopted.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
+My husband is adopted.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. What do you do for a living?
 User 2: I'm a farmer.
 User 1: Oh, that's cool! I've always thought farming would be a fun job. Do you like it?
@@ -8311,8 +8311,8 @@ I have two dogs.
 I like to work on vintage cars.","I help tend the fields.
 My father is a farmer.
 I like to listen to rock music while working.
-I have three arabian horses.","User 1: Hi, I'm [user 1's name]. I'm new here.
-User 2: Hi, I'm [user 2's name]. Welcome!
+I have three arabian horses.","User 1: Hi, I'm Ishi. I'm new here.
+User 2: Hi, I'm Ishi. Welcome!
 User 1: Thanks! What are you doing here?
 User 2: I'm here to learn more about farming. My father is a farmer, and I want to help him out.
 User 1: That's great! I love farming. I grew up on a farm, and I still love working on vintage cars.
@@ -8577,8 +8577,8 @@ I am deathly afraid of heights.","Knitting is my passion.
 I love to bake cookies.
 I am scared of dying.
 The county wide bake sale is where i feel most at home.
-I have a dogs.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I have a dogs.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you!
 User 2: You too!
 User 1: What do you like to do for fun?
@@ -8796,9 +8796,9 @@ I love to play pobox.
 I have blue eyes and red hair that comes to my waist.
 I hate school.
 I do not have many friends.","User 1: Hi there! What's your name?
-User 2: Hi, my name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. I'm [user 1's name].
-User 2: Nice to meet you too, [user 1's name].
+User 2: Hi, my name is Ishi.
+User 1: Nice to meet you, Ishi. I'm Ishi.
+User 2: Nice to meet you too, Ishi.
 User 1: So, what do you like to do for fun?
 User 2: I like to play pobox.
 User 1: I've never heard of that game. What's it about?
@@ -9037,8 +9037,8 @@ I also have a dog walking business.
 My father was a door to door salesman.","I am a stay at home dad.
 Horror movies are my favorites.
 I spent a decade working in the human services field.
-My father used to work for home depot.","User 1: Hi, my name is [User 1's name].
-User 2: Hi, I'm [User 2's name].
+My father used to work for home depot.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you do for fun?
 User 2: I like to watch horror movies and I'm a stay at home dad.
 User 1: That's cool! I'm in an open polyamorous relationship and I also have a dog walking business.
@@ -9441,8 +9441,8 @@ I live in a three storey house.
 My family is continuously growing.","I dance on the weekends.
 I hate the color orange.
 I went to school for chemistry but work in a bookstore.
-I do not care about fashion.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I do not care about fashion.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to dance on the weekends.
 User 1: That sounds fun! I like to go for walks with my dog.
@@ -9785,8 +9785,8 @@ I was forced to marry when i was a.","I have brown curly hair.
 My bedroom is purple and lime green.
 I am a vegan.
 I like riding horses.
-I will graduate from high school in two years.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I will graduate from high school in two years.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to ride horses, I'm vegan, and I like to paint my room different colors.
 User 1: That's cool! I like to dance and I'm also vegan.
@@ -10239,8 +10239,8 @@ I like to tan in tanning beds.
 I am high maintenance.","I work my parents farms.
 I drive a big truck and live in country.
 I have a pet cow.
-I am an electrician.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am an electrician.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm an electrician.
 User 1: Oh, that's cool! I'm not very handy, so I'm always impressed by people who can fix things.
@@ -10270,8 +10270,8 @@ I am a museum tour guide.
 I love to drink fancy tea.","I work my parents farms.
 I drive a big truck and live in country.
 I am an electrician.
-I only listen to country music.","User 1: Hi! My name is [user 1's name].
-User 2: Hi! My name is [user 2's name].
+I only listen to country music.","User 1: Hi! My name is Ishi.
+User 2: Hi! My name is Ishi.
 User 1: What do you do for a living?
 User 2: I'm an electrician.
 User 1: Oh, that's cool! I've always been interested in electricity.
@@ -10794,8 +10794,8 @@ I am a vegan.","I am married to a doctor.
 I enjoy long walks with my dog.
 I am a professional tennis player.
 I live in a three storey house.
-My family is continuously growing.","User 1: Hi! I'm [user 1's name].
-User 2: Hello! I'm [user 2's name].
+My family is continuously growing.","User 1: Hi! I'm Ishi.
+User 2: Hello! I'm Ishi.
 User 1: It's nice to meet you! What do you do for fun?
 User 2: I enjoy playing tennis, going for walks with my dog, and spending time with my family.
 User 1: That sounds like a lot of fun! I like to ride horses, paint, and play video games.
@@ -10817,8 +10817,8 @@ I volunteer at a soup kitchen.","I am married to a doctor.
 My family is continuously growing.
 I enjoy long walks with my dog.
 I am a professional tennis player.
-I live in a three storey house.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I live in a three storey house.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: I'm a retired gym teacher.
 User 2: That's cool! I'm a professional tennis player.
 User 1: Oh, that's awesome! What's it like being a professional tennis player?
@@ -10927,8 +10927,8 @@ I have never been out of ohio.
 I have a cat named spook.","I do not pick up my toys.
 I have a pet turtle.
 I am four.
-My best friend lives next door.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My best friend lives next door.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. What do you like to do for fun?
 User 2: I like to play with my toys, go to the park, and watch TV.
 User 1: Those sound like fun things to do. Do you have any pets?
@@ -11302,8 +11302,8 @@ I just bought a house recently.","I read a book every week.
 My favorite kind of movie is a documentary.
 I started a new job as a pa three months ago.
 I am pregnant with my first child.
-I live with my husband in pennsylvania.","User 1: Hi! I'm [user 1's name].
-User 2: Hi there! I'm [user 2's name].
+I live with my husband in pennsylvania.","User 1: Hi! I'm Ishi.
+User 2: Hi there! I'm Ishi.
 User 1: Nice to meet you. What do you do for a living?
 User 2: I'm a PA in a hospital.
 User 1: Oh, that's interesting. What's your favorite part of the job?
@@ -11400,8 +11400,8 @@ I am single and with two dogs.
 I do not drink alcohol.","I ride the bus to school.
 My brother is older than me.
 I am 13 years old.
-I hate math class.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I hate math class.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to ride my bike, go to the park, and play video games.
 User 1: Cool, I like to play chess, take bubble baths, and go on walks.
@@ -11574,8 +11574,8 @@ I do not drink soda.
 I have a boyfriend.","My father is in the army.
 I love playing softball.
 I recently was fired and had to get a new job.
-I work in the insurance business.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I work in the insurance business.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. What do you do for fun?
 User 2: I love to play softball.
 User 1: That's so cool! I've always wanted to learn how to play.
@@ -12204,8 +12204,8 @@ I live in the cloud.","I grew up in the industry.
 I am a country music singer.
 My favorite band is rascal flats.
 I started playing guitar when i was three.
-We spent summers ring at national parks.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name]. What do you like to do for fun?
+We spent summers ring at national parks.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi. What do you like to do for fun?
 User 1: I like to make time stop.
 User 2: That's a cool superpower! What do you do with all the time you stop?
 User 1: I usually just explore the world. I like to see what's happening in different places and meet new people.
@@ -12332,8 +12332,8 @@ I have blue eyes and red hair that comes to my waist.
 I do not have many friends.","I grow roses in my garden.
 I have a big library at home.
 I am a museum tour guide.
-I love to drink fancy tea.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I love to drink fancy tea.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I love to read, drink fancy tea, and grow roses in my garden.
 User 1: That's cool! I love to read too. I'm not very good at growing plants, but I like to try.
@@ -12356,9 +12356,9 @@ I also like old school hip hop.
 I take dance lessons once a week.","I like playing basketball.
 I have one older sister.
 My mother is a dentist.
-My favourite artist is travis scott.","User 1: Hi, my name is [user 1's name]. What's your name?
-User 2: Hi, my name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+My favourite artist is travis scott.","User 1: Hi, my name is Ishi. What's your name?
+User 2: Hi, my name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I like to play basketball, listen to music, and hang out with friends.
 User 1: Those are all great hobbies! I like to play basketball too. What's your favorite basketball team?
 User 2: My favorite basketball team is the Golden State Warriors.
@@ -12450,7 +12450,7 @@ I am married.
 I am a vegetarian.","User 1: Hello!
 User 2: Hello!
 User 1: My name is [your name] and I am four years old.
-User 2: It's nice to meet you, [your name]. My name is [user 2's name].
+User 2: It's nice to meet you, [your name]. My name is Ishi.
 User 1: I like chocolate candy and looking at blocks.
 User 2: Chocolate candy is delicious! What kind of blocks do you like to look at?
 User 1: I like to look at blocks that have letters on them. I like to sing about the letters.
@@ -12479,8 +12479,8 @@ I dream of moving to the city.","My favorite color is grey.
 I am terrified of scorpions.
 I have a german shepherd named barnaby.
 My father drove a car for nascar.
-I am employed by the us postal service.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am employed by the us postal service.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you.
 User 2: Nice to meet you too.
 User 1: So, what do you do for a living?
@@ -12723,8 +12723,8 @@ I am an art major in college.
 I love to cook paella.","I am a construction worker.
 My dad taught me everything i know.
 I enjoy building houses.
-My cats are very special to me.","User 1: Hi! I'm [user 1's name].
-User 2: Hello! I'm [user 2's name].
+My cats are very special to me.","User 1: Hi! I'm Ishi.
+User 2: Hello! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a construction worker.
 User 1: Oh, that's interesting! How did you get started in that?
@@ -13099,9 +13099,9 @@ I produce music for artists.
 My favourite food is pizza.","I do not have many friends.
 I hate school.
 I am a 12 year old girl.
-I have blue eyes and red hair that comes to my waist.","User 1: Hey, I'm [user 1's name]. What's your name?
-User 2: I'm [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+I have blue eyes and red hair that comes to my waist.","User 1: Hey, I'm Ishi. What's your name?
+User 2: I'm Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I like to read and write, and I also like to play music.
 User 1: Cool, me too! I love to listen to rap music. Do you like rap?
 User 2: I've never really listened to rap music before. What's it like?
@@ -13361,8 +13361,8 @@ My brother is older than me.
 I am 13 years old.","I like to watch nhl hockey.
 I live is a rural farming community.
 I have a german shepherd dog.
-I enjoy coloring books.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I enjoy coloring books.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to watch hockey, color in coloring books, and play with my dog.
 User 1: That sounds like fun! I like to play video games and go to the movies.
@@ -13447,8 +13447,8 @@ I have never had a steady relationship.
 I work from home.","I love taking bubble baths.
 I am single and with two dogs.
 I do not drink alcohol.
-I like to play chess.","User 1: Hi! I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I like to play chess.","User 1: Hi! I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I work from home as a software engineer.
 User 1: Oh, that's cool! I work from home too. I'm a freelance writer.
@@ -13468,8 +13468,8 @@ User 2: I love those shows too! I also like to watch crime dramas.
 User 1: Those are good too. I love watching the characters solve the mysteries.
 User 2: Me too. I'm always so invested in the story.
 User 1: Me too.
-User 2: Well, it was nice talking to you, [User 1's name].
-User 1: You too, [User 2's name]. I hope we can talk again soon.
+User 2: Well, it was nice talking to you, Ishi.
+User 1: You too, Ishi. I hope we can talk again soon.
 User 2: Me too!"
 "I love playing softball.
 I recently was fired and had to get a new job.
@@ -13478,8 +13478,8 @@ I work in the insurance business.","I love to play board games.
 My parents were also teachers.
 My favorite band is up and i got to see them in concert once.
 For vacation i enjoy time at the beach.","User 1: Hi, what's your name?
-User 2: Hi, my name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+User 2: Hi, my name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I love to play board games. What about you?
 User 1: I love to play softball. I also like to go to the beach.
 User 2: That's cool. I've never played softball.
@@ -13541,8 +13541,8 @@ I drive a 2015 honda civic.","I own two vintage mustangs.
 My favorite music is country.
 I like to work on vintage cars.
 I have two dogs.
-I like to go to country concerts on weekends.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
+I like to go to country concerts on weekends.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to work on my vintage cars and go to country concerts.
 User 1: That sounds like fun! I like to listen to rap music and produce music for artists.
@@ -13815,8 +13815,8 @@ I am a gold medalist olympian.","My favorite food is papaya.
 I married a super model from italy.
 I have zero family that i am close to.
 I am a bee farmer.
-My name is george.","User 1: Hi, I'm [User 1's name]. What's your name?
-User 2: Hi, my name is [User 2's name].
+My name is george.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, my name is Ishi.
 User 1: It's nice to meet you. What do you do for a living?
 User 2: I'm a bee farmer.
 User 1: That's interesting! What's it like working with bees?
@@ -13841,8 +13841,8 @@ User 1: So, what are your goals for the future?
 User 2: I want to continue to grow my bee farm and eventually start my own honey business.
 User 1: That sounds like a great goal. I'm sure you'll be successful.
 User 2: Thank you. I'm optimistic about it.
-User 1: It's been great chatting with you, [User 2's name].
-User 2: It's been great chatting with you too, [User 1's name]."
+User 1: It's been great chatting with you, Ishi.
+User 2: It's been great chatting with you too, Ishi."
 "My friends are all skateboarders.
 I have a broken arm.
 I am a skateboarder.
@@ -13944,8 +13944,8 @@ I work at a bank.
 I am an omnivore.","I am a country music singer.
 I started playing guitar when i was three.
 We spent summers ring at national parks.
-My favorite band is rascal flats.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+My favorite band is rascal flats.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: What do you do for a living?
 User 2: I'm a country music singer.
 User 1: That's cool! I love country music. What's your favorite band?
@@ -14062,8 +14062,8 @@ I also work as a custodian to help pay the bills.","I am overweight and unhappy.
 I do not believe in god.
 I spend most of my time on facebook when i am not working.
 I work at a nursing home.
-My wife left me and took my children.","User 1: Hi! My name is [user 1's name].
-User 2: Hi there! My name is [user 2's name].
+My wife left me and took my children.","User 1: Hi! My name is Ishi.
+User 2: Hi there! My name is Ishi.
 User 1: What do you do for a living?
 User 2: I work at a nursing home.
 User 1: Oh, that's cool! I used to work in a nursing home too.
@@ -14210,8 +14210,8 @@ My parents are not very supportive of my dream.","I am terrified of scorpions.
 My favorite color is grey.
 I am employed by the us postal service.
 My father drove a car for nascar.","* * *
-User 1: Hello! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+User 1: Hello! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to play the piano, sing, and go for walks.
 User 1: That sounds like fun! I like to play the piano and sing too.
@@ -14348,8 +14348,8 @@ For vacation i enjoy time at the beach.
 My parents were also teachers.","I am terrified of scorpions.
 I am employed by the us postal service.
 I have a german shepherd named barnaby.
-My father drove a car for nascar.","User 1: Hi there! I'm [user 1's name].
-User 2: Hello! I'm [user 2's name].
+My father drove a car for nascar.","User 1: Hi there! I'm Ishi.
+User 2: Hello! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a mail carrier for the US Postal Service.
 User 1: Oh, that's cool! I've always thought it would be interesting to be a mail carrier.
@@ -14847,8 +14847,8 @@ I also have a dog walking business.","I enjoy being around people.
 I like to workout a a times a week.
 I volunteer in a homeless shelter.
 In my spare time i do volunteer work.
-I am a professional wrestler.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am a professional wrestler.","User 1: Hi there! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a professional wrestler.
 User 1: That's so cool! I've always been a fan of wrestling.
@@ -15049,8 +15049,8 @@ I diet a lot.","I visit europe twice a year.
 I am an art major in college.
 I love to cook paella.
 I have a weakness for fish and chips.
-I am a descendant of christopher columbus.","User 1: Hi! I'm [User 1's name].
-User 2: Hi [User 1's name]. I'm [User 2's name].
+I am a descendant of christopher columbus.","User 1: Hi! I'm Ishi.
+User 2: Hi Ishi. I'm Ishi.
 User 1: What are you up to today?
 User 2: I'm just hanging out. I'm not sure what I want to do.
 User 1: Well, I'm going to go to the mall. Do you want to come with me?
@@ -15065,8 +15065,8 @@ User 1: Great! I'll see you there.
 
 [A few minutes later]
 
-User 1: Hey [User 2's name], I'm here!
-User 2: Hi [User 1's name]! I'm ready to go.
+User 1: Hey Ishi, I'm here!
+User 2: Hi Ishi! I'm ready to go.
 User 1: Great! Let's go!
 [They go shopping]
 
@@ -15175,8 +15175,8 @@ I am currently in a juvenile detention center.
 My mom is coming to visit me tomorrow.","My father is an electrician.
 I speak chinese.
 I play ping pong.
-I play the violin and the guitar.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I play the violin and the guitar.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What are you in for?
 User 2: I'm here for shoplifting.
 User 1: Oh, me too.
@@ -15211,8 +15211,8 @@ User 1: I've never played ping pong before.
 User 2: You should try it sometime. It's a lot of fun.
 User 1: I will.
 User 2: Okay. So, what's your name?
-User 1: My name is [user 1's name].
-User 2: It's nice to meet you, [user 1's name].
+User 1: My name is Ishi.
+User 2: It's nice to meet you, Ishi.
 User 1: You too."
 "I enjoy mountain biking as a hobby.
 I am a huge coffee lover.
@@ -15220,8 +15220,8 @@ I do not drink alcohol.
 I hate the color pink.","My father is an electrician.
 I play ping pong.
 I love chocolate bars.
-I speak chinese.","User 1: Hi! I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I speak chinese.","User 1: Hi! I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to play ping pong, I love chocolate bars, and I speak Chinese.
 User 1: That's cool! I like to mountain bike and I love coffee. I don't drink alcohol, and I hate the color pink.
@@ -15437,8 +15437,8 @@ I drive a mini van.
 I also like a glass of wine in the evenings.","My favorite color is yellow.
 I workout four hours a day.
 Gymnastics is my favorite sport.
-I am a gold medalist olympian.","User 1: Hi, I'm [user 1's name]. I'm a coach for little league baseball.
-User 2: Hi, I'm [user 2's name]. I'm a gold medalist olympian.
+I am a gold medalist olympian.","User 1: Hi, I'm Ishi. I'm a coach for little league baseball.
+User 2: Hi, I'm Ishi. I'm a gold medalist olympian.
 User 1: That's amazing! What sport did you compete in?
 User 2: I was a gymnast.
 User 1: That's so cool! I always wanted to be a gymnast, but I wasn't very good at it.
@@ -15623,8 +15623,8 @@ I just broke up with boyfriend two months ago.","I am a professional wrestler.
 I volunteer in a homeless shelter.
 In my spare time i do volunteer work.
 I like to workout a a times a week.
-I enjoy being around people.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I enjoy being around people.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you.
 User 2: You too.
 User 1: So, what do you do for a living?
@@ -15872,9 +15872,9 @@ I am not a good swimmer at all.
 I love rollercoasters and sky diving.","I have a german shepherd dog.
 I live is a rural farming community.
 My husband is adopted.
-I like to watch nhl hockey.","User 1: Hi, my name is [User 1's name]. What's your name?
-User 2: Hi, I'm [User 2's name].
-User 1: It's nice to meet you, [User 2's name]. What do you do for fun?
+I like to watch nhl hockey.","User 1: Hi, my name is Ishi. What's your name?
+User 2: Hi, I'm Ishi.
+User 1: It's nice to meet you, Ishi. What do you do for fun?
 User 2: I like to watch cooking shows, go for walks in the woods, and play with my German shepherd dog.
 User 1: That sounds fun! I like to cook too. Do you have any favorite recipes?
 User 2: Yes, I love making hummus. It's a great vegan protein source.
@@ -16072,8 +16072,8 @@ I work for our local supermarket.","I like to play with my dolls.
 I am four.
 I have a pet turtle.
 I do not pick up my toys.
-My best friend lives next door.","User 1: Hey, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+My best friend lives next door.","User 1: Hey, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to play with my dolls and my turtle.
 User 1: Oh, that's cool. I have a cat named Spook.
@@ -16095,8 +16095,8 @@ User 2: Great! We can make a day of it.
 User 1: Sounds like a plan.
 User 2: I'm excited.
 User 1: Me too.
-User 2: Bye, [User 1's name].
-User 1: Bye, [User 2's name]."
+User 2: Bye, Ishi.
+User 1: Bye, Ishi."
 "I have three dogs.
 I also have a dog walking business.
 I am in an open polyamorous relationship.
@@ -16154,8 +16154,8 @@ I just broke up with boyfriend two months ago.","I like to play with my dolls.
 My best friend lives next door.
 I have a pet turtle.
 I am four.","User 1: Hello, what's your name?
-User 2: Hi, my name is [user 2's name].
-User 1: It's nice to meet you, [user 2's name].
+User 2: Hi, my name is Ishi.
+User 1: It's nice to meet you, Ishi.
 User 2: Nice to meet you too.
 User 1: What do you like to do for fun?
 User 2: I like to play with my dolls and go to the park.
@@ -16425,8 +16425,8 @@ I am a professional wrestler.
 I enjoy being around people.","I make straight as in school.
 When i grow up i want to be a physical therapist.
 I am currently in high school.
-I won homecoming queen this year.","User 1: Hey! I'm [User 1's name].
-User 2: Nice to meet you! I'm [User 2's name].
+I won homecoming queen this year.","User 1: Hey! I'm Ishi.
+User 2: Nice to meet you! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to study, volunteer, and play sports.
 User 1: That's cool! I like to volunteer too. What kind of volunteering do you do?
@@ -16506,8 +16506,8 @@ I am four.","I play a lot of call of duty.
 On weekends i do live action roleplaying events.
 I like donuts.
 My favorite band is the insane clown posse.
-I drive a ford pinto.","User 1: Hi, my name is [user 1's name]. I'm four years old.
-User 2: Hello, [user 1's name]. My name is [user 2's name]. I'm 25 years old.
+I drive a ford pinto.","User 1: Hi, my name is Ishi. I'm four years old.
+User 2: Hello, Ishi. My name is Ishi. I'm 25 years old.
 User 1: What do you like to do for fun?
 User 2: I like to play video games, do live action roleplaying, and eat donuts.
 User 1: I like to play with my dolls and go to the park with my best friend.
@@ -16562,8 +16562,8 @@ My favourite food is shawarma.","I walk three miles every day.
 I love disneyland and mickey mouse.
 My favorite way to relax is to read a book.
 I love to spend time with my family.
-I am a baby delivery nurse.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+I am a baby delivery nurse.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: What do you do for fun?
 User 2: I like to walk three miles every day, read books, and spend time with my family.
 User 1: That sounds like a lot of fun! I love to read books too. What are some of your favorite books?
@@ -17088,8 +17088,8 @@ I am in the third grade.","I faint at the sight of blood.
 My dream in life is to work from home.
 I went to school to be a veterinarian but hated it.
 I have an internet addiction and spend a lot of time playing roleplaying games.
-I dye my hair every three months.","User 1: Hi! I'm [User 1's name].
-User 2: Hi [User 1's name]. I'm [User 2's name].
+I dye my hair every three months.","User 1: Hi! I'm Ishi.
+User 2: Hi Ishi. I'm Ishi.
 User 1: What are you interested in?
 User 2: I'm interested in a lot of things, but my biggest interests are roleplaying games, dyeing my hair, and working from home.
 User 1: Oh, I've never tried roleplaying games before. What's it like?
@@ -17387,9 +17387,9 @@ I never broke a bone in my body ever in my life.","I like to tan in tanning beds
 I love spending money.
 I am high maintenance.
 I diet a lot.
-I love listening to britney spears.","User 1: Hi, my name is [user 1's name].
+I love listening to britney spears.","User 1: Hi, my name is Ishi.
 
-User 2: Hi, nice to meet you! My name is [user 2's name].
+User 2: Hi, nice to meet you! My name is Ishi.
 
 User 1: What do you do for a living?
 
@@ -17711,9 +17711,9 @@ I donate a part of my salary to charity each month.
 I volunteer my time with a local bunny rescue.
 My favorite color is navy blue.","User 1: Hi there! What's your name?
 
-User 2: My name is [user 2's name]. What's yours?
+User 2: My name is Ishi. What's yours?
 
-User 1: My name is [user 1's name]. It's nice to meet you!
+User 1: My name is Ishi. It's nice to meet you!
 
 User 2: It's nice to meet you too!
 
@@ -17760,8 +17760,8 @@ I have never had a steady relationship.","My current goal is to run a k.
 I make straight as in school.
 I won homecoming queen this year.
 I am currently in high school.
-When i grow up i want to be a physical therapist.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+When i grow up i want to be a physical therapist.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What are you up to today?
 User 2: I'm just working on my homework.
 User 1: Oh, me too. What are you working on?
@@ -17954,8 +17954,8 @@ I am a christian.","My favourite food is shawarma.
 I am in the army.
 I live in canada.
 I did not graduate high school.
-My grandfather served in world war a.","User 1: Hi! I'm [User 1's name].
-User 2: Hi! I'm [User 2's name].
+My grandfather served in world war a.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you! I'm from [User 1's location].
 User 2: Nice to meet you too! I'm from [User 2's location].
 User 1: What do you do for a living?
@@ -18058,8 +18058,8 @@ I am a gold medalist olympian.","My wife and kids are the best.
 I am a plumber.
 I love going to the park with my three children and my wife.
 I have three children.
-My favorite ice cream flavor is chocolate.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My favorite ice cream flavor is chocolate.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a plumber.
 User 1: That's cool! I've always been interested in plumbing.
@@ -18543,9 +18543,9 @@ Knitting is my passion.
 I have a dogs.","I am now looking for a new job.
 My favorite movie is friday.
 I am a doctor.
-My daughter is a child prodigy.","User 1: Hi, I'm [user 1's name].
+My daughter is a child prodigy.","User 1: Hi, I'm Ishi.
 
-User 2: Hi, I'm [user 2's name].
+User 2: Hi, I'm Ishi.
 
 User 1: What do you do for a living?
 
@@ -18700,8 +18700,8 @@ I feel old.","I coach little league baseball.
 I also like a glass of wine in the evenings.
 I drive a mini van.
 I have five sons.
-Coffee is my preferred beverage.","User 1: Hi, my name is [user 1's name]. I'm here for shoplifting.
-User 2: Hi, I'm [user 2's name]. I'm a volunteer at the juvenile detention center.
+Coffee is my preferred beverage.","User 1: Hi, my name is Ishi. I'm here for shoplifting.
+User 2: Hi, I'm Ishi. I'm a volunteer at the juvenile detention center.
 User 1: What's your favorite thing to do?
 User 2: I like to coach little league baseball.
 User 1: That sounds fun! I've never played baseball before.
@@ -19258,7 +19258,7 @@ I am a construction worker.","I only listen to country music.
 I drive a big truck and live in country.
 I work my parents farms.
 I have a pet cow.","User 1: Hi! I'm [your name].
-User 2: Hi! I'm [user 2's name].
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to listen to country music, drive my big truck, and work my parents' farm.
 User 1: That sounds like a lot of fun! I like to listen to Aerosmith, watch Nascar racing, and UFC.
@@ -20549,8 +20549,8 @@ I hate the color orange.
 I went to school for chemistry but work in a bookstore.
 I do not care about fashion.
 I dance on the weekends.","User 1: Hey, what's your name?
-User 2: My name is [User 2's name].
-User 1: Nice to meet you, [User 2's name].
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi.
 User 2: Nice to meet you too.
 User 1: What do you do for a living?
 User 2: I'm a bookstore clerk.
@@ -21035,8 +21035,8 @@ I drive a 2015 honda civic.
 My favourite food is pizza.","I recently moved to this country.
 I just moved into my first home.
 A already have a step children.
-I am expecting triplets in three months.","User 1: Hey! I'm [user 1's name].
-User 2: Hi there! I'm [user 2's name].
+I am expecting triplets in three months.","User 1: Hey! I'm Ishi.
+User 2: Hi there! I'm Ishi.
 User 1: Nice to meet you! Where are you from?
 User 2: I'm from [country]. I just moved to [country] this year.
 User 1: Oh, that's exciting! What brought you here?
@@ -21402,7 +21402,7 @@ I have a hat collection of over 1000 hats.","I won homecoming queen this year.
 My current goal is to run a k.
 When i grow up i want to be a physical therapist.
 I am currently in high school.","User 1: Hi! I'm [your name].
-User 2: Hi [your name], I'm [user 2's name].
+User 2: Hi [your name], I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to run, play basketball, and hang out with friends.
 User 1: I like to run too! I've been running for a few years now.
@@ -22016,7 +22016,7 @@ I love taking bubble baths.","Hey there i am 23 and i love food.
 I have been traveling the world for a years.
 I have been trying all types of food everywhere i go.
 I also like to cook but i am not very good at it.","User 1: Hi there, I'm [your name].
-User 2: Hey there, I'm [user 2's name].
+User 2: Hey there, I'm Ishi.
 User 1: Nice to meet you!
 User 2: You too!
 User 1: So, what do you like to do for fun?
@@ -22305,8 +22305,8 @@ I have a pet cow.
 I drive a big truck and live in country.","I am an elementary school teacher.
 My boyfriend and i are moving into an apartment together next week.
 I am fluent in english spanish and french.
-I am interested in photography and like taking pictures.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am interested in photography and like taking pictures.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm an elementary school teacher.
 User 1: Oh, that's cool! What grades do you teach?
@@ -22445,8 +22445,8 @@ I am currently in high school.
 I make straight as in school.","I am pregnant with my first child.
 I live with my husband in pennsylvania.
 I read a book every week.
-I started a new job as a pa three months ago.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I started a new job as a pa three months ago.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for fun?
 User 2: I read a lot and love going to the movies.
 User 1: I like to read too! What are you reading right now?
@@ -22891,8 +22891,8 @@ I have a black lab named trooper.","I watch too much tv in spare time.
 I go to the gym most days just to socialize.
 I have never had a steady relationship.
 I work from home.
-I like to spend my money on cars.","User 1: Hi there! My name is [user 1's name]!
-User 2: Hi [user 1's name], I'm [user 2's name]!
+I like to spend my money on cars.","User 1: Hi there! My name is Ishi!
+User 2: Hi Ishi, I'm Ishi!
 User 1: What do you do for a living?
 User 2: I'm a software engineer, but I work from home.
 User 1: Oh, that's cool! I'm a mechanical engineer.
@@ -23173,8 +23173,8 @@ I grew up on a farm.","When i grow up i want to be a dog.
 I am four years old.
 I like to eat chocolate candy.
 I like to look at blocks and sing about letters.
-I like to talk but people have a hard time understanding.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I like to talk but people have a hard time understanding.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to eat chocolate candy and look at blocks.
 User 1: That sounds like fun. I like to eat chocolate candy too.
@@ -23203,7 +23203,7 @@ I like to eat chocolate candy.
 I like to look at blocks and sing about letters.
 I am four years old.
 I like to talk but people have a hard time understanding.","User 1: Hi there, my name is [your name].
-User 2: Hi, my name is [user 2's name].
+User 2: Hi, my name is Ishi.
 User 1: It's nice to meet you. What do you like to do?
 User 2: I like to play with blocks and sing about letters.
 User 1: That sounds fun. I like to read books and watch movies.
@@ -23417,8 +23417,8 @@ I am a mechanical engineer.","I also have a dog walking business.
 I have three dogs.
 I like to watch the olympics.
 I am in an open polyamorous relationship.
-My father was a door to door salesman.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My father was a door to door salesman.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to go hiking and rock climbing.
 User 1: That's cool! I love rock climbing too.
@@ -23797,8 +23797,8 @@ When i grow up i want to be a dog.","I am planning on getting a divorce.
 My wife spends all my money.
 I work as a car salesman.
 I am 40 years old.
-I hate my job.","User 1: Hi my name is [User 1's name] and I am 4 years old.
-User 2: Hello [User 1's name]. I am [User 2's name] and I am 40 years old.
+I hate my job.","User 1: Hi my name is Ishi and I am 4 years old.
+User 2: Hello Ishi. I am Ishi and I am 40 years old.
 User 1: What do you like to do for fun?
 User 2: I like to play video games and go to the movies.
 User 1: I like to play with blocks and sing about letters.
@@ -23826,8 +23826,8 @@ I am also a graduate student.","I enjoy mountain biking as a hobby.
 I hate the color pink.
 My father was a construction worker.
 I do not drink alcohol.
-I am a huge coffee lover.","User 1: Hi! My name is [user 1's name], and I'm a graduate student.
-User 2: Hi! My name is [user 2's name], and I'm a mountain biker.
+I am a huge coffee lover.","User 1: Hi! My name is Ishi, and I'm a graduate student.
+User 2: Hi! My name is Ishi, and I'm a mountain biker.
 User 1: Nice to meet you! What's your favorite thing about mountain biking?
 User 2: I love the adrenaline rush and the feeling of being free.
 User 1: I can see why! I love kayaking for the same reason.
@@ -23853,8 +23853,8 @@ My wife and kids are the best.","I enjoy mountain biking as a hobby.
 I do not drink alcohol.
 My father was a construction worker.
 I hate the color pink.
-I am a huge coffee lover.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am a huge coffee lover.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to go mountain biking.
 User 1: Oh, that's cool! I've never been mountain biking before.
@@ -24019,8 +24019,8 @@ My friends are all skateboarders.","I helped design the game starcraft.
 I have an allergy to water.
 I am a recluse.
 I am a famous twitch streamer.
-I am working on a building a robot to be my body double.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I am working on a building a robot to be my body double.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a game designer.
 User 1: Oh, that's cool. I've always been interested in game design.
@@ -24511,8 +24511,8 @@ I love chocolate bars.
 I play ping pong.","My parents were both very athletic.
 I got a new job just yesterday to be a life coach.
 I love running and preparing for marathons.
-I am a clean eater.","User 1: Hey, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I am a clean eater.","User 1: Hey, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to run, cook, and play the guitar.
 User 1: I love to run too! What's your favorite distance?
@@ -24582,8 +24582,8 @@ Mickey mouse is my favorite character.","I currently work for a watch dealer.
 My family does not support my career choices.
 I often shop for shoes and watches.
 I like shopping.
-My dream car is a rolls royce ghost.","User 1: Hi! I'm [User 1's name].
-User 2: Hi! I'm [User 2's name].
+My dream car is a rolls royce ghost.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What are you interested in?
 User 2: I'm interested in shopping, watches, and shoes.
 User 1: Oh, cool! I love shopping too.
@@ -24645,8 +24645,8 @@ I work as a school teacher.","I volunteer at the homeless shelter.
 My father played violin professionally.
 I am a piano teacher on the side.
 I play several instruments.
-I enjoy exploring new parts of the city.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I enjoy exploring new parts of the city.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a piano teacher on the side, and I volunteer at the homeless shelter.
 User 1: Oh, that's cool. I'm a school teacher.
@@ -25053,8 +25053,8 @@ I won homecoming queen this year.
 My current goal is to run a k.","My favorite spanish word is trabajo.
 My next language to study is french.
 One of the languages that i am currently studying is spanish.
-I also study languages.","User 1: Hi! I'm [user 1's name]. What's your name?
-User 2: Hi! I'm [user 2's name].
+I also study languages.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you! What are you studying in school?
 User 2: I'm studying Spanish.
 User 1: That's cool! I'm studying to be a physical therapist.
@@ -25786,8 +25786,8 @@ I love chocolate bars.
 I play the violin and the guitar.","I think i will retire in a few years.
 I am a librarian.
 I am 60years old.
-I really like to travel.","User 1: Hi, I'm [user 1's name]. I'm a musician. I play the violin and the guitar.
-User 2: Hi, I'm [user 2's name]. I'm a librarian. I love to travel.
+I really like to travel.","User 1: Hi, I'm Ishi. I'm a musician. I play the violin and the guitar.
+User 2: Hi, I'm Ishi. I'm a librarian. I love to travel.
 User 1: Oh, that's cool. I've always wanted to travel the world.
 User 2: Where would you like to go first?
 User 1: I've always wanted to go to Europe.
@@ -26139,8 +26139,8 @@ I do not drink soda.","My wife left me and took my children.
 I do not believe in god.
 I am overweight and unhappy.
 I work at a nursing home.
-I spend most of my time on facebook when i am not working.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I spend most of my time on facebook when i am not working.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to take walks, read books, and play video games.
 User 1: That sounds nice. I like to take walks too.
@@ -26186,8 +26186,8 @@ I love to go to disney world every year.","My wife left me and took my children.
 I do not believe in god.
 I am overweight and unhappy.
 I work at a nursing home.
-I spend most of my time on facebook when i am not working.","User 1: Hi! My name is [user 1's name]. I'm in the third grade and I love Mickey Mouse. What's your name?
-User 2: Hi, [user 1's name]. My name is [user 2's name].
+I spend most of my time on facebook when i am not working.","User 1: Hi! My name is Ishi. I'm in the third grade and I love Mickey Mouse. What's your name?
+User 2: Hi, Ishi. My name is Ishi.
 User 1: It's nice to meet you! What do you like to do for fun?
 User 2: I like to spend time with my friends, watch TV, and play games.
 User 1: That sounds like fun! I like to do those things too.
@@ -26204,8 +26204,8 @@ User 1: I love Harry Potter too! It's my favorite series.
 User 2: Me too! I've read all the books and watched all the movies.
 User 1: Me too! I'm so excited for the new movie coming out.
 User 2: Me too! I'm sure it's going to be great.
-User 1: It's been a pleasure chatting with you, [user 2's name].
-User 2: It's been my pleasure too, [user 1's name]."
+User 1: It's been a pleasure chatting with you, Ishi.
+User 2: It's been my pleasure too, Ishi."
 "I have a hat collection of over 1000 hats.
 I won a gold medal in the 1992 olympics.
 I love cats and have two cats.
@@ -26521,8 +26521,8 @@ I am a famous twitch streamer.
 I am working on a building a robot to be my body double.","My father was a door to door salesman.
 I have three dogs.
 I am in an open polyamorous relationship.
-I also have a dog walking business.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I also have a dog walking business.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I have a dog walking business.
 User 1: Oh, that's cool. I love dogs.
@@ -26993,7 +26993,7 @@ My family does not support my career choices.
 I like shopping.","I enjoy gardening and walking outdoors.
 I have a dogs.
 I work as a school teacher.
-I am a woman.","User 1: Hi, I'm [user 1's name]. What do you do for a living?
+I am a woman.","User 1: Hi, I'm Ishi. What do you do for a living?
 User 2: I'm a school teacher. I love working with children and helping them learn.
 User 1: That's great! I'm a watch dealer. I love working with watches and helping people find the perfect one for them.
 User 2: That sounds like a really interesting job. I've never really been into watches, but I can see how they could be really cool.
@@ -27260,8 +27260,8 @@ I work at a nursing home.","My ex cheated and left me for a lawyer.
 I am a recording engineer and own my own studio.
 I prefer being inside.
 Whats up i am a 46 year old single dad 46 a kids.
-I live in california but the recording artist market was dead last year.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+I live in california but the recording artist market was dead last year.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: I'm a single dad and I work at a nursing home. What do you do for work?
 User 2: I'm a recording engineer and I own my own studio.
 User 1: Oh, that's cool. I'm not very musical, but I love listening to music.
@@ -27474,8 +27474,8 @@ I do not have a smartphone.","My main transportation is my motorbike.
 Its red with blue stripe so it shiny when i race.
 I waitress during the day to supplement my income.
 I have light skin with big brown eyes.","User 1: Hi there! What's your name?
-User 2: Hi, my name is [user 2's name]. What's yours?
-User 1: My name is [user 1's name]. It's nice to meet you!
+User 2: Hi, my name is Ishi. What's yours?
+User 1: My name is Ishi. It's nice to meet you!
 User 2: Nice to meet you too!
 User 1: What do you do for a living?
 User 2: I'm a waitress during the day and I race my motorbike at night.
@@ -27732,8 +27732,8 @@ I am getting married in the spring.","I enjoy exploring new parts of the city.
 I play several instruments.
 I am a piano teacher on the side.
 My father played violin professionally.
-I volunteer at the homeless shelter.","User 1: Hi! I'm [User 1's name].
-User 2: Hi, I'm [User 2's name]. It's nice to meet you.
+I volunteer at the homeless shelter.","User 1: Hi! I'm Ishi.
+User 2: Hi, I'm Ishi. It's nice to meet you.
 User 1: You too! What do you like to do for fun?
 User 2: I love exploring new parts of the city, playing music, and volunteering at the homeless shelter.
 User 1: That sounds like a lot of fun! I love exploring new places too. I'm also a big music fan.
@@ -27908,8 +27908,8 @@ I drive a mini van.","I have a weakness for vanilla ice cream.
 My favorite season is winter.
 I have a hat collection of over 1000 hats.
 I love cats and have two cats.
-I won a gold medal in the 1992 olympics.","User 1: Hi! I'm [User 1's name].
-User 2: Hello! I'm [User 2's name].
+I won a gold medal in the 1992 olympics.","User 1: Hi! I'm Ishi.
+User 2: Hello! I'm Ishi.
 User 1: Nice to meet you! What's your favorite beverage?
 User 2: I love vanilla ice cream!
 User 1: Me too! It's my favorite dessert.
@@ -28346,8 +28346,8 @@ I am an elementary school teacher.","I love to go to disney world every year.
 Mickey mouse is my favorite character.
 I play with my friends on the playground.
 I love to sing songs from the movie frozen.
-I am in the third grade.","User 1: Hi, my name is [User 1's name] and I'm an elementary school teacher.
-User 2: Hi [User 1's name], my name is [User 2's name] and I'm in the third grade.
+I am in the third grade.","User 1: Hi, my name is Ishi and I'm an elementary school teacher.
+User 2: Hi Ishi, my name is Ishi and I'm in the third grade.
 User 1: That's great! What's your favorite subject in school?
 User 2: I love reading and math.
 User 1: Me too! I love reading to my students.
@@ -28406,8 +28406,8 @@ I am high maintenance.","I won a gold medal in the 1992 olympics.
 I love cats and have two cats.
 I have a hat collection of over 1000 hats.
 I have a weakness for vanilla ice cream.
-My favorite season is winter.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My favorite season is winter.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I love spending time with my cats, and I also love ice cream.
 User 1: I love cats too! What are their names?
@@ -28632,8 +28632,8 @@ My favorite movie is mean girls.
 I own a cat and a dog.
 I am a party animal.
 I am deathly afraid of heights.","User 1: Hi! What's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you do for a living?
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you do for a living?
 User 2: I'm a student at [university name].
 User 1: Oh, what are you studying?
 User 2: I'm studying business.
@@ -28668,8 +28668,8 @@ I often shop for shoes and watches.","I love wearing skinny jeans and leggings.
 I am a blonde girl with really short hair.
 My favorite hobbies are listening to music and playing video games.
 My favorite shirts are band shirts and ruffle sleeves.","User 1: Hi! What's your name?
-User 2: I'm [user 2's name]. What's yours?
-User 1: I'm [user 1's name]. It's nice to meet you!
+User 2: I'm Ishi. What's yours?
+User 1: I'm Ishi. It's nice to meet you!
 User 2: Nice to meet you too!
 User 1: What do you like to do for fun?
 User 2: I like to listen to music, play video games, and hang out with friends.
@@ -30048,8 +30048,8 @@ I have a weakness for vanilla ice cream.","I love to sing songs from the movie f
 I play with my friends on the playground.
 Mickey mouse is my favorite character.
 I love to go to disney world every year.
-I am in the third grade.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am in the third grade.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I love to sing songs from the movie Frozen.
 User 1: Oh, that's cool! I love that movie too. I'm a big fan of Elsa.
@@ -30372,8 +30372,8 @@ I spend my time bird watching with my cats.
 The holidays make me depressed.","My favorite way to relax is to read a book.
 I walk three miles every day.
 I am a baby delivery nurse.
-I love to spend time with my family.","User 1: Hi, my name is [user 1's name]!
-User 2: Hi [user 1's name], my name is [user 2's name]!
+I love to spend time with my family.","User 1: Hi, my name is Ishi!
+User 2: Hi Ishi, my name is Ishi!
 User 1: Nice to meet you! What do you do for a living?
 User 2: I am a baby delivery nurse.
 User 1: Wow, that's so interesting! How did you get into that field?
@@ -30390,8 +30390,8 @@ User 1: Those are both great genres! I love historical fiction too. What are som
 User 2: I love the Outlander series by Diana Gabaldon. I also love The Book Thief by Markus Zusak.
 User 1: Those are both great books! I've read them both and I loved them.
 User 2: They're so good! I'm glad you liked them.
-User 1: Thanks! I'm glad we had this conversation. It was nice to meet you, [user 2's name].
-User 2: It was nice to meet you too, [user 1's name]."
+User 1: Thanks! I'm glad we had this conversation. It was nice to meet you, Ishi.
+User 2: It was nice to meet you too, Ishi."
 "I am a skateboarder.
 My friends are all skateboarders.
 My favourite skater is rob dryden.
@@ -30711,8 +30711,8 @@ I work at a bank.","My favorite toy as a child as my lite brite.
 I love new kids on the block.
 I take dance lessons once a week.
 I also like old school hip hop.
-I was born in the early 80 s.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I was born in the early 80 s.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a nurse.
 User 1: Oh, that's cool. I work at a bank.
@@ -30783,8 +30783,8 @@ I recently got an apartment with my best friend.
 I work at a bar at night to pay for college.","My favorite toy as a child as my lite brite.
 I take dance lessons once a week.
 I also like old school hip hop.
-I love new kids on the block.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I love new kids on the block.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a nurse in training.
 User 1: Oh, that's awesome! I've always wanted to be a nurse.
@@ -30916,8 +30916,8 @@ I live in alaska.","Since the surgery i have had strange powers.
 I was born with my heart outside my body.
 I had to have a transplant.
 I can move objects with my mind.
-I am a boy.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I am a boy.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you.
 User 2: It's nice to meet you too.
 User 1: What are you up to today?
@@ -31166,9 +31166,9 @@ My main transportation is my motorbike.
 I have light skin with big brown eyes.
 Its red with blue stripe so it shiny when i race.","User 1: Hello!
 User 2: Hello!
-User 1: My name is [user 1's name].
-User 2: Nice to meet you, [user 1's name]. My name is [user 2's name].
-User 1: It's nice to meet you too, [user 2's name].
+User 1: My name is Ishi.
+User 2: Nice to meet you, Ishi. My name is Ishi.
+User 1: It's nice to meet you too, Ishi.
 User 2: Where do you live?
 User 1: I live in the cloud.
 User 2: The cloud? That's interesting. What's it like there?
@@ -31194,8 +31194,8 @@ User 1: Really?
 User 2: Sure! I'd love to fly around the world with you.
 User 1: That would be so much fun!
 User 2: I know! We could have so much fun together.
-User 1: I'm so glad we met, [user 2's name].
-User 2: Me too, [user 1's name].
+User 1: I'm so glad we met, Ishi.
+User 2: Me too, Ishi.
 User 1: I think we're going to be great friends.
 User 2: I think so too."
 "I live with my husband in pennsylvania.
@@ -31398,8 +31398,8 @@ User 2: That's impressive! I'm sure you've learned a lot about yourself in that 
 User 1: I have. I've learned that I'm much more peaceful and calm when I don't speak.
 User 2: That's great! I'm glad you've found something that works for you.
 User 1: Thanks. I'm glad I could share it with you.
-User 2: It's nice to meet you. I'm [user 2's name].
-User 1: It's nice to meet you too. I'm [user 1's name].
+User 2: It's nice to meet you. I'm Ishi.
+User 1: It's nice to meet you too. I'm Ishi.
 User 2: What do you do for a living?
 User 1: I'm a stay-at-home mom.
 User 2: Oh, that must be really rewarding.
@@ -31677,8 +31677,8 @@ I am a christian.","I just broke up with boyfriend two months ago.
 My favorite color is orange.
 I have a pet fish.
 I like to go hiking in the mornings to see the sunset.
-I turned 18 years old yesterday.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: I'm [user 2's name]. Nice to meet you.
+I turned 18 years old yesterday.","User 1: Hi, I'm Ishi. What's your name?
+User 2: I'm Ishi. Nice to meet you.
 User 1: Same here. So, what do you like to do for fun?
 User 2: I like to go hiking, I just turned 18 yesterday, and I have a pet fish.
 User 1: That's cool. I like to go hiking too. I have a sister who's a pole dancer, and I love listening to classical music.
@@ -31799,8 +31799,8 @@ I have blue eyes and red hair that comes to my waist.
 I do not have many friends.","I volunteer my time with a local bunny rescue.
 I work fulltime in a shipyard.
 I am ex military.
-My favorite color is navy blue.","User 1: Hi, my name is [User 1's name]. What's yours?
-User 2: I'm [User 2's name]. It's nice to meet you.
+My favorite color is navy blue.","User 1: Hi, my name is Ishi. What's yours?
+User 2: I'm Ishi. It's nice to meet you.
 User 1: You too. What do you like to do for fun?
 User 2: I like to volunteer my time with a local bunny rescue.
 User 1: That's great! I love bunnies.
@@ -32760,8 +32760,8 @@ I have a dogs.
 The county wide bake sale is where i feel most at home.","I was adopted at a young age to an older couple.
 I am terrified of clowns due to childhood trauma.
 I just got a job working in a gas station.
-I enjoy working with my hands and love gardening.","User 1: Hey! I'm [User 1's name].
-User 2: Hi there! I'm [User 2's name].
+I enjoy working with my hands and love gardening.","User 1: Hey! I'm Ishi.
+User 2: Hi there! I'm Ishi.
 User 1: It's nice to meet you! What do you do for fun?
 User 2: I like to work with my hands and love gardening.
 User 1: That's great! I love to knit.
@@ -32939,8 +32939,8 @@ I work for our local supermarket.
 I have a cat named spook.","I also like to cook but i am not very good at it.
 I have been trying all types of food everywhere i go.
 Hey there i am 23 and i love food.
-I have been traveling the world for a years.","User 1: Hey! I'm [user 1's name].
-User 2: Hey [user 1's name], I'm [user 2's name].
+I have been traveling the world for a years.","User 1: Hey! I'm Ishi.
+User 2: Hey Ishi, I'm Ishi.
 User 1: It's nice to meet you!
 User 2: Nice to meet you too!
 User 1: What are you interested in?
@@ -32965,8 +32965,8 @@ I have been working since i was sixteen years old.
 I am a construction worker.","I also like to cook but i am not very good at it.
 I have been trying all types of food everywhere i go.
 I have been traveling the world for a years.
-I own a yacht and i rent it out when i am not using it.","User 1: Hi, I'm [user 1's name].
-User 2: Hello, I'm [user 2's name].
+I own a yacht and i rent it out when i am not using it.","User 1: Hi, I'm Ishi.
+User 2: Hello, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to cook, travel, and explore new places.
 User 1: Me too! I love trying new foods, especially Mexican food.
@@ -33020,8 +33020,8 @@ My parents were both very athletic.","I also like to cook but i am not very good
 I have been trying all types of food everywhere i go.
 I have been traveling the world for a years.
 I own a yacht and i rent it out when i am not using it.
-Hey there i am 23 and i love food.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi, nice to meet you! I'm [user 2's name].
+Hey there i am 23 and i love food.","User 1: Hi there! I'm Ishi.
+User 2: Hi, nice to meet you! I'm Ishi.
 User 1: It's nice to meet you too! What do you do for fun?
 User 2: I like to travel and try new food.
 User 1: That sounds like a lot of fun! I've always wanted to travel the world.
@@ -33466,8 +33466,8 @@ I will graduate from high school in two years.","I got a new job just yesterday 
 I love running and preparing for marathons.
 I am a clean eater.
 I am a cancer survivor.
-My parents were both very athletic.","User 1: Hey, I'm [User 1's name].
-User 2: Hey, I'm [User 2's name].
+My parents were both very athletic.","User 1: Hey, I'm Ishi.
+User 2: Hey, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a life coach.
 User 1: Oh, that's cool! How did you get into that?
@@ -33590,8 +33590,8 @@ I was born in the early 80 s.","I quit my job to pursue my spirituality full tim
 I am a buddhist.
 I have not spoken in three months.
 I like meditation.
-I live in alaska.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I live in alaska.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a Buddhist monk.
 User 1: Oh, that's cool. I've always been interested in Buddhism.
@@ -33868,8 +33868,8 @@ I like to eat hamburgers and french fries.","I work took i have a part time job 
 I am 19 and i cannot wait to move out 19 my parents home.
 I do not drink or do drugs or anything.
 They are constantly on my back.
-I just want to have fun with my friends.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I just want to have fun with my friends.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to take walks, hang out with my friends, and go to the movies.
 User 1: Sounds fun! I like to do those things too.
@@ -34909,8 +34909,8 @@ My ex cheated and left me for a lawyer.","I work in it and have been at the same
 I own a house in florida.
 I have a children and a dogs.
 I am a male.
-I enjoy american sports.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I enjoy american sports.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for work?
 User 2: I work in IT and have been at the same company for 15 years.
 User 1: That's great! I'm a recording engineer and own my own studio.
@@ -35279,8 +35279,8 @@ I own a cat and a dog.
 I am a party animal.","My boyfriend and i are moving into an apartment together next week.
 My favorite colors are red and silver.
 I am fluent in english spanish and french.
-I am an elementary school teacher.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am an elementary school teacher.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What's your favorite movie?
 User 2: My favorite movie is Mean Girls.
 User 1: Me too! It's so funny!
@@ -35421,8 +35421,8 @@ I am a cancer survivor.","If i am not cooking in the kitchen then i am definitel
 L also love comic books.
 I love cooking but i also enjoy fishing.
 Hey my name is larry and i am a chef.
-Spiderman is my favorite.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+Spiderman is my favorite.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a chef.
 User 1: That's cool. I love cooking too.
@@ -35522,8 +35522,8 @@ I am an elementary school teacher.
 I love to play board games.","My mother is very traditional while i prefer to be more free spirited.
 My family and i are from india.
 My favorite music genre is death metal.
-I am a swim coach at my local pool.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am a swim coach at my local pool.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: I'm an elementary school teacher.
 User 2: I'm a swim coach.
 User 1: What kind of music do you like?
@@ -35735,8 +35735,8 @@ I like taking and posting selkies.","I love to meet new people.
 I have a turtle named timothy.
 My favorite sport is ultimate frisbee.
 My parents are living in bora bora.
-Autumn is my favorite season.","User 1: Hi, I'm [User 1's name]. What's your name?
-User 2: Hi, I'm [User 2's name]. It's nice to meet you.
+Autumn is my favorite season.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi. It's nice to meet you.
 User 1: Nice to meet you too. What are you interested in?
 User 2: I like to meet new people, play ultimate frisbee, and spend time with my family.
 User 1: Those are all great things to be interested in. I like to dance at the club, run a dog obedience school, and eat a lot of sweets.
@@ -35876,8 +35876,8 @@ I am native american and live in oklahoma.","My favorite music is jazz.
 I am a pediatrician.
 I am married and have two kids of my own.
 I love running and reading.
-I also love vintage cars.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I also love vintage cars.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you do for a living?
 User 2: I'm a pediatrician.
 User 1: Oh, that's great! I'm an attorney.
@@ -35958,9 +35958,9 @@ I am considering going to college.","I want to be successful.
 I have got two more years in college.
 I study law.
 I have no siblings.
-I am a student.","User 1: Hi! I'm [user 1's name].
+I am a student.","User 1: Hi! I'm Ishi.
 
-User 2: Hi! I'm [user 2's name].
+User 2: Hi! I'm Ishi.
 
 User 1: What do you do for fun?
 
@@ -36437,8 +36437,8 @@ I drive a ford pickup truck.","My favorite band is nirvana.
 I am a musician.
 I like running.
 I work at pet smart.
-My father was a police officer.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My father was a police officer.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you. What do you do for fun?
 User 2: I like to run, play music, and read.
 User 1: That's cool. I like to run too. What kind of music do you play?
@@ -36819,8 +36819,8 @@ I like to eat a lot of meat.
 I have one brother.","I have a large stereo in my truck.
 My mother works in healthcare.
 I like to go hiking and camping.
-I eat meat.","User 1: Hi, I'm [user 1's name]!
-User 2: Hi, I'm [user 2's name]!
+I eat meat.","User 1: Hi, I'm Ishi!
+User 2: Hi, I'm Ishi!
 User 1: What do you like to do for fun?
 User 2: I like to go hiking and camping. I also like to cook.
 User 1: What do you like to cook?
@@ -36874,8 +36874,8 @@ I ran a blog about rabbit rescues.","I am homeschooled.
 My best friend is a robot.
 I am a blue haired teenager.
 I live in california.
-I love to coplay.","User 1: Hey, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I love to coplay.","User 1: Hey, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I love to cosplay, and I'm homeschooled.
 User 1: That's cool! I've always wanted to try cosplay.
@@ -37410,8 +37410,8 @@ I live on edris island.","I was born in south carolina.
 L graduated from usc.
 My dad is a farmer and my mom is a teacher.
 My name is joanna and i love watching horror films.
-Hey there i am a professional singer.","User 1: Hi, I'm [user 1's name]. I'm a young mixed race girl. I love to dance. I live with my sister and my dog Ralph. My parents are both deceased. I live on Edris Island.
-User 2: Hi, I'm [user 2's name]. I'm a professional singer. I love watching horror films. I was born in South Carolina and graduated from USC. My dad is a farmer and my mom is a teacher.
+Hey there i am a professional singer.","User 1: Hi, I'm Ishi. I'm a young mixed race girl. I love to dance. I live with my sister and my dog Ralph. My parents are both deceased. I live on Edris Island.
+User 2: Hi, I'm Ishi. I'm a professional singer. I love watching horror films. I was born in South Carolina and graduated from USC. My dad is a farmer and my mom is a teacher.
 User 1: That's cool! I've never been to South Carolina. Is it a nice place to live?
 User 2: It's beautiful! The weather is great and there are a lot of great places to visit.
 User 1: I'd love to go there someday.
@@ -37426,8 +37426,8 @@ User 1: Oh, that's cool! How do you like it here so far?
 User 2: I love it! It's so beautiful and peaceful.
 User 1: I'm glad you like it!
 User 2: Me too!
-User 1: Well, it was nice talking to you, [user 2's name].
-User 2: It was nice talking to you too, [user 1's name].
+User 1: Well, it was nice talking to you, Ishi.
+User 2: It was nice talking to you too, Ishi.
 User 1: Maybe we can hang out sometime.
 User 2: I'd love that!"
 "I love the band rush.
@@ -37521,8 +37521,8 @@ My job is cleaning out cages at a research facility.
 I am five feet tall.
 I have webbed toes.
 I am an artist.","User 1: Hello, what's your name?
-User 2: Hello, my name is [User 2's name].
-User 1: Nice to meet you, [User 2's name]. What do you do for a living?
+User 2: Hello, my name is Ishi.
+User 1: Nice to meet you, Ishi. What do you do for a living?
 User 2: I'm an artist. I use other people's trash for my projects.
 User 1: That's really cool! I've never met an artist before.
 User 2: Thanks! It's a lot of fun.
@@ -37545,8 +37545,8 @@ User 1: What's your favorite thing about mystery books?
 User 2: I love the suspense and the thrill of trying to figure out who the killer is.
 User 1: Me too! I love the feeling of accomplishment when I finally figure it out.
 User 2: Me too!
-User 1: It was nice chatting with you, [User 2's name].
-User 2: It was nice chatting with you too, [User 1's name]."
+User 1: It was nice chatting with you, Ishi.
+User 2: It was nice chatting with you too, Ishi."
 "My mother was not part of my life.
 I like to sing karok.
 I am allergic to dogs.
@@ -37824,8 +37824,8 @@ I enjoy reading biographies.","I have a wife and three kids.
 I do not have many friends.
 I used to drink but i stopped five years ago.
 I like playing poker.
-I am a carpenter.","User 1: Hi! My name is [User 1's name].
-User 2: Hi! My name is [User 2's name].
+I am a carpenter.","User 1: Hi! My name is Ishi.
+User 2: Hi! My name is Ishi.
 User 1: What do you do for a living?
 User 2: I am a carpenter.
 User 1: Oh, that's cool! I used to be a carpenter before I went to college.
@@ -38050,8 +38050,8 @@ I grew up in north dakota.
 I am of the jewish faith.","I love italian food.
 I enjoy playing softball.
 I like to sing in choir.
-I work in a program that mentors troubled teens.","User 1: Hi! My name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I work in a program that mentors troubled teens.","User 1: Hi! My name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you!
 User 2: You too!
 User 1: Where are you from?
@@ -38398,7 +38398,7 @@ I just got my nails done.","My mother runs her own restaurant where i work part 
 I like reading paranormal romances.
 My favorite food is pizza.
 I have a stutter when excited.","User 1: Hi, I'm new here.
-User 2: Welcome! I'm [user 2's name]. What do you like to do for fun?
+User 2: Welcome! I'm Ishi. What do you like to do for fun?
 User 1: I like to read, go to the beach, and spend time with my friends.
 User 2: That sounds fun! I like to read too, especially paranormal romances.
 User 1: I've never read one before. What's it like?
@@ -38442,8 +38442,8 @@ I like to build model spaceships.","I used to work at a carnival.
 I am afraid of dogs.
 I like to drink scotch to relax.
 I write short stories for a living.
-I like dark superhero movies.","User 1: Hey, I'm [user 1's name]. What's your name?
-User 2: I'm [user 2's name].
+I like dark superhero movies.","User 1: Hey, I'm Ishi. What's your name?
+User 2: I'm Ishi.
 User 1: Nice to meet you. What do you like to do for fun?
 User 2: I like to write short stories, and I used to work at a carnival.
 User 1: That's cool. I'm not very creative, but I like to play video games.
@@ -38754,8 +38754,8 @@ My favorite food is eggplant parmigiana.
 I am a stock broker.","I am afraid of spiders and snakes.
 I am a science fiction author.
 I graduated from mit with a degree in engineering.
-My parents passed away two years ago.","User 1: Hi, my name is [user 1's name]. I'm a stock broker.
-User 2: Hi, my name is [user 2's name]. I'm a science fiction author.
+My parents passed away two years ago.","User 1: Hi, my name is Ishi. I'm a stock broker.
+User 2: Hi, my name is Ishi. I'm a science fiction author.
 User 1: That's cool! I've always been a fan of science fiction.
 User 2: Thanks! I'm glad you like it.
 User 1: What's your favorite sci-fi book?
@@ -39564,8 +39564,8 @@ I got a job working in advertising last year.","I am a bodybuilder.
 I like to eat a lot of meat.
 I am a doctor.
 My mom is a secretary.
-I have one brother.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I have one brother.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. Where are you from?
 User 2: I'm from North Dakota.
 User 1: Oh, that's cool! I've never been to North Dakota. What's it like there?
@@ -39836,8 +39836,8 @@ I love running and reading.
 My favorite music is jazz.","I spend a lot of time online.
 I am a furry.
 I love to play on second life.
-I am a twenty eight year old male.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am a twenty eight year old male.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. What do you do for fun?
 User 2: I spend a lot of time online.
 User 1: Oh, really? What do you like to do online?
@@ -40194,8 +40194,8 @@ I live in california.
 I love to coplay.
 My best friend is a robot.
 I am homeschooled.","User 1: Hi, what's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I love to cosplay and I have a robot for a best friend.
 User 1: That sounds really cool! I've never been to a cosplay event before.
 User 2: You should definitely go to one! They're a lot of fun.
@@ -40222,7 +40222,7 @@ I love to travel.","I love playing video games.
 Hey there my name is jordan and i am a veterinarian.
 Love to read drama books.
 I am originally from california but i live in florida.
-I am also a musician on the weekends.","User 1: Hi, my name is [User 1's name]. I'm a biology teacher at a college.
+I am also a musician on the weekends.","User 1: Hi, my name is Ishi. I'm a biology teacher at a college.
 User 2: Hi, I'm Jordan, a veterinarian. It's nice to meet you.
 User 1: Nice to meet you too. What do you like to do for fun?
 User 2: I love playing video games and reading drama books. I'm also a musician on the weekends.
@@ -40282,8 +40282,8 @@ I live in california.
 I am a blue haired teenager.","I cannot wait to get my first full time job as a nurse.
 I have just completed my education as registered nurse.
 I love shopping for clothes.
-I am single.","User 1: Hello! I'm [user 1's name], what's your name?
-User 2: Hi, I'm [user 2's name].
+I am single.","User 1: Hello! I'm Ishi, what's your name?
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I love shopping for clothes, cooking, and reading.
 User 1: Those are all great hobbies! I like to cook and read too.
@@ -40600,8 +40600,8 @@ I am a 14 year old trans boy.
 I want to be an actor when i grow up.","I like to listen to country music.
 I enjoy cooking.
 I like to knit hats for babies in the hospital.
-I am a vegan.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am a vegan.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to listen to country music, cook, and knit hats for babies in the hospital.
 User 1: That's cool! I like to watch movies, play video games, and hang out with my friends.
@@ -41616,7 +41616,7 @@ Horses are my favorite animal.
 I just got my nails done.
 I love the beach.
 My dad has a car dealership.","User 1: Hi! What's your name?
-User 2: Hi, I'm [user 2's name].
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I love to go to the beach, go horseback riding, and shop.
 User 1: Oh, I love the beach too! I've always wanted to go horseback riding.
@@ -41686,8 +41686,8 @@ My mother is a medical doctor.","I work for a company that rents properties.
 I like to go hunting.
 I restore classic cars.
 I am a handyman.
-I am allergic to shellfish.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I am allergic to shellfish.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I work for a company that rents properties.
 User 1: Oh, that sounds interesting. What's your favorite part of the job?
@@ -42139,8 +42139,8 @@ I am an animal lover.","I am a huge fantasy fan.
 I want to write fantasy books myself.
 I am of.
 I have two part time jobs.
-I like to binge watch the lord of the rings.","User 1: Hi, I'm [user 1's name]. I'm a huge animal lover. I have three cats and two dogs.
-User 2: Hi, I'm [user 2's name]. I love animals too! I have a cat and a dog.
+I like to binge watch the lord of the rings.","User 1: Hi, I'm Ishi. I'm a huge animal lover. I have three cats and two dogs.
+User 2: Hi, I'm Ishi. I love animals too! I have a cat and a dog.
 User 1: That's great! What are their names?
 User 2: My cat's name is Mittens and my dog's name is Bailey.
 User 1: I love those names! They're so cute.
@@ -42870,7 +42870,7 @@ My name is lucy.","I used to play sports in high school.
 I am a college graduate.
 I love watching sports on tv.
 My favorite sport is soccer.","User 1: Hi! I'm Lucy.
-User 2: Hi Lucy, I'm [user 2's name].
+User 2: Hi Lucy, I'm Ishi.
 User 1: It's nice to meet you! What do you do for a living?
 User 2: I'm a college graduate and I work in marketing.
 User 1: That's cool! I'm a college graduate and I work as a secretary.
@@ -42925,8 +42925,8 @@ I work as a kindergarten teacher.","Poker is my favorite card game.
 I am taking college and hoping to be a teacher.
 I am a huge ed sheeran fan.
 I am learning jujitsu but am still new to it.
-I run to relieve stress.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I run to relieve stress.","User 1: Hi there! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to play poker, run, and listen to Ed Sheeran.
 User 1: Oh, I love Ed Sheeran! I'm also a big fan of poker.
@@ -43753,10 +43753,10 @@ I like to work out.","I do not eat anything sweet.
 I like jazz music.
 My favorite tv show is the office.
 I do not drive because i live in new york.
-I am jewish.","User 1: Hi, my name is [user 1's name]. What's yours?
-User 2: Hi [user 1's name], my name is [user 2's name].
-User 1: It's nice to meet you, [user 2's name].
-User 2: It's nice to meet you too, [user 1's name].
+I am jewish.","User 1: Hi, my name is Ishi. What's yours?
+User 2: Hi Ishi, my name is Ishi.
+User 1: It's nice to meet you, Ishi.
+User 2: It's nice to meet you too, Ishi.
 User 1: So, what do you like to do for fun?
 User 2: I like to listen to jazz music, watch The Office, and not eat anything sweet.
 User 1: Oh, that's cool. I like to listen to rap music, eat sushi, and work out.
@@ -43779,8 +43779,8 @@ User 1: I like to go to the museums, see shows, and eat at all the different res
 User 2: That sounds like a lot of fun. I've never been to New York before.
 User 1: You should come visit sometime.
 User 2: I will.
-User 1: It was nice talking to you, [user 2's name].
-User 2: It was nice talking to you too, [user 1's name]."
+User 1: It was nice talking to you, Ishi.
+User 2: It was nice talking to you too, Ishi."
 "I am a college graduate.
 My favorite sport is soccer.
 I love watching sports on tv.
@@ -43895,8 +43895,8 @@ I grew up in wisconsin.
 I have two brothers.","I am divorced.
 I have three children all girls.
 I was born in the late was.
-My parents were a firefighter and a teacher.","User 1: Hello, my name is [user 1's name].
-User 2: Hello, my name is [user 2's name].
+My parents were a firefighter and a teacher.","User 1: Hello, my name is Ishi.
+User 2: Hello, my name is Ishi.
 User 1: Where are you from?
 User 2: I was born in the late war, but I grew up in Wisconsin.
 User 1: I'm from Wisconsin too!
@@ -44391,8 +44391,8 @@ I have three guns and love hunting.","I have a brothers and a sisters.
 My dogs name is charlie.
 My parents live in australia.
 I am a stock broker.
-My favorite food is eggplant parmigiana.","User 1: It's nice to meet you, [user 2's name].
-User 2: Nice to meet you too, [user 1's name].
+My favorite food is eggplant parmigiana.","User 1: It's nice to meet you, Ishi.
+User 2: Nice to meet you too, Ishi.
 User 1: What do you do for a living?
 User 2: I'm a stock broker.
 User 1: Oh, that sounds interesting. I've always been curious about the stock market.
@@ -44451,8 +44451,8 @@ I cook homemade meals every day.","I have traveled to six countries.
 I love to travel.
 I have a large garden.
 I teach biology at a college.
-My hobby is walking.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My hobby is walking.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a biology professor at a college.
 User 1: That sounds really interesting! What's your favorite thing about your job?
@@ -44633,8 +44633,8 @@ My personal ideal is theodore roosevelt.
 I ran a blog about rabbit rescues.
 I am a competitive body builder.","User 1: Hi there! What's your name?
 User 2: I'm Tim.
-User 1: Nice to meet you, Tim. I'm [user 1's name].
-User 2: It's nice to meet you too, [user 1's name].
+User 1: Nice to meet you, Tim. I'm Ishi.
+User 2: It's nice to meet you too, Ishi.
 User 1: Where are you from?
 User 2: I'm from Wisconsin.
 User 1: Oh, cool! I'm from Florida.
@@ -44884,7 +44884,7 @@ I am originally from california but i live in florida.","I am a professional ska
 I was born with a tail which was removed.
 I worked at hollister in high school.
 I play bluegrass music.","User 1: Hi, my name is Jordan and I'm a veterinarian.
-User 2: Hi Jordan, I'm [user 2's name] and I'm a professional skater.
+User 2: Hi Jordan, I'm Ishi and I'm a professional skater.
 User 1: That's cool! I used to skate when I was younger.
 User 2: Really? What kind of skating did you do?
 User 1: I mostly did rollerblading. I used to love going to the skate park and just messing around.
@@ -44980,8 +44980,8 @@ My parents are both deceased.
 I live on edris island.","I graduated from mit with a degree in engineering.
 I am a science fiction author.
 I am afraid of spiders and snakes.
-I am unmarried and do not have any children.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I am unmarried and do not have any children.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Where are you from?
 User 2: I'm from Boston.
 User 1: Oh, I've been there once. It's a beautiful city.
@@ -45628,8 +45628,8 @@ I am a blue haired teenager.","My family has four people in it.
 I am five feet tall.
 I like music.
 I have one sibling and two parents.","User 1: Hi! What's your name?
-User 2: Hi! My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+User 2: Hi! My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I like to play music, hang out with my family, and go to school.
 User 1: That's great! I like to play music too. What kind of music do you play?
 User 2: I play guitar and piano. I also like to sing.
@@ -46596,8 +46596,8 @@ I like to work out.
 I am vegan.","I write short stories for a living.
 I used to work at a carnival.
 I like to drink scotch to relax.
-I like dark superhero movies.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I like dark superhero movies.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I write short stories for a living.
 User 1: That sounds really cool! I love to read. What kind of short stories do you write?
@@ -46833,8 +46833,8 @@ I grew up in the united states of america.","I enjoy cooking.
 I like to knit hats for babies in the hospital.
 I am unable to work at a job because of a disability.
 I like to listen to country music.
-I am a vegan.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am a vegan.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I don't have a job right now because of a disability, but I like to cook and knit hats for babies in the hospital.
 User 1: That's really cool! I'm a student studying biology. I want to be a marine biologist.
@@ -46913,8 +46913,8 @@ I have a big pet dog.
 I love reading books about travel.","My favorite music is jazz.
 I love running and reading.
 I am a pediatrician.
-I also love vintage cars.","User 1: Hey, I'm [user 1's name].
-User 2: Hey, I'm [user 2's name].
+I also love vintage cars.","User 1: Hey, I'm Ishi.
+User 2: Hey, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to run, read, and listen to jazz music.
 User 1: That's cool! I like to walk, read, and eat Italian food.
@@ -47095,8 +47095,8 @@ My favourite composer is bach.
 I am an engineer.
 I hate insects.
 I like to eat bacon.","User 1: Hi! What's your name?
-User 2: Hi, my name is [user 2's name].
-User 1: It's nice to meet you, [user 2's name]. What do you do for fun?
+User 2: Hi, my name is Ishi.
+User 1: It's nice to meet you, Ishi. What do you do for fun?
 User 2: I like to play frisbee, listen to music, and read.
 User 1: Those are all great hobbies. I like to play frisbee too. What kind of music do you like?
 User 2: I like a lot of different types of music, but my favorite composer is Bach.
@@ -47801,9 +47801,9 @@ I love italian food.","I have a golden retriever named ginger.
 I just became a first time father.
 I studied abroad for a years.
 My favorite hobby is model cars.","User 1: Hey! What's your name?
-User 2: Hi! I'm [user 2's name].
-User 1: Nice to meet you, [user 2's name]. My name is [user 1's name].
-User 2: Nice to meet you too, [user 1's name].
+User 2: Hi! I'm Ishi.
+User 1: Nice to meet you, Ishi. My name is Ishi.
+User 2: Nice to meet you too, Ishi.
 User 1: What do you do for fun?
 User 2: I like to play softball, sing in choir, and eat Italian food.
 User 1: That's cool! I like to play softball too. What's your favorite position?
@@ -47916,8 +47916,8 @@ My parents were proud immigrants to america.
 I enjoy cross stitch and quilting.","I am vegan.
 I like to work out.
 I listen to rap music.
-I have a father and a brother.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I have a father and a brother.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What are you interested in?
 User 2: I'm interested in veganism, working out, and rap music.
 User 1: That's cool! I'm not vegan, but I like to work out too. I'm also a fan of rap music.
@@ -48398,8 +48398,8 @@ I grew up in wisconsin.
 I love cold weather and snow.","I am single.
 I love shopping for clothes.
 I am very close with my sister.
-I cannot wait to get my first full time job as a nurse.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I cannot wait to get my first full time job as a nurse.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you! Where are you from?
 User 2: I'm from [user 2's hometown].
 User 1: Cool! I'm from Wisconsin.
@@ -48882,8 +48882,8 @@ I am very shy.","I am a male.
 I am 40 years old.
 I hate being still.
 I am divorced and have a kids.
-I love to build things with my hands.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I love to build things with my hands.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a carpenter.
 User 1: That's cool! I love building things with my hands.
@@ -48942,8 +48942,8 @@ My best friend is a robot.","My favorite food is ice cream.
 I am a homebody.
 I have a husband who i love very much.
 I do not like exercise or physical activity.
-I love watching movies and tv.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I love watching movies and tv.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: I'm homeschooled and I love to cosplay.
 User 2: That's cool! I'm a homebody and I love ice cream.
 User 1: Oh, I love ice cream too! I'm from California, where are you from?
@@ -49346,8 +49346,8 @@ I am 17 years old and a senior in high school.","I am allergic to cats.
 I like to make crafts.
 I am homeschooling my child.
 I like getting up bright and early.
-I live in a very small town.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I live in a very small town.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for fun?
 User 2: I like to make crafts and homeschool my child.
 User 1: Oh, that's cool. I like to shop for clothes and go to concerts.
@@ -49370,9 +49370,9 @@ I like to go hiking and camping.
 My father is retired.","I met my best friend in kindergarten.
 I grew up in north dakota.
 I am of the jewish faith.
-I got a job working in advertising last year.","User 1: Hi, my name is [User 1's name].
+I got a job working in advertising last year.","User 1: Hi, my name is Ishi.
 
-User 2: Hello, I'm [User 2's name].
+User 2: Hello, I'm Ishi.
 
 User 1: It's nice to meet you. What do you do for fun?
 
@@ -49568,8 +49568,8 @@ I also enjoy cooking meals with food from our garden.
 My favorite musician is john denver.","I have two brothers.
 I grew up in wisconsin.
 My favorite band is metallica.
-I work as a managerial consultant.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I work as a managerial consultant.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Where are you from?
 User 2: I grew up in Wisconsin.
 User 1: Oh, cool! I grew up on a large horse ranch in Wyoming.
@@ -49710,8 +49710,8 @@ I live in a large city.","My favorite musician is john denver.
 I love to work with horses.
 I also enjoy cooking meals with food from our garden.
 I work out every day.
-I was raised on a large horse ranch.","User 1: Hi! My name is [user 1's name].
-User 2: Hi, nice to meet you! My name is [user 2's name].
+I was raised on a large horse ranch.","User 1: Hi! My name is Ishi.
+User 2: Hi, nice to meet you! My name is Ishi.
 User 1: What do you do for a living?
 User 2: I work on a horse ranch.
 User 1: Oh, that's cool! I love horses. Do you have any horses of your own?
@@ -49861,8 +49861,8 @@ I enjoy coding such as web design.","I was raised on a large horse ranch.
 My favorite musician is john denver.
 I also enjoy cooking meals with food from our garden.
 I work out every day.
-I love to work with horses.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I love to work with horses.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you.
 User 2: You too.
 User 1: So, what do you like to do for fun?
@@ -50030,9 +50030,9 @@ I love cats.","I live under the sea.
 I spend most of my day at school.
 I have a tail as a feet and long wavy hair.
 I have dinner with my family and then go out play with friends.
-I love exploring with my sea creatures are my friends.","User 1: Hi, my name is [user 1's name].
+I love exploring with my sea creatures are my friends.","User 1: Hi, my name is Ishi.
 
-User 2: Hello [user 1's name], my name is [user 2's name].
+User 2: Hello Ishi, my name is Ishi.
 
 User 1: It's nice to meet you. Where are you from?
 
@@ -50395,8 +50395,8 @@ I am a married mother of a kids.
 My husband runs his own business.","I love to work with horses.
 I was raised on a large horse ranch.
 I work out every day.
-My favorite musician is john denver.","User 1: Hi there, I'm [user 1's name].
-User 2: Hi [user 1's name], I'm [user 2's name].
+My favorite musician is john denver.","User 1: Hi there, I'm Ishi.
+User 2: Hi Ishi, I'm Ishi.
 User 1: It's nice to meet you. What do you do for fun?
 User 2: I love to work with horses. I was raised on a large horse ranch.
 User 1: That's great! I've always wanted to work with horses, but I've never had the opportunity.
@@ -51171,8 +51171,8 @@ My favorite color is purple.
 I am a devout catholic.","I have three cats and two dogs.
 I live near some mountains.
 Both my parents were teachers.
-I am an animal lover.","User 1: Hi, I'm [user 1's name].
-User 2: Hello, I'm [user 2's name].
+I am an animal lover.","User 1: Hi, I'm Ishi.
+User 2: Hello, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a teacher.
 User 1: Oh, that's great! What grade do you teach?
@@ -51248,9 +51248,9 @@ I was born with a tail which was removed.
 I play bluegrass music.","My favourite drink is iced tea.
 I listen to country music.
 I am a young adult.
-My family is from canada.","User 1: Hi, I'm [user 1's name]. What's your name?
+My family is from canada.","User 1: Hi, I'm Ishi. What's your name?
 
-User 2: Hi, I'm [user 2's name]. Nice to meet you.
+User 2: Hi, I'm Ishi. Nice to meet you.
 
 User 1: Nice to meet you too. Where are you from?
 
@@ -51553,8 +51553,8 @@ My mother is a medical doctor.
 I play a lot of fantasy videogames.","I used to drink but i stopped five years ago.
 I like playing poker.
 I do not have many friends.
-I have a wife and three kids.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I have a wife and three kids.","User 1: Hi there! I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you. What do you do for fun?
 User 2: I like to play poker.
 User 1: Oh, that's cool. I've never played poker before.
@@ -52071,8 +52071,8 @@ I love the band heart.
 I am divorced.","I cannot wait to get my first full time job as a nurse.
 I have just completed my education as registered nurse.
 I love shopping for clothes.
-I am single.","User 1: Hi there, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am single.","User 1: Hi there, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: So, what's your story?
 User 2: I just graduated from nursing school, and I'm excited to start my career as a registered nurse.
 User 1: That's great! Congratulations! What kind of nursing do you want to do?
@@ -52399,9 +52399,9 @@ I have never been away from the state i live in.
 I am an 12 year old girl.
 My dad taches tae kwan do.","User 1: Hi, what's your name?
 
-User 2: I'm [user 2's name].
+User 2: I'm Ishi.
 
-User 1: It's nice to meet you, [user 2's name]. What do you like to do for fun?
+User 1: It's nice to meet you, Ishi. What do you like to do for fun?
 
 User 2: I like to do tae kwan do.
 
@@ -52704,7 +52704,7 @@ I am originally from california but i live in florida.","User 1: Hey there!
 User 2: Hi!
 User 1: What's your name?
 User 2: My name is Jordan.
-User 1: Nice to meet you, Jordan! My name is [user 1's name].
+User 1: Nice to meet you, Jordan! My name is Ishi.
 User 2: Nice to meet you too!
 User 1: What do you do for a living?
 User 2: I'm a veterinarian.
@@ -53604,8 +53604,8 @@ I drive a volkswagen beetle.","I am going to hairdresser school.
 I have an exotic fish aquarium.
 I have two sons.
 I collect vintage 50 s decorations.
-I eat granola for breakfast every day.","User 1: Hi! I'm [user 1's name].
-User 2: Hi [user 1's name], I'm [user 2's name].
+I eat granola for breakfast every day.","User 1: Hi! I'm Ishi.
+User 2: Hi Ishi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm going to hairdresser school.
 User 1: Oh, that's cool! I've always been interested in hair styling.
@@ -53833,8 +53833,8 @@ I am on a diet now.
 I just got my nails done.","My girlfriend lives with me.
 I am a student.
 I have a dog named max.
-I am studying to be a lawyer.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am studying to be a lawyer.","User 1: Hi there! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to go to the beach, play video games, and spend time with my girlfriend.
 User 1: That sounds like fun! I love the beach too. What do you like to do there?
@@ -53925,7 +53925,7 @@ I am a champion at tae kwan do.","I have been working as a real estate agent for
 I am 34 years old.
 I went to college at university of mississippi.
 I have two children that are in their kindergarten.
-I am an environmentalist.","User 1: Hi! I'm [user 1's name], how are you?
+I am an environmentalist.","User 1: Hi! I'm Ishi, how are you?
 User 2: I'm good, thanks! How are you doing today?
 User 1: I'm doing well, thanks! I'm an 12 year old girl, and I've never been away from the state I live in. My dad teaches tae kwan do, and I'm a champion at it. What about you?
 User 2: I'm 34 years old, and I've been working as a real estate agent for the past 12 years. I have two children that are in their kindergarten, and I'm also an environmentalist.
@@ -54031,8 +54031,8 @@ I have know taekwondo since i was a kid.","I am a democrat.
 I read as much as i can.
 I care deeply about politics.
 I work in it.
-I watch the news on tv every night.","User 1: Hi, I'm [user 1's name].
-User 2: Hello, [user 2's name]. What are you interested in?
+I watch the news on tv every night.","User 1: Hi, I'm Ishi.
+User 2: Hello, Ishi. What are you interested in?
 User 1: I love Italian food, and I work in a program that mentors troubled teens. I also like to sing in choir and have known Taekwondo since I was a kid.
 User 2: I'm a Democrat, and I care deeply about politics. I work in it, and I read as much as I can. I also watch the news on TV every night.
 User 1: That's interesting. What kind of work do you do in politics?
@@ -54205,8 +54205,8 @@ I am color blind and live with my little sister.","My dad taches tae kwan do.
 I like rollercoasters.
 I am a champion at tae kwan do.
 I have never been away from the state i live in.
-I am an 12 year old girl.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+I am an 12 year old girl.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to go to amusement parks, play video games, and read.
 User 1: I like to go to amusement parks too! I've never been to one in [user 2's state].
@@ -54259,8 +54259,8 @@ I love to cook.
 I am a proud republican.","I have a big pet dog.
 I like to walk long distances.
 I love reading books about travel.
-I want to travel to europe.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I want to travel to europe.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a teacher.
 User 1: Really? Me too! What grade do you teach?
@@ -54488,9 +54488,9 @@ I have a big sweet tooth.","I just became a first time father.
 My favorite hobby is model cars.
 I have seen the movie titanic ten times.
 I studied abroad for a years.
-I have a golden retriever named ginger.","User 1: Hello! I'm [user 1's name].
+I have a golden retriever named ginger.","User 1: Hello! I'm Ishi.
 
-User 2: Hello! I'm [user 2's name]. It's nice to meet you.
+User 2: Hello! I'm Ishi. It's nice to meet you.
 
 User 1: It's nice to meet you too.
 
@@ -54522,9 +54522,9 @@ User 2: It was an amazing experience! I learned so much about different cultures
 
 User 1: I'm sure you did! I'm glad you had a great time.
 
-User 2: Thank you! I'm glad to meet you, [user 1's name].
+User 2: Thank you! I'm glad to meet you, Ishi.
 
-User 1: It's nice to meet you too, [user 2's name]."
+User 1: It's nice to meet you too, Ishi."
 "I have traveled to six countries.
 My hobby is walking.
 I teach biology at a college.
@@ -54556,8 +54556,8 @@ I have a soft spot for my boss niece.
 My favorite band is simple plan.","I like to work out.
 I have a father and a brother.
 I am vegan.
-My favourite food is sushi.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My favourite food is sushi.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a personal trainer.
 User 1: Really? I've always been curious about getting into shape.
@@ -54649,7 +54649,7 @@ I do not want kids.
 I am single.
 I also like to sing.","User 1: Hi there! What's your name?
 User 2: My name is Sarah.
-User 1: Hi Sarah, I'm [user 1's name]. What do you do for fun?
+User 1: Hi Sarah, I'm Ishi. What do you do for fun?
 User 2: I love to sing and act. I'm actually trying to become an actress.
 User 1: That's awesome! I love to sing too. I've never tried acting, but it's always seemed like a lot of fun.
 User 2: It is! It can be really challenging, but it's also really rewarding.
@@ -54719,8 +54719,8 @@ I like to eat muffins.","I love romance books and movies.
 I am scared of dogs.
 I rent an apartment.
 I am a 32 year old single woman.
-I want to be a chef.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I want to be a chef.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I work in the healthcare industry.
 User 1: Oh, that's interesting. What's your job title?
@@ -54752,8 +54752,8 @@ I do not like exercise or physical activity.","My favorite music is jazz.
 I love running and reading.
 I am married and have two kids of my own.
 I also love vintage cars.
-I am a pediatrician.","User 1: Hey, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
+I am a pediatrician.","User 1: Hey, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I love running, reading, and listening to jazz.
 User 1: That sounds great! I love to watch movies and TV.
@@ -54851,7 +54851,7 @@ I attend university and study biology.
 I grew up in the united states of america.","I am also a musician on the weekends.
 Love to read drama books.
 I love playing video games.
-Hey there my name is jordan and i am a veterinarian.","User 1: Hi, my name is [user 1's name]!
+Hey there my name is jordan and i am a veterinarian.","User 1: Hi, my name is Ishi!
 
 User 2: Hi, it's nice to meet you! My name is Jordan.
 
@@ -54904,8 +54904,8 @@ I spend a lot of time online.
 I am a furry.","I have dinner with my family and then go out play with friends.
 I love exploring with my sea creatures are my friends.
 I live under the sea.
-I have a tail as a feet and long wavy hair.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I have a tail as a feet and long wavy hair.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Where are you from?
 User 2: I live under the sea.
 User 1: What's it like under the sea?
@@ -55112,8 +55112,8 @@ I am looking forward to retiring in five years.","My parents passed away two yea
 I am unmarried and do not have any children.
 I am a science fiction author.
 I am afraid of spiders and snakes.
-I graduated from mit with a degree in engineering.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I graduated from mit with a degree in engineering.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm an administrative assistant.
 User 1: Oh, cool. I'm a science fiction author.
@@ -55540,8 +55540,8 @@ I love to cook.
 I like reading.","I dropped out of high school.
 I am an avid runner.
 I do not like animals.
-I live in low income apartments.","User 1: Hi, my name is [User 1's name] and I'm a teacher.
-User 2: Hi, I'm [User 2's name] and I'm a runner.
+I live in low income apartments.","User 1: Hi, my name is Ishi and I'm a teacher.
+User 2: Hi, I'm Ishi and I'm a runner.
 User 1: Oh, that's cool. How long have you been running?
 User 2: I've been running for about five years now.
 User 1: That's impressive. What do you like about running?
@@ -55618,9 +55618,9 @@ I like making barbecue.
 I like watching horror movies.","I am a great cook.
 I have three children.
 I love cats.
-I am unhappy with my weight.","User 1: Hi, I'm [user 1's name].
+I am unhappy with my weight.","User 1: Hi, I'm Ishi.
 
-User 2: Hi, I'm [user 2's name].
+User 2: Hi, I'm Ishi.
 
 User 1: What do you do for fun?
 
@@ -55703,8 +55703,8 @@ I have a father and a brother.","I am a twenty year old male.
 I was born in puerto rico.
 I am serving in south korea.
 I am a violent person.
-I am in the army.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name]. Where are you from?
+I am in the army.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi. Where are you from?
 User 1: I'm from [user 1's location]. What about you?
 User 2: I was born in Puerto Rico, but I'm currently serving in the army in South Korea.
 User 1: Oh, that's cool! What's it like being in the army?
@@ -56023,8 +56023,8 @@ I have six older sisters and one younger brother.
 My favorite food is pizza.","I love the band heart.
 I was born in the late was.
 I have three children all girls.
-I am divorced.","User 1: Hi! I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am divorced.","User 1: Hi! I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What are some of your interests?
 User 2: I love music, especially the band Heart.
 User 1: Oh, I love them too! I used to listen to them all the time when I was younger.
@@ -56758,8 +56758,8 @@ I like running.","I work as an accountant.
 I drive a honda civic.
 I am a single mom of two boys.
 I like to go hiking in my spare time.
-I live in ohio.","User 1: Hi! I'm [User 1's name].
-User 2: Hi! I'm [User 2's name].
+I live in ohio.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm an accountant.
 User 1: Oh, that's interesting! I work at PetSmart.
@@ -56974,8 +56974,8 @@ My favorite singer is taylor swift.","I live in texas.
 I love to play on second life.
 I spend a lot of time online.
 I am a furry.
-I am a twenty eight year old male.","User 1: Hey, I'm [User 1's name].
-User 2: Hey, I'm [User 2's name].
+I am a twenty eight year old male.","User 1: Hey, I'm Ishi.
+User 2: Hey, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I work online as a furry artist.
 User 1: That sounds interesting! What kind of art do you do?
@@ -57329,8 +57329,8 @@ I have a large garden.
 I love to travel.","I like to listen to country music.
 I enjoy cooking.
 I am unable to work at a job because of a disability.
-I like to knit hats for babies in the hospital.","User 1: Hi! I'm [user 1's name]. I'm a biology professor at a local college.
-User 2: Hi! I'm [user 2's name]. I'm a stay-at-home mom.
+I like to knit hats for babies in the hospital.","User 1: Hi! I'm Ishi. I'm a biology professor at a local college.
+User 2: Hi! I'm Ishi. I'm a stay-at-home mom.
 User 1: That's great! What do you enjoy doing for fun?
 User 2: I love to cook and listen to country music. I also like to knit hats for babies in the hospital.
 User 1: That's so kind of you! I'm a big fan of country music too. I've been to six countries.
@@ -57488,7 +57488,7 @@ I work as an attorney.","I listen to country music.
 I enjoy coding such as web design.
 My family is from canada.
 My favourite drink is iced tea.","User 1: Hello, what's your name?
-User 2: Hi, my name is [user 2's name].
+User 2: Hi, my name is Ishi.
 User 1: It's nice to meet you.
 User 2: You too.
 User 1: What do you like to do for fun?
@@ -57783,9 +57783,9 @@ I have a big pet dog.
 My favorite type of food is italian.","My best friend took my boyfriend in high school.
 My parents were always gone when i was growing up.
 I want children badly but not right time in my life.
-I want to be a fashion designer.","User 1: Hi! I'm [user 1's name].
+I want to be a fashion designer.","User 1: Hi! I'm Ishi.
 
-User 2: Hi, I'm [user 2's name]. It's nice to meet you.
+User 2: Hi, I'm Ishi. It's nice to meet you.
 
 User 1: It's nice to meet you too!
 
@@ -57978,7 +57978,7 @@ I love to meet new people.
 I have a turtle named timothy.
 Autumn is my favorite season.
 My favorite sport is ultimate frisbee.","User 1: Hi there! I'm Jordan. I'm a veterinarian from California.
-User 2: Hi Jordan! I'm [user 2's name]. It's nice to meet you!
+User 2: Hi Jordan! I'm Ishi. It's nice to meet you!
 User 1: Nice to meet you too! What do you do for a living?
 User 2: I'm a software engineer.
 User 1: That's cool! I've always been interested in coding, but I never had the chance to learn it.
@@ -58209,10 +58209,10 @@ I am unhappy with my weight.
 I work days and my husband works nights.","My personal ideal is theodore roosevelt.
 My favorite singer is tim mcgraw.
 I am color blind and live with my little sister.
-I am a competitive body builder.","User 1: Hey, I'm [user 1's name].
-User 2: Hello, I'm [user 2's name].
-User 1: It's nice to meet you, [user 2's name].
-User 2: Nice to meet you too, [user 1's name].
+I am a competitive body builder.","User 1: Hey, I'm Ishi.
+User 2: Hello, I'm Ishi.
+User 1: It's nice to meet you, Ishi.
+User 2: Nice to meet you too, Ishi.
 User 1: What do you do for a living?
 User 2: I'm a competitive body builder.
 User 1: Oh, that's cool! I've always been interested in body building, but I've never tried it myself.
@@ -58251,9 +58251,9 @@ I live in low income apartments.","I want to travel to europe.
 I like to walk long distances.
 My favorite type of food is italian.
 I love reading books about travel.
-I have a big pet dog.","User 1: Hi, I'm [user 1's name]. I'm an avid runner.
+I have a big pet dog.","User 1: Hi, I'm Ishi. I'm an avid runner.
 
-User 2: Hi, I'm [user 2's name]. I like to walk long distances too.
+User 2: Hi, I'm Ishi. I like to walk long distances too.
 
 User 1: Nice to meet you. What's your favorite type of food?
 
@@ -58694,8 +58694,8 @@ I drive a convertible mustang.","I love to surf and skate.
 I do not sing very well.
 I grew up in california.
 I am a fashion model and actor.
-I will be moving to new york city next year.","User 1: Hi, I'm [user 1's name], I'm a kindergarten teacher.
-User 2: Hi, I'm [user 2's name], I'm a fashion model and actor.
+I will be moving to new york city next year.","User 1: Hi, I'm Ishi, I'm a kindergarten teacher.
+User 2: Hi, I'm Ishi, I'm a fashion model and actor.
 User 1: Cool, what's your favorite thing about your job?
 User 2: I love getting to dress up and be creative.
 User 1: That sounds like a lot of fun.
@@ -58727,9 +58727,9 @@ I am an avid runner.
 I live in low income apartments.
 I work in fast food.
 I do not like animals.","User 1: Hi, what's your name?
-User 2: Hi, I'm [user 2's name]. What's yours?
-User 1: My name is [user 1's name].
-User 2: Nice to meet you, [user 1's name]. What do you do for fun?
+User 2: Hi, I'm Ishi. What's yours?
+User 1: My name is Ishi.
+User 2: Nice to meet you, Ishi. What do you do for fun?
 User 1: I'm a huge fantasy fan, I love to read fantasy books and binge watch fantasy shows like the Lord of the Rings.
 User 2: I've never been a fan of fantasy. I think it's too unrealistic.
 User 1: I can see why you might think that, but I think it's a great escape from reality.
@@ -58885,8 +58885,8 @@ I went to college at university of mississippi.","I like to eat muffins.
 I work in the healthcare industry.
 I am five feet tall.
 I have a dog named pedro.
-I love film.","User 1: Hi, I'm [user 1's name].
-User 2: Hello, I'm [user 2's name].
+I love film.","User 1: Hi, I'm Ishi.
+User 2: Hello, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I work in the healthcare industry.
 User 1: Oh, that's interesting. I work as a real estate agent.
@@ -58967,8 +58967,8 @@ I love dogs but hate cats.","I was arrested for stealing.
 My parents were always gone when i was growing up.
 My best friend took my boyfriend in high school.
 I want children badly but not right time in my life.
-I want to be a fashion designer.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I want to be a fashion designer.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to play video games, watch movies, and hang out with my friends.
 User 1: I like to do those things too! What kind of video games do you like to play?
@@ -59044,8 +59044,8 @@ I will try any kind of food once.
 I collect weird stickers.","I have two cats.
 I write romance novels.
 I am an introvert.
-I am a writer.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am a writer.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I love to write romance novels.
 User 1: That's cool. I love to read poetry.
@@ -59628,8 +59628,8 @@ Both my parents were teachers.","I cannot wait to get my first full time job as 
 I have just completed my education as registered nurse.
 I love shopping for clothes.
 I am very close with my sister.
-I am single.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
+I am single.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you do for work?
 User 2: I'm a registered nurse.
 User 1: Oh, that's awesome! I'm a huge animal lover, and I really admire nurses.
@@ -59667,8 +59667,8 @@ I work in the healthcare industry.","I enjoy oldies music.
 I am an administrative assistant.
 I love trying barbeque restaurants.
 I like ot play racquetball.","User 1: Hi, what's your name?
-User 2: Hi, I'm [user 2's name].
-User 1: Hi [user 2's name]. What do you do for a living?
+User 2: Hi, I'm Ishi.
+User 1: Hi Ishi. What do you do for a living?
 User 2: I'm an administrative assistant.
 User 1: What's your favorite thing about your job?
 User 2: I like that it's so varied and I get to meet new people all the time.
@@ -59877,8 +59877,8 @@ I enjoy playing softball.
 I love italian food.","My favorite holiday is christmas.
 I love watching football on sundays.
 My favorite food is cheese pizza.
-I am a hair stylist.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am a hair stylist.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a hair stylist.
 User 1: Oh, that's cool! I love getting my hair done.
@@ -59980,9 +59980,9 @@ I have three guns and love hunting.
 I am very conservative.","I got a job working in advertising last year.
 I have traveled and studied abroad.
 I am of the jewish faith.
-I met my best friend in kindergarten.","User 1: Hi! I'm [user 1's name].
+I met my best friend in kindergarten.","User 1: Hi! I'm Ishi.
 
-User 2: Hi, I'm [user 2's name].
+User 2: Hi, I'm Ishi.
 
 User 1: It's nice to meet you! What do you like to do for fun?
 
@@ -60199,7 +60199,7 @@ I am a huge fantasy fan.
 I want to write fantasy books myself.
 I am of.","User 1: Hi! What's your name?
 User 2: Hi, I'm Jake.
-User 1: Nice to meet you, Jake. I'm [user 1's name]. What do you do for fun?
+User 1: Nice to meet you, Jake. I'm Ishi. What do you do for fun?
 User 2: I like to binge-watch The Lord of the Rings.
 User 1: Me too! I love that series.
 User 2: I'm also a huge fantasy fan.
@@ -60362,8 +60362,8 @@ I like rollercoasters.
 I am a champion at tae kwan do.","I love pink floyd.
 I love dogs but hate cats.
 I want to be an actor when i grow up.
-I am a 14 year old trans boy.","User 1: Hi! I'm [User 1's name]. What's your name?
-User 2: Hi! I'm [User 2's name].
+I am a 14 year old trans boy.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi! I'm Ishi.
 User 1: It's nice to meet you! How old are you?
 User 2: I'm 14.
 User 1: Oh, me too!
@@ -60463,7 +60463,7 @@ My parents did not want me.
 I work at mcdonald s.","User 1: Hey, nice to meet you!
 User 2: Nice to meet you too!
 User 1: What's your name?
-User 2: My name is [user 2's name].
+User 2: My name is Ishi.
 User 1: Where are you from?
 User 2: I'm from [user 2's location].
 User 1: Nice! I've never been there before.
@@ -60878,8 +60878,8 @@ I studied abroad for a years.
 I have seen the movie titanic ten times.
 I have a golden retriever named ginger.
 I just became a first time father.","User 1: Hi! What's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I like to build model cars and play video games.
 User 1: Oh, cool! I've never built a model car before. What's your favorite model car?
 User 2: I like to build muscle cars, like the Corvette and the Mustang.
@@ -60905,8 +60905,8 @@ I study law.
 I have no siblings.","My dad drove a semi driver and i was on the road with him.
 I never finished high school.
 I have 3 sisters.
-I am the lead singer in a popular band.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name]. It's nice to meet you.
+I am the lead singer in a popular band.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi. It's nice to meet you.
 User 1: It's nice to meet you too. What do you do for fun?
 User 2: I'm the lead singer in a popular band.
 User 1: Oh, that's cool! I've always wanted to be in a band.
@@ -61575,9 +61575,9 @@ I collect weird stickers.
 I want to learn how to draw.","I am afraid of water.
 I love to garden.
 My favorite color is purple.
-My favorite team is the ohio state buckeyes.","User 1: Hi, I'm [user 1's name].
+My favorite team is the ohio state buckeyes.","User 1: Hi, I'm Ishi.
 
-User 2: Hi, I'm [user 2's name].
+User 2: Hi, I'm Ishi.
 
 User 1: What do you like to do for fun?
 
@@ -61693,8 +61693,8 @@ My favourite composer is bach.
 I am an engineer.","My favorite tv show is the office.
 I do not drive because i live in new york.
 I like jazz music.
-I do not eat anything sweet.","User 1: Hi, my name is [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
+I do not eat anything sweet.","User 1: Hi, my name is Ishi. What's your name?
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! Do you have a favorite TV show?
 User 2: My favorite TV show is The Office. What's yours?
 User 1: I love The Office! I also like Parks and Rec.
@@ -61754,8 +61754,8 @@ I have a husband who i love very much.","I work in fast food.
 I am an avid runner.
 I dropped out of high school.
 I live in low income apartments.
-I do not like animals.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I do not like animals.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to run, play video games, and read.
 User 1: I like running too! I don't like video games or reading.
@@ -61835,8 +61835,8 @@ I love watching movies and tv.
 I am a homebody.","User 1: Hi there!
 User 2: Hello!
 User 1: What's your name?
-User 2: My name is [User 2's name].
-User 1: Nice to meet you! I'm [User 1's name].
+User 2: My name is Ishi.
+User 1: Nice to meet you! I'm Ishi.
 User 2: Nice to meet you too! What do you do for a living?
 User 1: I'm a student studying to be a lawyer.
 User 2: Oh, that's cool! What's your favorite subject?
@@ -61912,8 +61912,8 @@ I have webbed toes.
 I use other peoples trash for my projects.","I live on edris island.
 I love to dance.
 My parents are both deceased.
-I live with my sister and my dog ralph.","User 1: Hey, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I live with my sister and my dog ralph.","User 1: Hey, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What are you up to today?
 User 2: Not much, just hanging out with my sister and dog.
 User 1: Oh, that sounds fun. I'm an artist.
@@ -62883,8 +62883,8 @@ I am a 32 year old single woman.
 I love romance books and movies.","I live in a large city.
 I have two horses.
 I work in a grocery store.
-My favorite singer is taylor swift.","User 1: Hi! My name is [user 1's name].
-User 2: Hello! My name is [user 2's name].
+My favorite singer is taylor swift.","User 1: Hi! My name is Ishi.
+User 2: Hello! My name is Ishi.
 User 1: What do you do for a living?
 User 2: I work in a grocery store.
 User 1: Oh, cool! I used to work in a grocery store when I was younger.
@@ -63087,8 +63087,8 @@ I have a big sweet tooth.
 I just bought a brand new house.","I like dark superhero movies.
 I like to drink scotch to relax.
 I am afraid of dogs.
-I used to work at a carnival.","User 1: Hi, I'm [user 1's name]. I just moved into the neighborhood and I'm looking for some new friends.
-User 2: Hi, I'm [user 2's name]. Welcome to the neighborhood! I'm not sure if I can be your friend, but I can tell you a little bit about myself.
+I used to work at a carnival.","User 1: Hi, I'm Ishi. I just moved into the neighborhood and I'm looking for some new friends.
+User 2: Hi, I'm Ishi. Welcome to the neighborhood! I'm not sure if I can be your friend, but I can tell you a little bit about myself.
 User 1: That would be great! I like to know about people.
 User 2: Well, I like dark superhero movies, I like to drink scotch to relax, and I'm afraid of dogs.
 User 1: I like dark superhero movies too! I also like to drink, but I prefer beer. I'm not afraid of dogs, but I don't really like them either.
@@ -63318,8 +63318,8 @@ I live beside the sea and go swimming every day.
 I drive a convertible mustang.","I love to ride horses.
 I keep things to myself instead of speaking my mind.
 I love having facial hair.
-My left leg hurts me daily.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My left leg hurts me daily.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a teacher at a local kindergarten.
 User 1: That sounds like a fun job!
@@ -63847,8 +63847,8 @@ I want to be a fashion designer.
 My best friend took my boyfriend in high school.","I love cold weather and snow.
 My favorite band is metallica.
 I grew up in wisconsin.
-I work as a managerial consultant.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I work as a managerial consultant.","User 1: Hi there! I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you do for a living?
 User 2: I'm a managerial consultant.
 User 1: Oh, that sounds interesting! What's your favorite part of the job?
@@ -63974,7 +63974,7 @@ I do not get along with my dad.
 I am a nurse.
 I hate cats.
 I love onions.","User 1: Hi, I'm Lucy. What's your name?
-User 2: I'm [user 2's name].
+User 2: I'm Ishi.
 User 1: Nice to meet you! What do you do for work?
 User 2: I'm a nurse.
 User 1: Oh, that's cool! I've always been interested in nursing, but I'm not sure if I have the stomach for it.
@@ -64005,8 +64005,8 @@ I have a stutter when excited.
 I have six older sisters and one younger brother.","I want to be an actor when i grow up.
 I love dogs but hate cats.
 I am a 14 year old trans boy.
-I go to middle school.","User 1: Hi! I'm [user 1's name]. What's your name?
-User 2: Hi! I'm [user 2's name].
+I go to middle school.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi! I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I love acting, reading, and playing video games.
 User 1: I love to act too! What's your favorite role you've ever played?
@@ -64097,7 +64097,7 @@ I live with my sister and my dog ralph.
 My parents are both deceased.","My name is lucy.
 I graduated from college last year.
 I work in an office as a secretary.
-I was on the soccer team in college.","User 1: Hi, my name is [user 1's name].
+I was on the soccer team in college.","User 1: Hi, my name is Ishi.
 
 User 2: Hi, I'm Lucy. It's nice to meet you.
 
@@ -64349,8 +64349,8 @@ Last weeks i was at a friends wedding.","I have know taekwondo since i was a kid
 I like to sing in choir.
 I work in a program that mentors troubled teens.
 I enjoy playing softball.
-I love italian food.","User 1: Hi! I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name]. Nice to meet you!
+I love italian food.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi. Nice to meet you!
 User 1: Nice to meet you too! What do you do for fun?
 User 2: I love to sing in choir and play softball.
 User 1: That's awesome! I love to sing too. What kind of music do you like to sing?
@@ -64627,8 +64627,8 @@ I have a brothers and a sisters.","I do not get along with my dad.
 I love onions.
 I have been at the same job for a years.
 I am a nurse.","User 1: Hi there! What's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you [user 2's name]. What do you do for a living?
+User 2: My name is Ishi.
+User 1: Nice to meet you Ishi. What do you do for a living?
 User 2: I'm a nurse.
 User 1: That's great! I have a lot of respect for nurses.
 User 2: Thank you. I love my job.
@@ -64915,8 +64915,8 @@ I like to party when we are not playing a gig.","Hey there i am a professional s
 My dad is a farmer and my mom is a teacher.
 I was born in south carolina.
 L graduated from usc.
-My name is joanna and i love watching horror films.","User 1: Hey, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My name is joanna and i love watching horror films.","User 1: Hey, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm a professional singer.
 User 1: That's cool! I'm a lead singer in a popular band.
@@ -65310,9 +65310,9 @@ I like to sing karok.
 I am allergic to dogs.","User 1: Hi!
 User 2: Hi!
 User 1: What's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. My name is [user 1's name].
-User 2: Nice to meet you too, [user 1's name].
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. My name is Ishi.
+User 2: Nice to meet you too, Ishi.
 User 1: So, what do you like to do for fun?
 User 2: I like to sing karaoke, go hiking, and read.
 User 1: Oh, that's cool! I like to sing karaoke too. I've never been hiking, but I've always wanted to try it. And I like to read too.
@@ -65530,8 +65530,8 @@ I like to eat candy.","I like to go hunting.
 I am allergic to shellfish.
 I restore classic cars.
 I work for a company that rents properties.
-I am a handyman.","User 1: Hi! I'm [user 1's name]. I'm new here.
-User 2: Hi, I'm [user 2's name]. I'm glad to meet you.
+I am a handyman.","User 1: Hi! I'm Ishi. I'm new here.
+User 2: Hi, I'm Ishi. I'm glad to meet you.
 User 1: Nice to meet you too. What do you do for fun?
 User 2: I like to go hunting, restore classic cars, and work on my house.
 User 1: That sounds like a lot of fun. I like to play soccer, watch movies, and read.
@@ -66262,8 +66262,8 @@ I have a brothers and a sisters.
 My parents live in australia.","User 1: Hi!
 User 2: Hello!
 User 1: What's your name?
-User 2: My name is [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you like to do for fun?
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you like to do for fun?
 User 2: I love to cook! My favorite food is eggplant parmigiana.
 User 1: That's a good one! I love eggplant parmigiana too.
 User 2: Do you cook a lot?
@@ -66375,8 +66375,8 @@ I do not like chips.
 I am a professional skater.","User 1: Hi!
 User 2: Hi!
 User 1: What's your name?
-User 2: My name is [User 2's name].
-User 1: Nice to meet you, [User 2's name]. What do you do for fun?
+User 2: My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you do for fun?
 User 2: I like to skate. I'm a professional skater.
 User 1: That's cool! I've always wanted to learn to skate.
 User 2: You should! It's really fun.
@@ -66398,8 +66398,8 @@ User 1: What's your favorite thing about skating?
 User 2: I love the feeling of freedom. When I'm skating, I feel like I can do anything.
 User 1: That's awesome! I can see why you love it so much.
 User 2: Me too!
-User 1: It was nice meeting you, [User 2's name].
-User 2: It was nice meeting you too, [User 1's name]."
+User 1: It was nice meeting you, Ishi.
+User 2: It was nice meeting you too, Ishi."
 "I am married with a kids.
 I love to cook.
 I am a proud republican.
@@ -66524,8 +66524,8 @@ I am a violent person.","I drive a ford pickup truck.
 I have three guns and love hunting.
 I am very conservative.
 I go to church every sunday.
-My family lives down the street from me.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+My family lives down the street from me.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: Where are you from?
 User 2: I'm from [user 2's hometown].
 User 1: I'm from Puerto Rico.
@@ -66784,8 +66784,8 @@ I live on a faraway island.
 I write romance novels.
 I have two cats.
 I am a writer.","User 1: Hello! What's your name?
-User 2: Hi there! My name is [User 2's name].
-User 1: Nice to meet you, [User 2's name]. What do you do for fun?
+User 2: Hi there! My name is Ishi.
+User 1: Nice to meet you, Ishi. What do you do for fun?
 User 2: I write romance novels.
 User 1: That's awesome! I've always wanted to write a book, but I'm not sure where to start.
 User 2: There are a lot of great resources out there to help you get started. You could check out some books on writing, or you could take a class.
@@ -67007,8 +67007,8 @@ I am a violent person.
 I am a twenty year old male.","I like to make crafts.
 I am homeschooling my child.
 I live in a very small town.
-I like getting up bright and early.","User 1: Hello, my name is [user 1's name].
-User 2: Hello [user 1's name], my name is [user 2's name].
+I like getting up bright and early.","User 1: Hello, my name is Ishi.
+User 2: Hello Ishi, my name is Ishi.
 User 1: It's nice to meet you.
 User 2: Nice to meet you too.
 User 1: I'm from Puerto Rico, but I'm currently serving in the army in South Korea.
@@ -67047,8 +67047,8 @@ User 1: I'm sure it is.
 User 2: So, what's your favorite thing about living in a small town?
 User 1: I like the sense of community. Everyone knows everyone else and there's always someone to lend a helping hand.
 User 2: That's one of the things I love about living in a small town too.
-User 1: It's so nice to meet you, [user 2's name].
-User 2: It's nice to meet you too, [user 1's name]."
+User 1: It's so nice to meet you, Ishi.
+User 2: It's nice to meet you too, Ishi."
 "My family lives in arkansas.
 I live with my two brothers in an apartment in chicago.
 I am a batista.
@@ -67178,8 +67178,8 @@ I am a devout catholic.","I love playing sports and being active.
 I love rap music.
 I am in college studying education.
 I am a 22 year old girl.
-I love to hang out with my friends.","User 1: Hi, I'm [user 1's name].
-User 2: Hi [user 1's name], I'm [user 2's name].
+I love to hang out with my friends.","User 1: Hi, I'm Ishi.
+User 2: Hi Ishi, I'm Ishi.
 User 1: What do you do for a living?
 User 2: I'm in college studying education.
 User 1: That's great! I'm a registered nurse at a pediatric hospital.
@@ -67208,8 +67208,8 @@ User 1: I love a lot of different movies, but my favorites are probably the Marv
 User 2: I love the Marvel movies too! I'm so excited for the new one coming out next year.
 User 1: Me too! I'm sure it's going to be great.
 User 2: I'm sure it will be.
-User 1: Well, it was nice meeting you, [user 2's name].
-User 2: It was nice meeting you too, [user 1's name]."
+User 1: Well, it was nice meeting you, Ishi.
+User 2: It was nice meeting you too, Ishi."
 "I am studying to be a lawyer.
 My girlfriend lives with me.
 I enjoy traveling and going on adventures.
@@ -67247,8 +67247,8 @@ I have one sibling and two parents.","I am an animal lover.
 I have three cats and two dogs.
 I live near some mountains.
 Both my parents were teachers.","User 1: Hi! What's your name?
-User 2: My name is [user 2's name]. What's yours?
-User 1: My name is [user 1's name]. I'm five feet tall, and I'm currently attending school.
+User 2: My name is Ishi. What's yours?
+User 1: My name is Ishi. I'm five feet tall, and I'm currently attending school.
 User 2: Cool! I'm also five feet tall. I love animals, and I have three cats and two dogs.
 User 1: That's awesome! I love animals too. I have a cat named Mittens.
 User 2: I love cats! What kind of cat is Mittens?
@@ -67278,8 +67278,8 @@ User 1: I like those genres too! I also like to read historical fiction and fant
 User 2: Those are all great genres! I love reading.
 User 1: Me too! It's my favorite way to relax.
 User 2: Me too! I'm glad we have something in common.
-User 1: Me too! It's nice to meet you, [user 2's name].
-User 2: Nice to meet you too, [user 1's name]."
+User 1: Me too! It's nice to meet you, Ishi.
+User 2: Nice to meet you too, Ishi."
 "I am a democrat.
 I work in it.
 I watch the news on tv every night.
@@ -67357,8 +67357,8 @@ I also write diet cookbooks.
 I enjoy exercising for long hours.","I eat granola for breakfast every day.
 I collect vintage 50 s decorations.
 I have an exotic fish aquarium.
-I am going to hairdresser school.","User 1: Hi! I'm [user 1's name].
-User 2: Hi! I'm [user 2's name].
+I am going to hairdresser school.","User 1: Hi! I'm Ishi.
+User 2: Hi! I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to collect vintage 50s decorations.
 User 1: That's cool! I've never been much of a collector myself, but I do enjoy looking at old things.
@@ -67700,8 +67700,8 @@ I am single.","I like to go hiking and camping.
 I eat meat.
 I have a large stereo in my truck.
 My father is retired.","User 1: Hi there! What's your name?
-User 2: Hi! My name is [user 2's name]. What's yours?
-User 1: My name is [user 1's name]. It's nice to meet you!
+User 2: Hi! My name is Ishi. What's yours?
+User 1: My name is Ishi. It's nice to meet you!
 User 2: It's nice to meet you too!
 User 1: What do you like to do for fun?
 User 2: I like to go hiking and camping. I also like to go fishing and hunting.
@@ -67931,8 +67931,8 @@ My job is cleaning out cages at a research facility.","My favourite composer is 
 I am an engineer.
 I hate insects.
 I like to eat bacon.
-I speak english.","User 1: Hi, my name is [user 1's name].
-User 2: Hello, my name is [user 2's name].
+I speak english.","User 1: Hi, my name is Ishi.
+User 2: Hello, my name is Ishi.
 User 1: What do you do for a living?
 User 2: I'm an engineer.
 User 1: What kind of engineering?
@@ -68130,8 +68130,8 @@ I am unmarried and do not have any children.
 I graduated from mit with a degree in engineering.","I have webbed toes.
 I am an artist.
 I use other peoples trash for my projects.
-My job is cleaning out cages at a research facility.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+My job is cleaning out cages at a research facility.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: It's nice to meet you.
 User 2: You too.
 User 1: So, what do you do for a living?
@@ -68334,9 +68334,9 @@ I never finished high school.
 I eat sardines for breakfast daily.","I like dark superhero movies.
 I like to drink scotch to relax.
 I write short stories for a living.
-I used to work at a carnival.","User 1: Hi, I'm [user 1's name]. What's your name?
-User 2: Hi, I'm [user 2's name].
-User 1: Nice to meet you, [user 2's name]. What do you do for a living?
+I used to work at a carnival.","User 1: Hi, I'm Ishi. What's your name?
+User 2: Hi, I'm Ishi.
+User 1: Nice to meet you, Ishi. What do you do for a living?
 User 2: I write short stories for a living.
 User 1: That's cool! What kind of short stories do you write?
 User 2: I write mostly dark superhero stories.
@@ -68449,8 +68449,8 @@ I am an omnivore.
 My hobby is graphic design.","I go to church every sunday.
 I drive a ford pickup truck.
 My family lives down the street from me.
-I am very conservative.","User 1: Hi! I'm [user 1's name]. What's your name?
-User 2: Hi [user 1's name], I'm [user 2's name].
+I am very conservative.","User 1: Hi! I'm Ishi. What's your name?
+User 2: Hi Ishi, I'm Ishi.
 User 1: It's nice to meet you! What do you do for a living?
 User 2: I'm a sales representative.
 User 1: Oh, that's cool! I work in graphic design.
@@ -68489,8 +68489,8 @@ I am color blind and live with my little sister.","I am going to auburn universi
 I drive a volkswagen beetle.
 I love shopping fashion and clothes.
 I want to be a doctor when i grow up.
-I am 17 years old and a senior in high school.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I am 17 years old and a senior in high school.","User 1: Hi, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I love shopping for clothes and fashion. I'm also going to Auburn University next year as a freshman.
 User 1: That's cool! I'm a competitive body builder and I live with my little sister. I also ran a blog about rabbit rescues.
@@ -68718,8 +68718,8 @@ My parents are both deceased.","I love reading books about travel.
 I have a big pet dog.
 I like to walk long distances.
 My favorite type of food is italian.
-I want to travel to europe.","User 1: Hi, I'm [user 1's name].
-User 2: Hi, I'm [user 2's name].
+I want to travel to europe.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: What do you like to do for fun?
 User 2: I like to read books about travel, and I also like to walk long distances.
 User 1: That's great! I like to read books about travel too. I've always wanted to travel to Europe.
@@ -68766,8 +68766,8 @@ I go to middle school.","I read a lot of poetry.
 I will try any kind of food once.
 I collect weird stickers.
 I like hiking in nature.
-I want to learn how to draw.","User 1: Hi! I'm [user 1's name].
-User 2: Hi [user 2's name]. I'm [user 2's name].
+I want to learn how to draw.","User 1: Hi! I'm Ishi.
+User 2: Hi Ishi. I'm Ishi.
 User 1: Nice to meet you!
 User 2: Nice to meet you too!
 User 1: What do you do for fun?
@@ -68788,8 +68788,8 @@ User 1: Have you ever read any Sylvia Plath?
 User 2: I have! I love her work. She's one of my favorite poets.
 User 1: Me too! She's so talented.
 User 2: Yeah, she's amazing.
-User 1: It was nice talking to you, [user 2's name].
-User 2: It was nice talking to you too, [user 1's name]."
+User 1: It was nice talking to you, Ishi.
+User 2: It was nice talking to you too, Ishi."
 "I like to party when we are not playing a gig.
 I never finished high school.
 My dad drove a semi driver and i was on the road with him.
@@ -69199,8 +69199,8 @@ I love dogs but hate cats.","Horses are my favorite animal.
 I love the beach.
 I just got my nails done.
 I am on a diet now.
-My dad has a car dealership.","User 1: Hey, my name is [user 1's name].
-User 2: Hi, I'm [user 2's name].
+My dad has a car dealership.","User 1: Hey, my name is Ishi.
+User 2: Hi, I'm Ishi.
 User 1: Nice to meet you! What do you do for fun?
 User 2: I like to go to the beach, ride horses, and get my nails done.
 User 1: That sounds fun! I love horses too. Do you have any pets?
@@ -69348,8 +69348,8 @@ I have got two more years in college.
 I study law.","I was arrested for stealing.
 I want to be a fashion designer.
 I want children badly but not right time in my life.
-My best friend took my boyfriend in high school.","User 1: Hello, my name is [user 1's name].
-User 2: Hello, I'm [user 2's name].
+My best friend took my boyfriend in high school.","User 1: Hello, my name is Ishi.
+User 2: Hello, I'm Ishi.
 User 1: Nice to meet you. What do you like to do for fun?
 User 2: I like to draw and paint. I also like to read and go for walks.
 User 1: That sounds like fun. I like to read and go for walks too.
@@ -69382,8 +69382,8 @@ I will try any kind of food once.
 I collect weird stickers.","I share an apartment in seattle with two roommates.
 I just graduated from college two years ago.
 I am a kindergarten teacher.
-I can barely pay my bills every month.","User 1: Hi there! I'm [user 1's name].
-User 2: Hi [user 1's name], I'm [user 2's name].
+I can barely pay my bills every month.","User 1: Hi there! I'm Ishi.
+User 2: Hi Ishi, I'm Ishi.
 User 1: Nice to meet you! What do you like to do for fun?
 User 2: I like to hike in nature, read a lot of poetry, and try any kind of food once.
 User 1: Those are all great things to do! I love hiking too. Where's your favorite place to hike?
@@ -69546,8 +69546,8 @@ I am what people call a baby boomer.","My favorite band is nirvana.
 I like running.
 I am a musician.
 My father was a police officer.
-I work at pet smart.","User 1: Hi, I'm [User 1's name].
-User 2: Hi, I'm [User 2's name].
+I work at pet smart.","User 1: Hi, I'm Ishi.
+User 2: Hi, I'm Ishi.
 User 1: It's nice to meet you.
 User 2: Nice to meet you too.
 User 1: What do you do for fun?
@@ -70069,8 +70069,8 @@ I love to work with horses.
 I also enjoy cooking meals with food from our garden.","I got a job working in advertising last year.
 I met my best friend in kindergarten.
 I am of the jewish faith.
-I grew up in north dakota.","User 1: Hi, my name is [user 1's name].
-User 2: Hi, my name is [user 2's name].
+I grew up in north dakota.","User 1: Hi, my name is Ishi.
+User 2: Hi, my name is Ishi.
 User 1: Where are you from?
 User 2: I grew up in North Dakota, but I moved to California for college.
 User 1: I grew up on a large horse ranch in Oklahoma. I still love working with horses, and I also enjoy cooking meals with food from our garden.
@@ -70155,8 +70155,8 @@ I work at mcdonald s.
 I was raised by my uncle and aunt.","I do not eat anything sweet.
 I do not drive because i live in new york.
 I am jewish.
-My favorite tv show is the office.","User 1: Hi, my name is [user 1's name].
-User 2: Hello, my name is [user 2's name].
+My favorite tv show is the office.","User 1: Hi, my name is Ishi.
+User 2: Hello, my name is Ishi.
 User 1: Where are you from?
 User 2: I'm from New York City.
 User 1: Oh, that's cool. I've always wanted to visit New York City.
