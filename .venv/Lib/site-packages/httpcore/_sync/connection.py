@@ -6,7 +6,7 @@ from typing import Iterable, Iterator, Optional, Type
 
 from .._backends.sync import SyncBackend
 from .._backends.base import SOCKET_OPTION, NetworkBackend, NetworkStream
-from .._exceptions import ConnectError, ConnectionNotAvailable, ConnectTimeout
+from .._exceptions import ConnectError, ConnectTimeout
 from .._models import Origin, Request, Response
 from .._ssl import default_ssl_context
 from .._synchronization import Lock
@@ -21,9 +21,16 @@ logger = logging.getLogger("httpcore.connection")
 
 
 def exponential_backoff(factor: float) -> Iterator[float]:
+    """
+    Generate a geometric sequence that has a ratio of 2 and starts with 0.
+
+    For example:
+    - `factor = 2`: `0, 2, 4, 8, 16, 32, 64, ...`
+    - `factor = 3`: `0, 3, 6, 12, 24, 48, 96, ...`
+    """
     yield 0
-    for n in itertools.count(2):
-        yield factor * (2 ** (n - 2))
+    for n in itertools.count():
+        yield factor * 2**n
 
 
 class HTTPConnection(ConnectionInterface):
@@ -63,9 +70,9 @@ class HTTPConnection(ConnectionInterface):
                 f"Attempted to send request to {request.url.origin} on connection to {self._origin}"
             )
 
-        with self._request_lock:
-            if self._connection is None:
-                try:
+        try:
+            with self._request_lock:
+                if self._connection is None:
                     stream = self._connect(request)
 
                     ssl_object = stream.get_extra_info("ssl_object")
@@ -87,11 +94,9 @@ class HTTPConnection(ConnectionInterface):
                             stream=stream,
                             keepalive_expiry=self._keepalive_expiry,
                         )
-                except Exception as exc:
-                    self._connect_failed = True
-                    raise exc
-            elif not self._connection.is_available():
-                raise ConnectionNotAvailable()
+        except BaseException as exc:
+            self._connect_failed = True
+            raise exc
 
         return self._connection.handle_request(request)
 
@@ -130,7 +135,7 @@ class HTTPConnection(ConnectionInterface):
                         )
                         trace.return_value = stream
 
-                if self._origin.scheme == b"https":
+                if self._origin.scheme in (b"https", b"wss"):
                     ssl_context = (
                         default_ssl_context()
                         if self._ssl_context is None

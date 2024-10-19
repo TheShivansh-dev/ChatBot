@@ -1,503 +1,345 @@
-import os
-import random
+import requests
+from typing import Final, List
+from telegram import Update
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import re
-import difflib
-from typing import Final
+import random
+import spacy
+import numpy as np
+from sentence_transformers import SentenceTransformer, util
 
-import telegram
-from telegram import Update, InputFile, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
-import openpyxl
-
-# Token and Bot Username
-TOKEN: Final = '7652253001:AAEipGC5Fb0Y04NgbCICb6N1Tm6HcJG4tpA'
-BOT_USERNAME: Final = '@Dumbaa_bot'
-EXCEL_FILE = 'user_scores.xlsx'
-OCTO_EXCEL_FILE = 'octowordexcel.xlsx'  # Path to the Excel file containing octoword data
-
-# Dictionary to keep track of ongoing games
-octo_game_state = {}
-
-# Helper to escape MarkdownV2 characters
-def escape_markdown_v2(text: str) -> str:
-    return re.sub(r'([_\*\[\]\(\)~`>#+\-=|{}.!])', r'\\\1', text)
+# Your bot token and username
+# Your bot token and username
+TOKEN: Final = '7147905922:AAFPXxcBS3vdWmc0W0BrQ_EP2SsiyxhSzZY'
+BOT_USERNAME: Final = '@Iesp0404_bot'
 
 
-# Command to show all user scores
-async def show_all_results(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    scores = load_scores()  # Load scores from the Excel file
+TRUTH_FILE = 'truths.txt'
+DARE_FILE = 'dares.txt'
+filename = "knwldg.txt"
 
-    if not scores:
-        try:
-            await update.message.reply_text("No scores found")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("No scores found")
-        return
 
-    # Build the message to display all users
-    message = "*All Users and Scores:*\n"
-    for user_id, username, score in scores:
-        formatted_score = f"{score:.2f}"
-        message += f"ID: {user_id}, Username: @{escape_markdown(str(username))}, Score: {escape_markdown(str(formatted_score))}points\n"
+# Google Custom Search API credentials
+GOOGLE_API_KEYS: Final[List[str]] = [
+    'AIzaSyDqzvNif6a5kJm_sc4EmJzSk5upzrvHE48',  # First API Key
+    'AIzaSyCZjlwdblmT1T6xJrsUi22V9xgw9MZzByw',  # Replace with your second API key
+]
+GOOGLE_CXS: Final[List[str]] = [
+    '92178ceca83294240',  # First CX ID
+    '671582ee1a93142c9',  # Replace with your second CX ID
+]
+ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
+ALLOWED_ADMIN_GROUP_ID: Final = -1002137866227
+
+GIF_IMAGE_PATHS: Final = {
+    'bite': 'Image/bite.gif',
+    'boom': 'Image/boom.gif',
+    'beat': 'Image/beat.gif',
+    'call': 'Image/call.gif',
+    'care': 'Image/care.gif',
+    'chill': 'Image/chill.gif',
+    'dance': 'Image/dance.gif',
+    'enjoy': 'Image/enjoy.gif',
+    'feed': 'Image/feed.gif',
+    'fight': 'Image/fight.gif',
+    'fry': 'Image/fry.gif',
+    'greet': 'Image/greet.gif',
+    'go': 'Image/go.gif',
+    'hug': 'Image/hug.gif',
+    'ignore': 'Image/ignore.gif',
+    'kill': 'Image/kill.gif',
+    'knock': 'Image/knock.gif',
+    'miss': 'Image/miss.gif',
+    'move': 'Image/move.gif',
+    'patt': 'Image/patt.gif',
+    'play': 'Image/play.gif',
+    'poison': 'Image/poison.gif',
+    'poke': 'Image/poke.gif',
+    'praise': 'Image/praise.gif',
+    'roast': 'Image/roast.gif',
+    'scold': 'Image/scold.gif',
+    'silent': 'Image/silent.gif',
+    'slap': 'Image/slap.gif',
+    'snatch': 'Image/snatch.gif',
+    'sorry': 'Image/sorry.gif',
+    'spit': 'Image/spit.gif',
+    'stab': 'Image/stab.gif',
+    'stalk': 'Image/stalk.gif',
+    'swing': 'Image/swing.gif',
+    'tease': 'Image/tease.gif',
+    'teach': 'Image/teach.gif',
+    'write': 'Image/write.gif',
+    'throw': 'Image/throw.gif'
+}
+
+class KnowledgeBase:
+    def __init__(self, text):
+        # Load the pre-trained model once during initialization
+        self.model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+        
+        self.text = text
+        self.qa_pairs = self._extract_qa_pairs(text)
+        self.questions = [qa[0] for qa in self.qa_pairs]
+        self.answers = [qa[1] for qa in self.qa_pairs]
+        self.question_embeddings = self._embed_sentences(self.questions)
+        self.answer_embeddings = self._embed_sentences(self.answers)
+
+    def _extract_qa_pairs(self, text):
+        """Extract question-answer pairs from the provided text."""
+        qa_pairs = []
+        lines = text.split("\n")
+        for i in range(0, len(lines)-1, 2):  # Assuming each question and answer are on consecutive lines
+            question = lines[i].replace("User 1:", "").strip()
+            answer = lines[i+1].replace("User 2:", "").strip()
+            qa_pairs.append((question, answer))
+        return qa_pairs
+
+    def _embed_sentences(self, sentences):
+        """Embed sentences using the SentenceTransformer model."""
+        return self.model.encode(sentences, convert_to_tensor=True)
+
+    def answer_question(self, query, top_k=1):
+        """Find the most relevant answer based on the query."""
+        query_embedding = self.model.encode(query, convert_to_tensor=True)
+        cos_similarities = util.pytorch_cos_sim(query_embedding, self.question_embeddings)
+        
+        # Ensure similarities are computed on the CPU
+        cos_similarities = cos_similarities.cpu()
+
+        # Get the top k most similar questions
+        top_results = np.argpartition(-cos_similarities, range(top_k))[0:top_k]
+        best_question_idx = top_results[0][0]
+
+        # Get the corresponding answer
+        best_answer = self.answers[best_question_idx]
+
+        # Remove "User 1:" or "User 2:" from the response before sending it back
+        clean_answer = re.sub(r'(User\s*[12]:\s*)', '', best_answer)
+
+        return self._limit_answer_length(clean_answer)
+
+    def _limit_answer_length(self, answer, max_words=150):
+        """Limits the answer to a maximum of max_words words."""
+        words = answer.split()
+        if len(words) > max_words:
+            return ' '.join(words[:max_words]) + "..."
+        return answer
+ 
+# Initialize the knowledge base with the content from the file
+
+with open(filename, 'r', encoding='utf-8') as file:
+    text = file.read()
+
+kb = KnowledgeBase(text)
+
+def clean_text(text: str) -> str:
+    # Remove URLs
+    text = re.sub(r'http[s]?://\S+', '', text)
+    return text
+
+
+# Function to get a random line from a file
+def get_random_line(file_path: str) -> str:
     try:
-        await update.message.reply_text(message, parse_mode='MarkdownV2')
-    except telegram.error.BadRequest:
-        await update.message.chat.send_message(message, parse_mode='MarkdownV2')
-
-
-# Update the user's score in the Excel file
-def update_user_score(user_id: int, username: str, score: float):
-    # If the file does not exist, create it with headers
-    if not os.path.exists(EXCEL_FILE):
-        workbook = openpyxl.Workbook()
-        sheet = workbook.active
-        sheet.title = 'Scores'
-        # Create the header row
-        sheet.append(['Idnumber', 'Username', 'Score'])
-        workbook.save(EXCEL_FILE)
-
-    # Load the existing Excel file
-    workbook = openpyxl.load_workbook(EXCEL_FILE)
-    sheet = workbook.active
-
-    # Check if the user already exists by checking the user ID
-    user_found = False
-    for row in range(2, sheet.max_row + 1):  # Start from row 2 to skip the header
-        if sheet.cell(row=row, column=1).value == user_id:  # The user ID is in the first column (Idnumber)
-            # Update the score for this user
-            current_score = sheet.cell(row=row, column=3).value
-            new_score = current_score + score if current_score is not None else score
-            sheet.cell(row=row, column=3, value=new_score)  # Update the score in the 3rd column
-            user_found = True
-            break
-
-    if not user_found:
-        # If user not found, add a new row with the user ID, username, and score
-        sheet.append([user_id, username, score])
-
-    # Save the updated Excel file
-    workbook.save(EXCEL_FILE)
-    workbook.close()
-
-
-# Load all user scores from the Excel file
-def load_scores():
-    if not os.path.exists(EXCEL_FILE):
-        return []
-
-    workbook = openpyxl.load_workbook(EXCEL_FILE)
-    sheet = workbook.active
-
-    scores = []
-    for row in range(2, sheet.max_row + 1):  # Start from row 2 to skip the header
-        user_id = sheet.cell(row=row, column=1).value
-        username = sheet.cell(row=row, column=2).value
-        score = sheet.cell(row=row, column=3).value
-
-        if user_id and username and score is not None:
-            scores.append((user_id, username, score))
-
-    workbook.close()
-    return scores
-
-
-# Command to show the top 10 users
-async def select_top_10_users(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    scores = load_scores()
-
-    if not scores:
-        try:
-            await update.message.reply_text("No scores found")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("No scores found")
-        return
-
-    # Sort by score in descending order
-    scores.sort(key=lambda x: x[2], reverse=True)
-
-    # Get the top 10 users
-    top_10 = scores[:10]
-
-    # Build the message to display top users
-    message = "*Top 10 Dumbaa:*\n"
-    for idx, (user_id, username, score) in enumerate(top_10, 1):
-        formatted_score = f"{score:.2f}"
-        message += f"{idx}: @{escape_markdown(str(username))} : {escape_markdown(str(formatted_score))} points\n"
-    try:
-        await update.message.reply_text(message, parse_mode='MarkdownV2')
-    except telegram.error.BadRequest:
-        await update.message.chat.send_message(message, parse_mode='MarkdownV2')
-
-# Command to show the user's rank and score
-async def my_rank(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    user_id = update.message.from_user.id
-    username = update.message.from_user.username or update.message.from_user.first_name
-
-    scores = load_scores()
-
-    if not scores:
-        try:
-            await update.message.reply_text("No scores found")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("No scores found")
-        return
-
-    # Sort by score in descending order
-    scores.sort(key=lambda x: x[2], reverse=True)
-
-    # Find user's rank
-    user_rank = None
-    for rank, (u_id, u_name, score) in enumerate(scores, 1):
-        if u_id == user_id:
-            user_rank = (rank, score)
-            break
-
-    if user_rank:
-        rank, score = user_rank
-        formatted_score = f"{score:.2f}"
-        try:
-            await update.message.reply_text(f"Your rank: {rank}\nYour score: {formatted_score}")
-        except:
-            await update.message.chat.send_message(f"Your rank: {rank}\nYour score: {formatted_score}")
-    else:
-        try:
-            await update.message.reply_text("You haven't played the game yet")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("You haven't played the game yet")
-
-
-# Function to get a random word from the Excel file
-def get_random_word_from_excel(file_path: str, used_srno: list):
-    try:
-        workbook = openpyxl.load_workbook(file_path)
-        sheet = workbook.active
-
-        # Collect words and points from the Excel file
-        words_data = []
-        for row in range(2, sheet.max_row + 1):  # Start from the second row to skip headers
-            srno = sheet.cell(row=row, column=1).value  # 'srno' is in the first column
-            if srno in used_srno:  # Skip words that have already been used
-                continue
-            word = sheet.cell(row=row, column=2).value  # Assuming word is in column 2
-            point = sheet.cell(row=row, column=3).value  # Assuming points are in column 3
-
-            # Append tuple of srno, word, and points
-            words_data.append((srno, word, point))
-
-        # Choose a random word from the list of unused words
-        if words_data:
-            srno, word, point = random.choice(words_data)
-
-            return srno, word, point
-        else:
-            return None, None, None
-
+        with open(file_path, 'r', encoding='utf-8') as file:  # Specify UTF-8 encoding
+            lines = file.readlines()
+            return random.choice(lines).strip() if lines else 'No content found.'
     except FileNotFoundError:
-        return None, None, None
+        return f'{file_path} not found. Please make sure the file exists.'
+    except UnicodeDecodeError as e:
+        return f'Error reading file {file_path}: {e}'
 
 
-# Start the game and ask how many rounds
-# Define the list of allowed chat IDs
-# Define the list of allowed group IDs
-ALLOWED_GROUP_IDS = [-1001817635995]  # Replace with the actual group IDs (Note: Group IDs are usually negative)
-
-async def start_game_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    chat_id = update.message.chat.id
-
-    # Check if the chat_id (group ID) is in the allowed list
-    if chat_id not in ALLOWED_GROUP_IDS:
-        try:
-            await update.message.reply_text("due to the free service You are not allowed to start a game in this group. play there @iesp_0404 or contact @O000000000O00000000O")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("due to the free service You are not allowed to start a game in this group. play there @iesp_0404 or contact @O000000000O00000000O")
-        return
-
-    if chat_id in octo_game_state:
-        try:
-            await update.message.reply_text("A game is already running in this group.")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("A game is already running in this group.")
-        return
-
-    keyboard = [
-        [InlineKeyboardButton("25 Words", callback_data='25')],
-        [InlineKeyboardButton("100 Words", callback_data='100')],
-        [InlineKeyboardButton("250 Words", callback_data='250')],
-        [InlineKeyboardButton("500 Words", callback_data='500')],
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
+def add_line_to_file(file_path: str, new_line: str) -> str:
     try:
-        await update.message.reply_text('How many words do you want?', reply_markup=reply_markup)
-    except telegram.error.BadRequest:
-        await update.message.chat.send_message('How many words do you want?', reply_markup=reply_markup)
+        with open(file_path, 'a') as file:  # Open file in append mode
+            file.write(new_line + '\n')
+        return 'Your text has been added!'
+    except Exception as e:
+        return f'Failed to add text: {e}'
 
 
-
-async def cancel_game(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    chat_id = update.message.chat.id
-
-    # Check if there is an ongoing game in this chat
-    if chat_id in octo_game_state:
-        # Show the game results before canceling
-        await show_game_results(update.message, chat_id)
-
-        # Clear the game state for this chat
-        del octo_game_state[chat_id]
-        try:
-            await update.message.reply_text("The game has been canceled You can start a new game with /startdumba")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("The game has been canceled You can start a new game with /startdumba")
-    else:
-        try:
-            await update.message.reply_text("There is no game currently running in this chat")
-        except telegram.error.BadRequest:
-            await update.message.chat.send_message("There is no game currently running in this chat")
-
-
-
-
-def is_similar_word_in_message(user_text: str, word: str, threshold: float = 0.7) -> bool:
-    """
-    Check if the user's text contains the word with a similarity above the given threshold.
-    First, attempt to match the word exactly (ignoring case and spaces). If not an exact match,
-    check for similarity above the threshold.
-    """
-    # Convert both user text and the word to lowercase and strip leading/trailing spaces
-    user_text = user_text.lower().strip()
-    word = word.lower().strip()
-
-    # Check for an exact match
-    if user_text == word:
-        return True
-
-
-
-async def process_game_round(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """
-    Process the user's guess during the octo game round
-    """
-    chat_id = update.message.chat.id
-    message = update.message.text.strip()
-    user_id = update.message.from_user.id
-    username = update.message.from_user.username or update.message.from_user.first_name
-
-    if chat_id not in octo_game_state:
-        return
-
-    game_state = octo_game_state[chat_id]
-    current_word = game_state['current_word']
-    total_rounds = game_state['total_rounds']
-
-    # Initialize players if not already done
-    if 'players' not in game_state:
-        game_state['players'] = {}
-
-    # Initialize the player's data if not present
-    if user_id not in game_state['players']:
-        game_state['players'][user_id] = {
-            'username': username,
-            'current_game_score': 0
-        }
-
-    # Check if the user's message contains the word
-    if is_similar_word_in_message(message, current_word):
-        # User guessed correctly, award points
-        points = game_state['current_points']
-        game_state['players'][user_id]['current_game_score'] += points  # Update current game score
-        update_user_score(user_id, username, points)
-        formatted_score = f"{points:.2f}"
-        try:
-            await update.message.reply_text(f"Correct! @{username} earned {points} points for guessing the word: {current_word}")
-        except telegram.error.BadRequest:
-            # If replying fails, send a normal message
-            await update.message.chat.send_message(f"Correct! @{username} earned {points} points for guessing the word: {current_word}")
-
-
-        # Proceed to the next round
-        game_state['current_round'] += 1
-
-        # If the game is still ongoing, provide the next word
-        if game_state['current_round'] <= total_rounds:
-            next_srno, next_word, next_points = get_random_word_from_excel(OCTO_EXCEL_FILE, game_state.get('used_srno', []))
-
-            if next_word:
-                game_state.setdefault('used_srno', []).append(next_srno)
-                game_state['current_word'] = next_word
-                game_state['current_points'] = next_points
-
-                # Generate the scrambled word and the masked word
-                scrambled_word = ' '.join(random.sample(next_word, len(next_word)))
-                masked_word = mask_word(next_word)  # Call to the mask_word function
-
-                # Send the response with both the scrambled word and masked word
-                try:
-                    await update.message.reply_text(
-                        f"👻 Round: {game_state['current_round']}/{total_rounds}.\n"
-                        f"🎖️ Points: {next_points}\n"
-                        f"📚 Letters: {scrambled_word}\n"
-                        f"🎲 Guess: {masked_word}\n"
-                    )
-                except telegram.error.BadRequest:
-                    # If replying fails, send a normal message
-                    await update.message.chat.send_message(
-                        f"👻 Round: {game_state['current_round']}/{total_rounds}.\n"
-                        f"🎖️ Points: {next_points}\n"
-                        f"📚 Letters: {scrambled_word}\n"
-                        f"🎲 Guess: {masked_word}\n"
-                    )
-            else:
-                # If no more words are available, end the game
-                try:
-                    await update.message.reply_text("No more words available. The game is over.")
-                except telegram.error.BadRequest:
-                    await update.message.chat.send_message("No more words available. The game is over.")
-                await show_game_results(update.message, chat_id)  # Show results
-                del octo_game_state[chat_id]
-
+async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
+    if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
+        user_message = ' '.join(context.args).strip()
+        if user_message:
+            response = add_line_to_file(TRUTH_FILE, user_message)
+            await update.message.reply_text(response)
         else:
-            # Game is over, show the results
-            await show_game_results(update.message, chat_id)
-            del octo_game_state[chat_id]
+            await update.message.reply_text('Please provide a truth question to add.')
     else:
-        # Incorrect guess
-        return None
-
-# Function to mask the word
-
-def mask_word(word: str, min_masked: int = 2) -> str:
-    """Mask the word by replacing some letters with underscores."""
-    if len(word) <= min_masked:
-        return '_' * len(word)  # Return all underscores if the word is too short
-
-    # Calculate the minimum number of letters that should remain unmasked
-    min_preserved = (len(word)) // 2  # Half of the word length, rounded up for odd lengths
-    # Calculate the maximum number of letters to mask
-    max_to_mask = len(word) - min_preserved
-    # Ensure we mask at least min_masked letters and not more than max_to_mask
-    num_to_mask = random.randint(min_masked, max(max_to_mask, min_masked))
-
-    # Select indices to mask
-    indices_to_mask = random.sample(range(len(word)), num_to_mask)
-
-    # Create a list of characters from the word
-    masked_word_list = list(word)
-
-    # Replace selected indices with underscores
-    for index in indices_to_mask:
-        masked_word_list[index] = '_ '  # Use a single underscore without space
-
-    # Join the list back into a string
-    return ''.join(masked_word_list)
+        await update.message.reply_text('This command is not allowed in this group.')
 
 
-# Callback to handle the number of rounds selection
-async def handle_round_selection(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    query = update.callback_query
-    await query.answer()
-    chat_id = query.message.chat.id
-    selected_rounds = int(query.data)
+async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
+    if chat_id == ALLOWED_ADMIN_GROUP_ID:  # Check if the command is used in the allowed group
+        user_message = ' '.join(context.args).strip()
+        if user_message:
+            response = add_line_to_file(DARE_FILE, user_message)
+            await update.message.reply_text(response)
+        else:
+            await update.message.reply_text('Please provide a dare to add.')
+    else:
+        await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
 
-    if chat_id in octo_game_state:
+
+async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    command = update.message.text.split()[0][1:]
+    file_path = GIF_IMAGE_PATHS.get(command)
+    username = update.message.from_user.username
+    target_user = re.search(r'@(\w+)', update.message.text)
+    target_username = target_user.group(0) if target_user else 'someone'
+    custom_message = f'@{username} is {command}ing {target_username}'
+
+    if file_path:
+        if file_path.endswith('.gif'):
+            await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
+        else:
+            await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
+
+
+async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+
+
+async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    truth = get_random_line('truths.txt')
+    await update.message.reply_text(truth)
+
+
+# Function to handle the /dare command
+async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    dare = get_random_line('dares.txt')
+    await update.message.reply_text(dare)
+
+
+async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+
+
+async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('For a custom command, I will respond in a customized way.')
+
+
+async def get_google_search_response(query: str) -> str:
+    search_url = "https://www.googleapis.com/customsearch/v1"
+    for api_key, cx in zip(GOOGLE_API_KEYS, GOOGLE_CXS):
+        params = {
+            "key": api_key,
+            "cx": cx,
+            "q": query
+        }
         try:
-            await query.message.reply_text("A game is already running in this group.")
-        except telegram.error.BadRequest:
-            await query.message.chat.send_message("A game is already running in this group.")
-        return
+            response = requests.get(search_url, params=params)
+            if response.status_code == 429:  # Check for quota exceeded
+                continue  # Try the next API key and CX ID
+            response.raise_for_status()
+            search_results = response.json()
+            if 'items' in search_results:
+                snippets = [clean_text(item.get('snippet', '')) for item in search_results['items']]
+                return ' '.join(snippets)[:400]  # Limit response to 400 characters
+            else:
+                return 'No results found.'
+        except requests.exceptions.HTTPError as http_err:
+            if response.status_code == 403:  # Forbidden (possibly quota exceeded)
+                continue  # Try the next API key and CX ID
+            return f"HTTP error occurred: {http_err}"
+        except Exception as err:
+            return f"Other error occurred: {err}"
 
-    # Initialize the game state for this chat
-    srno, word, points = get_random_word_from_excel(OCTO_EXCEL_FILE, [])
-
-    # Shuffle the word and mask it
-    scrambled_word = ' '.join(random.sample(word, len(word)))
-    masked_word = mask_word(word)  # Call to the mask_word function
-
-    octo_game_state[chat_id] = {
-        'total_rounds': selected_rounds,
-        'current_round': 1,
-        'current_word': word,
-        'current_points': points,
-        'used_srno': [srno],
-        'current_game_score': 0,  # Initialize score for the current game
-    }
-    try:
-        await query.message.reply_text(
-        f"Starting game with {selected_rounds} words.\n"
-        f"👻 Round:   1/{selected_rounds}.\n"
-        f"🎖️ Points:  {points}\n"
-        f"📚 Letters:  {scrambled_word}\n"
-        f"🎲 Guess:  {masked_word}"
-        )
-    except telegram.error.BadRequest:
-        await query.message.chat.send_message(
-            f"Starting game with {selected_rounds} words.\n"
-            f"👻 Round:   1/{selected_rounds}.\n"
-            f"🎖️ Points:  {points}\n"
-            f"📚 Letters:  {scrambled_word}\n"
-            f"🎲 Guess:  {masked_word}"
-        )
+    # If all keys are exhausted
+    return "I've reached my daily search limit. I'll be able to respond after tomorrow."
 
 
-def escape_markdown(text):
-    """Escape special characters in the text for MarkdownV2."""
-    if isinstance(text, str):  # Ensure that we're working with a string
-        return text.replace('.', '\\.').replace('_', '\\_').replace('*', '\\*').replace('[', '\\[') \
-                   .replace(']', '\\]').replace('(', '\\(').replace(')', '\\)').replace('~', '\\~') \
-                   .replace('`', '\\`').replace('>', '\\>').replace('#', '\\#').replace('+', '\\+') \
-                   .replace('-', '\\-').replace('=', '\\=').replace('|', '\\|').replace('{', '\\{') \
-                   .replace('}', '\\}').replace('!', '\\!')
-    return str(text)  # Convert non-string types to string
+async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
 
-async def show_game_results(message, chat_id):
-    if chat_id not in octo_game_state:
-        try:
-            await message.reply_text("No game in progress")
-        except telegram.error.BadRequest:
-            await message.chat.send_message("No game in progress")
-        return
-
-    game_state = octo_game_state[chat_id]
-    players = game_state.get('players', {})
-
-    result_message = "*Game Over*\nScores:\n"
-
-    # Create a sorted list of players based on their current game score in descending order
-    sorted_players = sorted(players.items(), key=lambda item: float(item[1]['current_game_score']), reverse=True)
-
-    # Iterate over sorted players and their scores
-    for user_id, player_data in sorted_players:
-        player_score = player_data['current_game_score']
-
-        # Only show results for players with a score of 1 or more
-        if player_score >= 1:
-            formatted_score = f"{player_score:.2f}"
-            username = escape_markdown(player_data.get('username', 'Unknown User'))  # Handle missing username
-            result_message += f"@{username} Score: {escape_markdown(str(formatted_score))} points\n"  # Escape score
-
-    if result_message == "*Game Over*\nScores:\n":
-        result_message = "No players with a score of 1 or more."
-
-    try:
-        await message.reply_text(result_message, parse_mode='MarkdownV2')
-    except telegram.error.BadRequest:
-        await message.chat.send_message(result_message, parse_mode='MarkdownV2')
-
-# Main function to run the bot
-def main():
-    # Create the application
-    application = Application.builder().token(TOKEN).build()
-
-    # Register handlers
-    application.add_handler(CommandHandler('startdumba', start_game_command))
-    application.add_handler(CallbackQueryHandler(handle_round_selection))
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, process_game_round))
-    application.add_handler(CommandHandler('cancel', cancel_game))
-    application.add_handler(CommandHandler('showallresults', show_all_results))
-    application.add_handler(CommandHandler('myrank', my_rank))
-    application.add_handler(CommandHandler('top10dumb', select_top_10_users))
-
-    # Start the bot
-    application.run_polling()
+    # Check if the command is being used in the allowed group
+    if chat_id == ALLOWED_GROUP_ID:
+        user_message = ' '.join(context.args)
+        if user_message:
+            response = await get_google_search_response(user_message)
+            await update.message.reply_text(response)
+        else:
+            await update.message.reply_text('Please ask a question.')
+    else:
+        await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
 
 
-if __name__ == '__main__':
-    main()
+def handle_response(text: str) -> str:
+    processed: str = text.lower()
+    if re.search(r'\bhello\b|\bhi\b|\bhii\b|\bhii\b|\bhlo\b|\bhey\b', processed):
+        return 'Hello, hi there! How are you?'
+    if re.search(r'\bhow are you\b', processed):
+        return 'I am just a bot, but I’m here to help you. How can I assist you?'
+    if re.search(r'\bthank you\b|\bthanks\b|\bthank\b', processed):
+        return 'You’re welcome! Let me know if you need anything else.'
+    if re.search(r'\bbye\b|\bgoodbye\b', processed):
+        return 'Goodbye! Have a great day!'
+    if re.search(r'\bhelp\b', processed):
+        return 'I am here to help! Just let me know what you need assistance with.'
+    if re.search(r'\bsamaira\b', processed):
+        return 'she is a nyc person'
+    if re.search(r'\bpurpose of the group\b', processed):
+        return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
+    if re.search(r'\bwho is your owner\b', processed):
+        return 'My Owner is Ishi'
+    if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
+        return 'Jai Shree Krishna, ask any query with search command'
+
+    
+
+    return None
+
+
+# Command to list all available commands
+async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
+    all_commands = f"Available commands:\n{commands_list}\n/search"
+    await update.message.reply_text(all_commands)
+
+
+
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    text: str = update.message.text
+    print(f'User({update.message.chat.id}): "{text}"')
+
+    words = text.split()
+    if len(words) > 2:
+        response = kb.answer_question(text)
+        print('Bot:', response)
+        await update.message.reply_text(response)
+    else:
+        response = handle_response(text)
+        if response:
+            print('Bot:', response)
+            await update.message.reply_text(response)
+
+async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    print(f'Update {update} caused error {context.error}')
+
+
+if __name__ == "__main__":
+    print('Starting bot...')
+    app = Application.builder().token(TOKEN).build()
+
+    for command in GIF_IMAGE_PATHS.keys():
+        app.add_handler(CommandHandler(command, send_media))
+
+    app.add_handler(CommandHandler('start', start_command))
+    app.add_handler(CommandHandler('help', help_command))
+    app.add_handler(CommandHandler('custom', custom_command))
+    app.add_handler(CommandHandler('search', search_command))
+    app.add_handler(CommandHandler('iespcommands', commands_command))
+    app.add_handler(CommandHandler('truth', truth_command))
+    app.add_handler(CommandHandler('dare', dare_command))
+    app.add_handler(CommandHandler('addtruth', add_truth_command))
+    app.add_handler(CommandHandler('adddare', add_dare_command))
+
+    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    app.add_error_handler(error)
+
+    print('Polling the bot...')
+    app.run_polling(poll_interval=1)
