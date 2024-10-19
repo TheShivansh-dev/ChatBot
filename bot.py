@@ -16,7 +16,7 @@ BOT_USERNAME: Final = '@Iesp0404_bot'
 
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
-filename = "knwldg.txt"
+filename = "knwldge.txt"
 
 
 # Google Custom Search API credentials
@@ -304,7 +304,7 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text: str = update.message.text
-    print(f'User({update.message.chat.id}): "{text}"')
+    
 
     words = text.split()
     if len(words) > 2:
