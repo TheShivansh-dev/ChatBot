@@ -364,7 +364,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'User({update.message.chat.id}): "{text}"')
 
     # Check if the chat ID is the allowed group ID
-    if chat_id == ALLOWED_GROUP_ID:
+    if chat_id:
         words = text.split()
         if len(words) > 2:
             response = kb.answer_question(text)
