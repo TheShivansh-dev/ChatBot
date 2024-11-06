@@ -4,7 +4,9 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 import re
 import random
-
+import spacy
+import numpy as np
+from sentence_transformers import SentenceTransformer, util
 
 # Your bot token and username
 # Your bot token and username
@@ -14,7 +16,7 @@ BOT_USERNAME: Final = '@Iesp0404_bot'
 
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
-
+filename = "knwldg.txt"
 
 
 # Google Custom Search API credentials
@@ -70,9 +72,57 @@ GIF_IMAGE_PATHS: Final = {
     'throw': 'Image/throw.gif'
 }
 
+class KnowledgeBase:
+    def __init__(self, text):
+        # Load the pre-trained model once during initialization
+        self.model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
+        
+        self.text = text
+        self.qa_pairs = self._extract_qa_pairs(text)
+        self.questions = [qa[0] for qa in self.qa_pairs]
+        self.answers = [qa[1] for qa in self.qa_pairs]
+        self.question_embeddings = self._embed_sentences(self.questions)
+        self.answer_embeddings = self._embed_sentences(self.answers)
+    def _extract_qa_pairs(self, text):
+        """Extract question-answer pairs from the provided text."""
+        qa_pairs = []
+        lines = text.split("\n")
+        for i in range(0, len(lines)-1, 2):  # Assuming each question and answer are on consecutive lines
+            question = lines[i].replace("User 1:", "").strip()
+            answer = lines[i+1].replace("User 2:", "").strip()
+            qa_pairs.append((question, answer))
+        return qa_pairs
+    def _embed_sentences(self, sentences):
+        """Embed sentences using the SentenceTransformer model."""
+        return self.model.encode(sentences, convert_to_tensor=True)
+    def answer_question(self, query, top_k=1):
+        """Find the most relevant answer based on the query."""
+        query_embedding = self.model.encode(query, convert_to_tensor=True)
+        cos_similarities = util.pytorch_cos_sim(query_embedding, self.question_embeddings)
+        
+        # Ensure similarities are computed on the CPU
+        cos_similarities = cos_similarities.cpu()
+        # Get the top k most similar questions
+        top_results = np.argpartition(-cos_similarities, range(top_k))[0:top_k]
+        best_question_idx = top_results[0][0]
+        # Get the corresponding answer
+        best_answer = self.answers[best_question_idx]
+        # Remove "User 1:" or "User 2:" from the response before sending it back
+        clean_answer = re.sub(r'(User\s*[12]:\s*)', '', best_answer)
+        return self._limit_answer_length(clean_answer)
+    def _limit_answer_length(self, answer, max_words=150):
+        """Limits the answer to a maximum of max_words words."""
+        words = answer.split()
+        if len(words) > max_words:
+            return ' '.join(words[:max_words]) + "..."
+        return answer
+ 
 # Initialize the knowledge base with the content from the file
 
+with open(filename, 'r', encoding='utf-8') as file:
+    text = file.read()
 
+kb = KnowledgeBase(text)
 
 def clean_text(text: str) -> str:
     # Remove URLs
@@ -107,10 +157,22 @@ async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_message = ' '.join(context.args).strip()
         if user_message:
             response = add_line_to_file(TRUTH_FILE, user_message)
+            try:
+                await update.message.reply_text(response)
+            except:
+                await update.message.chat.send_message(response)
             await update.message.reply_text(response)
         else:
+            try:
+                await update.message.reply_text('Please provide a truth question to add.')
+            except:
+                await update.message.chat.send_message('Please provide a truth question to add.')
             await update.message.reply_text('Please provide a truth question to add.')
     else:
+        try:
+            await update.message.reply_text('This command is not allowed in this group.')
+        except:
+            await update.message.chat.send_message('This command is not allowed in this group.')
         await update.message.reply_text('This command is not allowed in this group.')
 
 
@@ -122,8 +184,16 @@ async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
             response = add_line_to_file(DARE_FILE, user_message)
             await update.message.reply_text(response)
         else:
+            try:
+                await update.message.reply_text('Please provide a dare to add.')
+            except:
+                await update.message.chat.send_message('Please provide a dare to add.')
             await update.message.reply_text('Please provide a dare to add.')
     else:
+        try:
+            await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
+        except:
+            await update.message.chat.send_message('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
         await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
 
 
@@ -137,31 +207,59 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
 
     if file_path:
         if file_path.endswith('.gif'):
+            try:
+                await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
+            except:
+                await update.message.chat.send_animation(animation=open(file_path, 'rb'), caption=custom_message)
             await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
         else:
+            try:
+                await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
+            except:
+                await update.message.chat.send_photo(photo=open(file_path, 'rb'), caption=custom_message)
             await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+    except:
+        await update.message.chat.send_message('Hello! Thanks For Chatting With Me, I am YourBot.')
     await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
-
 
 async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     truth = get_random_line('truths.txt')
+    try:
+        await update.message.reply_text(truth)
+    except:
+        await update.message.chat.send_message(truth)
     await update.message.reply_text(truth)
 
 
 # Function to handle the /dare command
 async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     dare = get_random_line('dares.txt')
+    try:
+        await update.message.reply_text(dare)
+    except:
+        await update.message.chat.send_message(dare)
+    
     await update.message.reply_text(dare)
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    except:
+        await update.message.chat.send_message('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
     await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    try:
+        await update.message.reply_text('For a custom command, I will respond in a customized way.')
+    except:
+        await update.message.chat.send_message('For a custom command, I will respond in a customized way.')
     await update.message.reply_text('For a custom command, I will respond in a customized way.')
 
 
@@ -203,10 +301,22 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         user_message = ' '.join(context.args)
         if user_message:
             response = await get_google_search_response(user_message)
+            try:
+                await update.message.reply_text(response)
+            except:
+                await update.message.chat.send_message(response)
             await update.message.reply_text(response)
         else:
+            try:
+                await update.message.reply_text('Please ask a question.')
+            except:
+                await update.message.chat.send_message('Please ask a question.')
             await update.message.reply_text('Please ask a question.')
     else:
+        try:
+            await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
+        except:
+            await update.message.chat.send_message('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
         await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
 
 
@@ -231,7 +341,7 @@ def handle_response(text: str) -> str:
     if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
         return 'Jai Shree Krishna, ask any query with search command'
 
-    
+
 
     return None
 
@@ -240,14 +350,47 @@ def handle_response(text: str) -> str:
 async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
     all_commands = f"Available commands:\n{commands_list}\n/search"
+    try:
+        await update.message.reply_text(all_commands)
+    except:
+        await update.message.chat.send_message(all_commands)
     await update.message.reply_text(all_commands)
 
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id  # Get the chat ID
     text: str = update.message.text
     print(f'User({update.message.chat.id}): "{text}"')
 
+    # Check if the chat ID is the allowed group ID
+    if chat_id == ALLOWED_GROUP_ID:
+        words = text.split()
+        if len(words) > 2:
+            response = kb.answer_question(text)
+            print('Bot:', response)
+            if response is None or response == '':
+                try:
+                    await update.message.reply_text('ask with /search command for all kind of queries')
+                except:
+                    await update.message.chat.send_message('ask with /search command for all kind of queries')
+            else: 
+                try:
+                    await update.message.reply_text(response)
+                except:
+                    await update.message.chat.send_message(response)
+        else:
+            response = handle_response(text)
+            if response:
+                try:
+                    await update.message.reply_text(response)
+                except:
+                    await update.message.chat.send_message(response)
+    else:
+        try:
+            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
+        except:
+            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
     response = handle_response(text)
     if response:
         print('Bot:', response)
@@ -278,4 +421,4 @@ if __name__ == "__main__":
     app.add_error_handler(error)
 
     print('Polling the bot...')
-    app.run_polling(poll_interval=1)
+    app.run_polling(poll_interval=2)
