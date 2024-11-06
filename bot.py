@@ -161,19 +161,19 @@ async def add_truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await update.message.reply_text(response)
             except:
                 await update.message.chat.send_message(response)
-            await update.message.reply_text(response)
+            
         else:
             try:
                 await update.message.reply_text('Please provide a truth question to add.')
             except:
                 await update.message.chat.send_message('Please provide a truth question to add.')
-            await update.message.reply_text('Please provide a truth question to add.')
+            
     else:
         try:
             await update.message.reply_text('This command is not allowed in this group.')
         except:
             await update.message.chat.send_message('This command is not allowed in this group.')
-        await update.message.reply_text('This command is not allowed in this group.')
+        
 
 
 async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -188,13 +188,13 @@ async def add_dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await update.message.reply_text('Please provide a dare to add.')
             except:
                 await update.message.chat.send_message('Please provide a dare to add.')
-            await update.message.reply_text('Please provide a dare to add.')
+            
     else:
         try:
             await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
         except:
             await update.message.chat.send_message('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
-        await update.message.reply_text('This command is not allowed in this place Use in https://t.me/+yVFKtplWZUA0Yzhl admin group.')
+        
 
 
 async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -217,7 +217,7 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
                 await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
             except:
                 await update.message.chat.send_photo(photo=open(file_path, 'rb'), caption=custom_message)
-            await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
+            
 
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -225,7 +225,7 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
     except:
         await update.message.chat.send_message('Hello! Thanks For Chatting With Me, I am YourBot.')
-    await update.message.reply_text('Hello! Thanks For Chatting With Me, I am YourBot.')
+    
 
 async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     truth = get_random_line('truths.txt')
@@ -233,7 +233,7 @@ async def truth_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(truth)
     except:
         await update.message.chat.send_message(truth)
-    await update.message.reply_text(truth)
+    
 
 
 # Function to handle the /dare command
@@ -243,8 +243,6 @@ async def dare_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(dare)
     except:
         await update.message.chat.send_message(dare)
-    
-    await update.message.reply_text(dare)
 
 
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -252,7 +250,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
     except:
         await update.message.chat.send_message('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
-    await update.message.reply_text('No worries, I will assist you with all kinds of help. For more help, contact @YourContactUsername.')
+    
 
 
 async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -260,7 +258,7 @@ async def custom_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('For a custom command, I will respond in a customized way.')
     except:
         await update.message.chat.send_message('For a custom command, I will respond in a customized way.')
-    await update.message.reply_text('For a custom command, I will respond in a customized way.')
+    
 
 
 async def get_google_search_response(query: str) -> str:
@@ -305,19 +303,19 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await update.message.reply_text(response)
             except:
                 await update.message.chat.send_message(response)
-            await update.message.reply_text(response)
+            
         else:
             try:
                 await update.message.reply_text('Please ask a question.')
             except:
                 await update.message.chat.send_message('Please ask a question.')
-            await update.message.reply_text('Please ask a question.')
+            
     else:
         try:
             await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
         except:
             await update.message.chat.send_message('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
-        await update.message.reply_text('Sorry, this command is not allowed in this group. Join https://t.me/+yVFKtplWZUA0Yzhl')
+        
 
 
 def handle_response(text: str) -> str:
@@ -354,7 +352,7 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(all_commands)
     except:
         await update.message.chat.send_message(all_commands)
-    await update.message.reply_text(all_commands)
+    
 
 
 
@@ -421,4 +419,4 @@ if __name__ == "__main__":
     app.add_error_handler(error)
 
     print('Polling the bot...')
-    app.run_polling(poll_interval=2)
+    app.run_polling(poll_interval=1)
