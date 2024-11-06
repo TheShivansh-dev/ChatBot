@@ -376,21 +376,21 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     await update.message.chat.send_message('ask with /search command for all kind of queries')
             else: 
                 try:
-                    await update.message.reply_text(response)
+                    await update.message.chat.send_message(response)
                 except:
                     await update.message.chat.send_message(response)
         else:
             response = handle_response(text)
             if response:
                 try:
-                    await update.message.reply_text(response)
+                    await update.message.chat.send_message(response)
                 except:
                     await update.message.chat.send_message(response)
     else:
         try:
-            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
+            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
         except:
-            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance.')
+            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
     response = handle_response(text)
     if response:
         print('Bot:', response)
