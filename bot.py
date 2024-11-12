@@ -320,25 +320,12 @@ async def search_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def handle_response(text: str) -> str:
     processed: str = text.lower()
-    if re.search(r'\bhello\b|\bhi\b|\bhii\b|\bhii\b|\bhlo\b|\bhey\b', processed):
-        return 'Hello, hi there! How are you?'
-    if re.search(r'\bhow are you\b', processed):
-        return 'I am just a bot, but I’m here to help you. How can I assist you?'
-    if re.search(r'\bthank you\b|\bthanks\b|\bthank\b', processed):
-        return 'You’re welcome! Let me know if you need anything else.'
-    if re.search(r'\bbye\b|\bgoodbye\b', processed):
-        return 'Goodbye! Have a great day!'
-    if re.search(r'\bhelp\b', processed):
-        return 'I am here to help! Just let me know what you need assistance with.'
-    if re.search(r'\bsamaira\b', processed):
-        return 'she is a nyc person'
+   
     if re.search(r'\bpurpose of the group\b', processed):
         return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
     if re.search(r'\bwho is your owner\b', processed):
         return 'My Owner is Ishi'
-    if re.search(r'\bgood (morning|mrng|night|nyt|afternoon|noon)\b|\bgm\b|\bgn\b|\bgd nyt\b', processed):
-        return 'Jai Shree Krishna, ask any query with search command'
-
+    
 
 
     return None
