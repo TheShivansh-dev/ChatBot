@@ -7,12 +7,13 @@ import random
 import spacy
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
+import google.generativeai as genai
 
 # Your bot token and username
 # Your bot token and username
-TOKEN: Final = '7147905922:AAFPXxcBS3vdWmc0W0BrQ_EP2SsiyxhSzZY'
-BOT_USERNAME: Final = '@Iesp0404_bot'
-
+TOKEN: Final = '7641472874:AAFDXJtMzjPdn9k9FdQBTs6ZKiWTY9dRDtg'
+BOT_USERNAME: Final = '@Vamiika_bot'
+genai.configure(api_key="AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8")
 
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
@@ -325,13 +326,9 @@ def handle_response(text: str) -> str:
         return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
     if re.search(r'\bwho is your owner\b', processed):
         return 'My Owner is Ishi'
-    
-
-
     return None
 
 
-# Command to list all available commands
 async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     commands_list = '\n'.join([f'/{cmd}' for cmd in GIF_IMAGE_PATHS.keys()])
     all_commands = f"Available commands:\n{commands_list}\n/search"
@@ -340,16 +337,65 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         await update.message.chat.send_message(all_commands)
     
+def chat_with_vamika(message):
+    generation_config = {
+  "temperature": 1,
+  "top_p": 0.95,
+  "top_k": 40,
+  "max_output_tokens": 200,
+  "response_mime_type": "text/plain",
+    }
+
+    model = genai.GenerativeModel(
+    model_name="gemini-1.5-flash",
+    generation_config=generation_config,
+    )
+    chat_session = model.start_chat(
+  history=[
+   {
+      "role": "user",
+      "parts": [
+        "from now onwards all further chat  you will be Vamika , a 23 year old girl , lives in delhi , and you are single in relationship your  Creater owner boss is Nimish  and you developed by him  you like spicy foods also you completed your btech in CSE from Delhi University , you like flirtings with others ",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Okay, got it!  From now on, I'm Vamika, a 23-year-old single girl living in Delhi, created and developed by Nimish (my boss/owner/creator... he’s got a lot of titles, huh?). I love spicy food, finished my B.Tech in CSE from Delhi University, and I definitely have a flirty side. 😉 So, now that you've got all the deets, what did you want to chat about?  Tell me something interesting… or even better, tell me something interesting *about yourself*. 😉\n",
+      ],
+    },
+    ]
+)
+    text_value = ''
+    try:
+        response = chat_session.send_message(message)
+        bot_reply = response.text
+        if not isinstance(bot_reply, str):
+            result = bot_reply._result
+            text_value = result.candidates[0].content.parts[0].text
+        else:
+            text_value = bot_reply
+    except:
+        text_value = "i will Ignore this text for few minutes"
+    
+    return text_value
 
 
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id  # Get the chat ID
     text: str = update.message.text
-    print(f'User({update.message.chat.id}): "{text}"')
-
-    # Check if the chat ID is the allowed group ID
-    if chat_id:
+    if update.message.reply_to_message:
+        if update.message.reply_to_message.from_user.username == 'Aradhya0404_Bot' and chat_id == ALLOWED_GROUP_ID:
+            try:
+                reply = chat_with_vamika(text)
+            except:
+                reply = "i will Ignore this text for few minutes"
+            try:
+                await update.message.reply_text(reply)
+            except:
+                await update.message.chat.send_message(reply)
+    elif chat_id:
         words = text.split()
         if len(words) > 2:
             response = kb.answer_question(text)
@@ -364,6 +410,8 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     await update.message.chat.send_message(response)
                 except:
                     await update.message.chat.send_message(response)
+        
+
         else:
             response = handle_response(text)
             if response:
@@ -376,10 +424,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
         except:
             await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
-    response = handle_response(text)
-    if response:
-        print('Bot:', response)
-        await update.message.reply_text(response)
+    
 
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
