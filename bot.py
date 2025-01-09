@@ -386,7 +386,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id  # Get the chat ID
     text: str = update.message.text
     if update.message.reply_to_message:
-        if update.message.reply_to_message.from_user.username == 'Aradhya0404_Bot' and chat_id == ALLOWED_GROUP_ID:
+        if update.message.reply_to_message.from_user.username == 'Vamiika_bot' and chat_id == ALLOWED_GROUP_ID:
             try:
                 reply = chat_with_vamika(text)
             except:
