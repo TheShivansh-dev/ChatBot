@@ -18,6 +18,7 @@ genai.configure(api_key="AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8")
 TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
 filename = "knwldg.txt"
+req =1
 
 
 # Google Custom Search API credentials
@@ -338,6 +339,20 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.chat.send_message(all_commands)
     
 def chat_with_vamika(message):
+    global req
+    
+    apikey = "AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8"
+    apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY"]
+    if req<=14:
+        apikey = apikeylist[0]
+    elif req<=28:
+        apikey = apikeylist[1]
+    else:
+        req = 1
+        apikey = apikeylist[0]
+    req = req + 1
+
+    genai.configure(api_key=apikey)
     generation_config = {
   "temperature": 1,
   "top_p": 0.95,
