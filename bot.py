@@ -376,11 +376,6 @@ def chat_with_vamika(message):
         req = 1
         apikey = apikeylist[0]
     req = req + 1
-    
-    if round_counter >= 10:
-        print("Enter here 1", round_counter)
-        chat_session_history = static_history.copy()
-        round_counter = 0
 
     genai.configure(api_key=apikey)
     generation_config = {
@@ -396,8 +391,8 @@ def chat_with_vamika(message):
     generation_config=generation_config,
     )
     chat_session = model.start_chat(
-  history=chat_session_history 
-)
+    history=chat_session_history 
+    )
     text_value = ''
     try:
         response = chat_session.send_message(message)
@@ -410,10 +405,10 @@ def chat_with_vamika(message):
             text_value = bot_reply
     except:
         text_value = "i will Ignore this text for few minutes"
-    round_counter = round_counter+1
     chat_session_history.append({"role": "model", "parts": [text_value]})
-
-    print("chat history start here \n",chat_session.history)
+    if len(chat_session_history) > 12: 
+            chat_session_history = chat_session_history[:2] + chat_session_history[2:][-10:]
+    
     return text_value
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
