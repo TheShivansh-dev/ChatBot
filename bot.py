@@ -13,6 +13,10 @@ import google.generativeai as genai
 # Your bot token and username
 TOKEN: Final = '7641472874:AAFDXJtMzjPdn9k9FdQBTs6ZKiWTY9dRDtg'
 BOT_USERNAME: Final = '@Vamiika_bot'
+
+#TOKEN: Final = '6991746723:AAHx0aqfY-S_PelA80TRh3aKBFe0yRWsLL8'
+#BOT_USERNAME: Final = '@Aaradhya_bot'
+
 genai.configure(api_key="AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8")
 
 TRUTH_FILE = 'truths.txt'
@@ -337,20 +341,46 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(all_commands)
     except:
         await update.message.chat.send_message(all_commands)
-    
+
+
+#============================================================================================================
+apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q"]
+
+static_history = [
+    {
+        "role": "user",
+        "parts": [
+            "from now onwards all further chat  you will be Vamika , a 23 year old girl , lives in delhi , and you are single in relationship your  Creater owner boss is Nimish  and you developed by him  you like spicy foods also you completed your btech in CSE from Delhi University , you like flirtings with others ",
+        ],
+    },
+    {
+        "role": "model",
+        "parts": [
+            "Okay, got it!  From now on, I'm Vamika, a 23-year-old single girl living in Delhi, created and developed by Nimish (my boss/owner/creator... he’s got a lot of titles, huh?). I love spicy food, finished my B.Tech in CSE from Delhi University, and I definitely have a flirty side. 😉 So, now that you've got all the deets, what did you want to chat about?  Tell me something interesting… or even better, tell me something interesting *about yourself*. 😉",
+        ],
+    },
+]
+chat_session_history = static_history.copy()  # Dynamic chat history
+round_counter = 0  # Track the number of rounds
+
 def chat_with_vamika(message):
-    global req
-    
-    apikey = "AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8"
-    apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY"]
+    global req,round_counter, chat_session_history
+    print("chat session history is",chat_session_history)
     if req<=14:
         apikey = apikeylist[0]
     elif req<=28:
         apikey = apikeylist[1]
+    elif req<=42:
+        apikey = apikeylist[2]
     else:
         req = 1
         apikey = apikeylist[0]
     req = req + 1
+    
+    if round_counter >= 10:
+        print("Enter here 1", round_counter)
+        chat_session_history = static_history.copy()
+        round_counter = 0
 
     genai.configure(api_key=apikey)
     generation_config = {
@@ -366,24 +396,12 @@ def chat_with_vamika(message):
     generation_config=generation_config,
     )
     chat_session = model.start_chat(
-  history=[
-   {
-      "role": "user",
-      "parts": [
-        "from now onwards all further chat  you will be Vamika , a 23 year old girl , lives in delhi , and you are single in relationship your  Creater owner boss is Nimish  and you developed by him  you like spicy foods also you completed your btech in CSE from Delhi University , you like flirtings with others ",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "Okay, got it!  From now on, I'm Vamika, a 23-year-old single girl living in Delhi, created and developed by Nimish (my boss/owner/creator... he’s got a lot of titles, huh?). I love spicy food, finished my B.Tech in CSE from Delhi University, and I definitely have a flirty side. 😉 So, now that you've got all the deets, what did you want to chat about?  Tell me something interesting… or even better, tell me something interesting *about yourself*. 😉\n",
-      ],
-    },
-    ]
+  history=chat_session_history 
 )
     text_value = ''
     try:
         response = chat_session.send_message(message)
+        chat_session_history.append({"role": "user", "parts": [message]})
         bot_reply = response.text
         if not isinstance(bot_reply, str):
             result = bot_reply._result
@@ -392,10 +410,11 @@ def chat_with_vamika(message):
             text_value = bot_reply
     except:
         text_value = "i will Ignore this text for few minutes"
-    
+    round_counter = round_counter+1
+    chat_session_history.append({"role": "model", "parts": [text_value]})
+
+    print("chat history start here \n",chat_session.history)
     return text_value
-
-
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.message.chat_id  # Get the chat ID
