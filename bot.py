@@ -217,7 +217,7 @@ async def send_media(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None
                 await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
             except:
                 await update.message.chat.send_animation(animation=open(file_path, 'rb'), caption=custom_message)
-            await update.message.reply_animation(animation=open(file_path, 'rb'), caption=custom_message)
+            
         else:
             try:
                 await update.message.reply_photo(photo=open(file_path, 'rb'), caption=custom_message)
