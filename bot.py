@@ -344,7 +344,7 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 
 #============================================================================================================
-apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q"]
+apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q","AIzaSyA7rw343tP5MNUmmxHK_BRQ3HreZkvEPCY"]
 
 static_history = [
     {
@@ -372,6 +372,8 @@ def chat_with_vamika(message):
         apikey = apikeylist[1]
     elif req<=42:
         apikey = apikeylist[2]
+    elif req<=56:
+        apikey = apikeylist[3]
     else:
         req = 1
         apikey = apikeylist[0]
