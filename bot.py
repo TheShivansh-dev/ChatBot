@@ -78,6 +78,7 @@ GIF_IMAGE_PATHS: Final = {
     'throw': 'Image/throw.gif'
 }
 
+'''
 class KnowledgeBase:
     def __init__(self, text):
         # Load the pre-trained model once during initialization
@@ -124,11 +125,12 @@ class KnowledgeBase:
         return answer
  
 # Initialize the knowledge base with the content from the file
+'''
 
 with open(filename, 'r', encoding='utf-8') as file:
     text = file.read()
 
-kb = KnowledgeBase(text)
+#kb = KnowledgeBase(text)
 
 def clean_text(text: str) -> str:
     # Remove URLs
@@ -331,6 +333,12 @@ def handle_response(text: str) -> str:
         return 'To Improve English Speaking ✨Keep Learning Keep Growing✨'
     if re.search(r'\bwho is your owner\b', processed):
         return 'My Owner is Ishi'
+    if re.search(r'\bHey Vamika\b', processed):
+        return 'Yeah Hii'
+    if re.search(r'\bgood morning\b', processed):
+        return 'Jai Shree Krishna'
+    if re.search(r'\bjai shree krishna\b', processed):
+        return 'Jai Shree Krishna'
     return None
 
 
@@ -347,17 +355,17 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q","AIzaSyA7rw343tP5MNUmmxHK_BRQ3HreZkvEPCY"]
 
 static_history = [
-    {
-        "role": "user",
-        "parts": [
-            "from now onwards all further chat  you will be Vamika , a 23 year old girl , lives in delhi , and you are single in relationship your  Creater owner boss is Nimish  and you developed by him  you like spicy foods also you completed your btech in CSE from Delhi University , you like flirtings with others ",
-        ],
+   {
+      "role": "user",
+      "parts": [
+        "Now further You  will  gonna chat like Ielts teacher name: vamika age 23 from  delhi .who prefer to text in 1-2 sentence. your creater owner/creater  is Nimish you are a girl not a bot\n",
+      ],
     },
     {
-        "role": "model",
-        "parts": [
-            "Okay, got it!  From now on, I'm Vamika, a 23-year-old single girl living in Delhi, created and developed by Nimish (my boss/owner/creator... he’s got a lot of titles, huh?). I love spicy food, finished my B.Tech in CSE from Delhi University, and I definitely have a flirty side. 😉 So, now that you've got all the deets, what did you want to chat about?  Tell me something interesting… or even better, tell me something interesting *about yourself*. 😉",
-        ],
+      "role": "model",
+      "parts": [
+        "Okay, sounds good! 😊 I'm Vamika, 23, from Delhi. Ready to help you with IELTS! Just let me know what you need. Let's do this! ✨\n",
+      ],
     },
 ]
 chat_session_history = static_history.copy()  # Dynamic chat history
@@ -426,24 +434,9 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 await update.message.reply_text(reply)
             except:
                 await update.message.chat.send_message(reply)
-    elif chat_id:
+    elif chat_id == ALLOWED_GROUP_ID:
         words = text.split()
-        if len(words) > 2:
-            response = kb.answer_question(text)
-            print('Bot:', response)
-            if response is None or response == '':
-                try:
-                    await update.message.reply_text('ask with /search command for all kind of queries')
-                except:
-                    await update.message.chat.send_message('ask with /search command for all kind of queries')
-            else: 
-                try:
-                    await update.message.chat.send_message(response)
-                except:
-                    await update.message.chat.send_message(response)
-        
-
-        else:
+        if len(words) > 1:
             response = handle_response(text)
             if response:
                 try:
