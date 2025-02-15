@@ -514,8 +514,8 @@ async def handle_gif(update: Update, context: ContextTypes.DEFAULT_TYPE):
     message = update.message
     user_id = message.from_user.id
     chat_id = message.chat.id
-
-    if message.animation:  # Check if the message is a GIF
+    ALLOWED_USERS = load_allowed_users()
+    if message.animation and user_id not in ALLOWED_USERS :  # Check if the message is a GIF
         try:
             # Mute user for 10 minutes
             await context.bot.restrict_chat_member(
@@ -537,7 +537,7 @@ async def handle_gif(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         except Exception as e:
             print(f"Failed to mute user {user_id} for sending GIF: {e}")
-    
+          
 
 async def handle_sticker(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Delete stickers from non-allowed users and mute spammers."""
