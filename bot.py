@@ -509,6 +509,35 @@ async def add_sticker_user(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except Exception as e:
         await update.message.reply_text(f"⚠️ Error adding user: {e}")
 
+async def handle_gif(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Delete GIFs (Animations) and mute the sender for 10 minutes."""
+    message = update.message
+    user_id = message.from_user.id
+    chat_id = message.chat.id
+
+    if message.animation:  # Check if the message is a GIF
+        try:
+            # Mute user for 10 minutes
+            await context.bot.restrict_chat_member(
+                chat_id=chat_id,
+                user_id=user_id,
+                permissions=ChatPermissions(
+                    can_send_messages=False
+                ),
+                until_date=int(time.time()) + 600  # Mute for 10 minutes
+            )
+            
+            # Notify group about the mute
+            await message.chat.send_message(
+                f"🚫 User [{message.from_user.username or user_id}] has been muted for 10 minutes due to sending a GIF."
+            )
+
+            # Delete the GIF message
+            await message.delete()
+        
+        except Exception as e:
+            print(f"Failed to mute user {user_id} for sending GIF: {e}")
+    
 
 async def handle_sticker(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Delete stickers from non-allowed users and mute spammers."""
@@ -587,6 +616,7 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
     app.add_handler(CommandHandler("addStick", add_sticker_user))
     app.add_handler(MessageHandler(filters.Sticker.ALL, handle_sticker))
+    app.add_handler(MessageHandler(filters.ANIMATION, handle_gif))
     app.add_error_handler(error)
 
     print('Polling the bot...')
