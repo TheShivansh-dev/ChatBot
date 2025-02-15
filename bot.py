@@ -1,8 +1,9 @@
 import requests
 from typing import Final, List
-from telegram import Update
+from telegram import Update,ChatPermissions
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
-import re
+import re,os,time
+import pandas as pd
 import random
 import spacy
 import numpy as np
@@ -23,8 +24,10 @@ TRUTH_FILE = 'truths.txt'
 DARE_FILE = 'dares.txt'
 filename = "knwldg.txt"
 req =1
+muted_users = set()
+sticker_tracker = {}
 
-
+EXCEL_FILE_PATH = "allowed_StickerUserID.xlsx"
 # Google Custom Search API credentials
 GOOGLE_API_KEYS: Final[List[str]] = [
     'AIzaSyDqzvNif6a5kJm_sc4EmJzSk5upzrvHE48',  # First API Key
@@ -443,12 +446,122 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     await update.message.chat.send_message(response)
                 except:
                     await update.message.chat.send_message(response)
+    elif chat_id == ALLOWED_ADMIN_GROUP_ID:
+        return
     else:
         try:
             await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
         except:
             await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
     
+def ensure_excel_file():
+    if not os.path.exists(EXCEL_FILE_PATH):
+        df = pd.DataFrame(columns=["User ID"])
+        df.to_excel(EXCEL_FILE_PATH, index=False)
+
+# Load allowed users from the Excel file
+def load_allowed_users():
+    ensure_excel_file()  # Make sure the file exists
+    try:
+        df = pd.read_excel(EXCEL_FILE_PATH)
+        return set(df["User ID"].dropna().astype(int)) if not df.empty else set()
+    except Exception as e:
+        print(f"Error loading allowed users: {e}")
+        return set()
+
+# Function to add a user ID to the Excel file
+async def add_sticker_user(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id
+    ALLOWED_USERS = load_allowed_users()  # Reload allowed users
+
+    # Allow only in the specified group
+    if chat_id != ALLOWED_ADMIN_GROUP_ID:
+        return  
+
+    if len(context.args) != 1:
+        await update.message.reply_text("Usage: /addstickeruserid <user_id>")
+        return
+
+    try:
+        new_user_id = int(context.args[0])  
+
+        if new_user_id in ALLOWED_USERS:
+            await update.message.reply_text("✅ This user is already allowed to send stickers.")
+            return
+
+        # Read existing data
+        df = pd.read_excel(EXCEL_FILE_PATH)
+        
+        # Append new user ID in correct column
+        new_entry = pd.DataFrame({"User ID": [new_user_id]})
+        df = pd.concat([df, new_entry], ignore_index=True)
+
+        # Save back to Excel
+        df.to_excel(EXCEL_FILE_PATH, index=False)
+
+        await update.message.reply_text(f"✅ User {new_user_id} is now allowed to send stickers.")
+
+        if os.path.exists(EXCEL_FILE_PATH):
+            await context.bot.send_document(chat_id=ALLOWED_ADMIN_GROUP_ID, document=open(EXCEL_FILE_PATH, 'rb'),
+                                    caption="📄 Updated Allowed User List")
+    except ValueError:
+        await update.message.reply_text("⚠️ Invalid user ID. Please enter a valid number.")
+    except Exception as e:
+        await update.message.reply_text(f"⚠️ Error adding user: {e}")
+
+
+async def handle_sticker(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Delete stickers from non-allowed users and mute spammers."""
+    message = update.message
+    user_id = message.from_user.id  
+    chat_id = message.chat.id
+    ALLOWED_USERS = load_allowed_users()
+
+    if user_id not in ALLOWED_USERS:
+        await message.delete()
+        current_time = time.time()
+        
+        # Initialize sticker tracking for the user if not exists
+        if user_id not in sticker_tracker:
+            sticker_tracker[user_id] = []
+
+        sticker_tracker[user_id].append(current_time)
+
+        # Remove timestamps older than 3 seconds
+        sticker_tracker[user_id] = [t for t in sticker_tracker[user_id] if current_time - t <= 3]
+
+        # If user sent more than 3 stickers in 3 seconds, mute for 10 minutes
+        if len(sticker_tracker[user_id]) > 3:
+            if user_id not in muted_users:  # Avoid muting multiple times
+                try:
+                    await context.bot.restrict_chat_member(
+                        chat_id=chat_id,
+                        user_id=user_id,
+                        permissions=ChatPermissions(
+                            can_send_messages=False
+                        ),
+                        until_date=int(current_time) + 600  # Mute for 10 minutes
+                    )
+                    await message.chat.send_message(
+                        f"🚫 User [{message.from_user.username or user_id}] has been muted for 10 minutes due to sticker spam."
+                    )
+                    muted_users.add(user_id)  # Add to muted users set
+                    sticker_tracker[user_id] = []  # Reset tracker
+                except Exception as e:
+                    print(f"Failed to mute user {user_id}: {e}")
+
+            return  # Do not send the "sticker not allowed" message if user is muted
+
+        # Delete the sticker message
+        try:
+            if user_id not in muted_users:  # Send warning only if user is not muted
+                await message.chat.send_message(
+                    "🚫 Only allowed users can send stickers.\n"
+                    "If you want permission, send a message to @Vamiika_bot saying:\n"
+                    '"allow me for a sticker"'
+                )
+        except Exception as e:
+            print(f"Failed to delete sticker: {e}")
 
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
@@ -472,6 +585,8 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler('adddare', add_dare_command))
 
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    app.add_handler(CommandHandler("addStick", add_sticker_user))
+    app.add_handler(MessageHandler(filters.Sticker.ALL, handle_sticker))
     app.add_error_handler(error)
 
     print('Polling the bot...')
