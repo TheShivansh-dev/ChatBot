@@ -104,3 +104,9 @@ Werkzeug==3.0.4
 wrapt==1.16.0
 yarl==1.9.4
 pandas
+pydub
+wave
+asyncio
+tempfile
+edge_tts
+speech_recognition
