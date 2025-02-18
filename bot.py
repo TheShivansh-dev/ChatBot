@@ -9,6 +9,15 @@ import spacy
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
 import google.generativeai as genai
+from pydub import AudioSegment
+import wave
+import asyncio
+import tempfile
+import edge_tts
+import speech_recognition as sr
+
+
+
 
 # Your bot token and username
 # Your bot token and username
@@ -37,7 +46,7 @@ GOOGLE_CXS: Final[List[str]] = [
     '92178ceca83294240',  # First CX ID
     '671582ee1a93142c9',  # Replace with your second CX ID
 ]
-ALLOWED_GROUP_ID: Final = -1001817635995  # Replace with your actual group ID
+ALLOWED_GROUP_ID: Final = -1001817635995    # Replace with your actual group ID
 ALLOWED_ADMIN_GROUP_ID: Final = -1002137866227
 
 GIF_IMAGE_PATHS: Final = {
@@ -353,107 +362,6 @@ async def commands_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     except:
         await update.message.chat.send_message(all_commands)
 
-
-#============================================================================================================
-apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q","AIzaSyA7rw343tP5MNUmmxHK_BRQ3HreZkvEPCY"]
-
-static_history = [
-   {
-      "role": "user",
-      "parts": [
-        "Now further You  will  gonna chat like Ielts teacher name: vamika age 23 from  delhi .who prefer to text in 1-2 sentence. your creater owner/creater  is Nimish you are a girl not a bot\n",
-      ],
-    },
-    {
-      "role": "model",
-      "parts": [
-        "Okay, sounds good! 😊 I'm Vamika, 23, from Delhi. Ready to help you with IELTS! Just let me know what you need. Let's do this! ✨\n",
-      ],
-    },
-]
-chat_session_history = static_history.copy()  # Dynamic chat history
-round_counter = 0  # Track the number of rounds
-
-def chat_with_vamika(message):
-    global req,round_counter, chat_session_history
-    print("chat session history is",chat_session_history)
-    if req<=14:
-        apikey = apikeylist[0]
-    elif req<=28:
-        apikey = apikeylist[1]
-    elif req<=42:
-        apikey = apikeylist[2]
-    elif req<=56:
-        apikey = apikeylist[3]
-    else:
-        req = 1
-        apikey = apikeylist[0]
-    req = req + 1
-
-    genai.configure(api_key=apikey)
-    generation_config = {
-  "temperature": 1,
-  "top_p": 0.95,
-  "top_k": 40,
-  "max_output_tokens": 200,
-  "response_mime_type": "text/plain",
-    }
-
-    model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash",
-    generation_config=generation_config,
-    )
-    chat_session = model.start_chat(
-    history=chat_session_history 
-    )
-    text_value = ''
-    try:
-        response = chat_session.send_message(message)
-        chat_session_history.append({"role": "user", "parts": [message]})
-        bot_reply = response.text
-        if not isinstance(bot_reply, str):
-            result = bot_reply._result
-            text_value = result.candidates[0].content.parts[0].text
-        else:
-            text_value = bot_reply
-    except:
-        text_value = "i will Ignore this text for few minutes"
-    chat_session_history.append({"role": "model", "parts": [text_value]})
-    if len(chat_session_history) > 12: 
-            chat_session_history = chat_session_history[:2] + chat_session_history[2:][-10:]
-    
-    return text_value
-
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    chat_id = update.message.chat_id  # Get the chat ID
-    text: str = update.message.text
-    if update.message.reply_to_message:
-        if update.message.reply_to_message.from_user.username == 'Vamiika_bot' and chat_id == ALLOWED_GROUP_ID:
-            try:
-                reply = chat_with_vamika(text)
-            except:
-                reply = "i will Ignore this text for few minutes"
-            try:
-                await update.message.reply_text(reply)
-            except:
-                await update.message.chat.send_message(reply)
-    elif chat_id == ALLOWED_GROUP_ID:
-        words = text.split()
-        if len(words) > 1:
-            response = handle_response(text)
-            if response:
-                try:
-                    await update.message.chat.send_message(response)
-                except:
-                    await update.message.chat.send_message(response)
-    elif chat_id == ALLOWED_ADMIN_GROUP_ID:
-        return
-    else:
-        try:
-            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
-        except:
-            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
-    
 def ensure_excel_file():
     if not os.path.exists(EXCEL_FILE_PATH):
         df = pd.DataFrame(columns=["User ID"])
@@ -592,6 +500,182 @@ async def handle_sticker(update: Update, context: ContextTypes.DEFAULT_TYPE):
         except Exception as e:
             print(f"Failed to delete sticker: {e}")
 
+#============================================================================================================
+apikeylist = ["AIzaSyC-2XiAk9k97bX5yU4pLWvf1NugtbgK9t8","AIzaSyAyhqX2OxeCad8E5WVRXO5hLTWOs1W2eDY","AIzaSyAuv8wHIo__6BRqczmnhm_EGl7CKD32u0Q","AIzaSyA7rw343tP5MNUmmxHK_BRQ3HreZkvEPCY"]
+
+static_history = [
+   {
+      "role": "user",
+      "parts": [
+        "Now further You  will  gonna chat like Ielts teacher name: vamika age 23 from  delhi .who prefer to text in 1-2 sentence. your creater owner/creater  is Nimish you are a girl not a bot\n",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Okay, sounds good! 😊 I'm Vamika, 23, from Delhi. Ready to help you with IELTS! Just let me know what you need. Let's do this! ✨\n",
+      ],
+    },
+]
+chat_session_history = static_history.copy()  # Dynamic chat history
+round_counter = 0  # Track the number of rounds
+
+def chat_with_vamika(message):
+    global req,round_counter, chat_session_history
+    print("chat session history is",chat_session_history)
+    if req<=14:
+        apikey = apikeylist[0]
+    elif req<=28:
+        apikey = apikeylist[1]
+    elif req<=42:
+        apikey = apikeylist[2]
+    elif req<=56:
+        apikey = apikeylist[3]
+    else:
+        req = 1
+        apikey = apikeylist[0]
+    req = req + 1
+
+    genai.configure(api_key=apikey)
+    generation_config = {
+  "temperature": 1,
+  "top_p": 0.95,
+  "top_k": 40,
+  "max_output_tokens": 200,
+  "response_mime_type": "text/plain",
+    }
+
+    model = genai.GenerativeModel(
+    model_name="gemini-1.5-flash",
+    generation_config=generation_config,
+    )
+    chat_session = model.start_chat(
+    history=chat_session_history 
+    )
+    text_value = ''
+    try:
+        response = chat_session.send_message(message)
+        chat_session_history.append({"role": "user", "parts": [message]})
+        bot_reply = response.text
+        if not isinstance(bot_reply, str):
+            result = bot_reply._result
+            text_value = result.candidates[0].content.parts[0].text
+        else:
+            text_value = bot_reply
+    except:
+        text_value = "i will Ignore this text for few minutes"
+    chat_session_history.append({"role": "model", "parts": [text_value]})
+    if len(chat_session_history) > 12: 
+            chat_session_history = chat_session_history[:2] + chat_session_history[2:][-10:]
+    
+    return text_value
+
+async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    chat_id = update.message.chat_id  # Get the chat ID
+    text: str = update.message.text
+    print("Ente here 3")
+    if update.message.reply_to_message:
+        print("Ente here 2",chat_id,ALLOWED_GROUP_ID)
+        print(update.message.reply_to_message.from_user.username)
+        if update.message.reply_to_message.from_user.username == 'Vamiika_bot' and chat_id == ALLOWED_GROUP_ID:
+            print("Ente here")
+            try:
+                reply = chat_with_vamika(text)
+            except:
+                reply = "i will Ignore this text for few minutes"
+            try:
+                await update.message.reply_text(reply)
+            except:
+                await update.message.chat.send_message(reply)
+    elif chat_id == ALLOWED_GROUP_ID:
+        words = text.split()
+        if len(words) > 1:
+            response = handle_response(text)
+            if response:
+                try:
+                    await update.message.chat.send_message(response)
+                except:
+                    await update.message.chat.send_message(response)
+    elif chat_id == ALLOWED_ADMIN_GROUP_ID:
+        return
+    else:
+        try:
+            await update.message.reply_text('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
+        except:
+            await update.message.chat.send_message('You are not allowed to use this feature in this group. Contact @O000000000O00000000O for assistance. or join there https://t.me/+yVFKtplWZUA0Yzhl')
+
+async def handle_voice(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    print("Enter here voice 1")
+    voice = update.message.voice
+    file = await context.bot.get_file(voice.file_id)
+    
+    if update.message.reply_to_message:
+        print("Enter here voice 2")
+        if (update.message.reply_to_message.from_user.username == 'Vamiika_bot' and 
+            update.message.chat.id == ALLOWED_GROUP_ID):
+            print("Enter here voice 3",file,voice)
+            # Create a temporary file for the audio and immediately close it
+            temp_audio = tempfile.NamedTemporaryFile(delete=False, suffix=".ogg")
+            temp_audio_name = temp_audio.name
+            temp_audio.close()
+            print("Enter here voice 5")
+            await file.download_to_drive(temp_audio_name)
+            print("Enter here voice 6")
+            # Convert audio (OGG to WAV conversion is handled in speech_to_text)
+            audio_text = speech_to_text(temp_audio_name)
+            print("Enter here voice 4" ,audio_text)
+            os.remove(temp_audio_name)  # Delete the temporary OGG file
+
+            # Get response from chat_with_vamika (assuming it's now async)
+            response_text = chat_with_vamika(audio_text)
+            print("Enter here voice 7" ,response_text)
+            # Create a temporary file for TTS output and close it immediately
+            temp_tts = tempfile.NamedTemporaryFile(delete=False, suffix=".mp3")
+            temp_tts_name = temp_tts.name
+            temp_tts.close()
+            
+            await text_to_speech(response_text, temp_tts_name)
+            
+            try:
+                # Open the file in a context manager to ensure it's closed after sending
+                with open(temp_tts_name, "rb") as voice_file:
+                    await update.message.reply_voice(voice=voice_file)
+            except Exception as e:
+                with open(temp_tts_name, "rb") as voice_file:
+                    await update.message.bot.send_voice(chat_id=update.message.chat.id, voice=voice_file)
+            os.remove(temp_tts_name)  # Delete the temporary MP3 file
+    else:
+        print("Not a reply msg")
+
+# Helper function to convert speech to text using SpeechRecognition
+def speech_to_text(audio_file):
+    recognizer = sr.Recognizer()
+    try:
+        # Convert the OGG file to WAV format
+        audio_segment = AudioSegment.from_file(audio_file, format="ogg")
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".wav") as temp_wav:
+            temp_wav_path = temp_wav.name
+            audio_segment.export(temp_wav_path, format="wav")
+        
+        # Now process the WAV file with SpeechRecognition
+        with sr.AudioFile(temp_wav_path) as source:
+            audio = recognizer.record(source)
+        os.remove(temp_wav_path)  # Clean up the temporary file
+
+        text = recognizer.recognize_google(audio)
+        return text
+    except sr.UnknownValueError:
+        return "Sorry, I couldn't understand the audio."
+    except sr.RequestError:
+        return "Speech recognition service is unavailable."
+    except Exception as e:
+        return f"Error during audio processing: {str(e)}"
+    
+# Text to Speech function using Edge-TTS
+async def text_to_speech(text, output_file):
+    communicate = edge_tts.Communicate(text, voice="en-US-JennyNeural")  # Female AI voice
+    await communicate.save(output_file)
+
 async def error(update: Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'Update {update} caused error {context.error}')
 
@@ -617,6 +701,7 @@ if __name__ == "__main__":
     app.add_handler(CommandHandler("addStick", add_sticker_user))
     app.add_handler(MessageHandler(filters.Sticker.ALL, handle_sticker))
     app.add_handler(MessageHandler(filters.ANIMATION, handle_gif))
+    app.add_handler(MessageHandler(filters.VOICE, handle_voice))
     app.add_error_handler(error)
 
     print('Polling the bot...')
