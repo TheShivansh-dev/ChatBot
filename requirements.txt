@@ -108,4 +108,4 @@ pydub
 wave
 asyncio
 edge_tts
-speech_recognition
+speechrecognition
