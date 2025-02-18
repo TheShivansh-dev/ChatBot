@@ -107,6 +107,5 @@ pandas
 pydub
 wave
 asyncio
-tempfile
 edge_tts
 speech_recognition
